@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="sites_overview">
+    <title>Sites</title>
+    <shortdesc>Sites provide a hierarchical organization structure for managing network devices and resources in Extreme Platform ONE.</shortdesc>
+    <conbody>
+        <p>Sites enable you to organize your network infrastructure based on physical locations, logical groupings, or business requirements. Each site can contain devices, VLANs, services, and other network resources that you manage through Extreme Platform ONE.</p>
+        
+        <p>The Sites feature uses a tree-based hierarchy that allows you to create parent-child relationships between locations. This structure helps you:</p>
+        <ul>
+            <li>Group devices by geographic location or business function</li>
+            <li>Apply consistent configurations across multiple devices</li>
+            <li>Monitor network health at different organizational levels</li>
+            <li>Manage access permissions based on site boundaries</li>
+        </ul>
+        
+        <section id="default_site">
+            <title>Default Site</title>
+            <p>The Default Site serves as the root-level container in your site hierarchy. When you first access Extreme Platform ONE, all devices are automatically assigned to the Default Site until you create additional sites and reassign them.</p>
+            
+            <p>The Default Site includes the following organizational levels:</p>
+            <dl>
+                <dlentry>
+                    <dt>Extreme Networks</dt>
+                    <dd>The top-level parent container that encompasses all network resources. This level shows 22 total entries in the current configuration.</dd>
+                </dlentry>
+                
+                <dlentry>
+                    <dt>Bangalore</dt>
+                    <dd>A geographic site container representing the Bangalore location. This site contains 7 entries including the Bangalore Office1 sub-site.</dd>
+                </dlentry>
+                
+                <dlentry>
+                    <dt>Bangalore Office1</dt>
+                    <dd>A sub-site within Bangalore that contains 7 entries. This office location includes:
+                        <ul>
+                            <li>Building1 - Contains 7 entries including Floor1</li>
+                            <li>Floor1 - Contains 7 specific network resources</li>
+                        </ul>
+                    </dd>
+                </dlentry>
+                
+                <dlentry>
+                    <dt>Salem</dt>
+                    <dd>A geographic site container for the Salem location. This site contains 6 entries including Salem Office1.</dd>
+                </dlentry>
+                
+                <dlentry>
+                    <dt>Salem Office1</dt>
+                    <dd>A sub-site within Salem that contains 6 entries. This office includes:
+                        <ul>
+                            <li>Building1 - Contains 6 entries including Floor1</li>
+                            <li>Floor1 - Contains 6 specific resources</li>
+                        </ul>
+                    </dd>
+                </dlentry>
+                
+                <dlentry>
+                    <dt>San Jose</dt>
+                    <dd>A geographic site container for the San Jose location. This site contains 9 entries including San Jose Office1.</dd>
+                </dlentry>
+                
+                <dlentry>
+                    <dt>San Jose Office1</dt>
+                    <dd>A sub-site within San Jose that contains 9 entries. This office includes:
+                        <ul>
+                            <li>Building1 - Contains 9 entries</li>
+                            <li>Data Center - Contains 2 specific resources</li>
+                        </ul>
+                    </dd>
+                </dlentry>
+            </dl>
+        </section>
+        
+        <section id="site_details">
+            <title>Site Information</title>
+            <p>When you select a site, the platform displays detailed information in the right panel, including:</p>
+            <dl>
+                <dlentry>
+                    <dt>Summary Tab</dt>
+                    <dd>Provides an overview of the selected site, including its location in the hierarchy and key statistics.</dd>
+                </dlentry>
+                
+                <dlentry>
+                    <dt>Alerts Tab</dt>
+                    <dd>Shows active alerts and notifications for devices within the selected site. The number badge (such as "0") indicates the current alert count.</dd>
+                </dlentry>
+                
+                <dlentry>
+                    <dt>Services/VLANs Tab</dt>
+                    <dd>Lists the network services and VLANs configured for the site.</dd>
+                </dlentry>
+                
+                <dlentry>
+                    <dt>Devices Section</dt>
+                    <dd>Displays devices assigned to the site, including:
+                        <ul>
+                            <li>Device status (undefined or operational)</li>
+                            <li>Device model and type</li>
+                            <li>IP address information</li>
+                        </ul>
+                    </dd>
+                </dlentry>
+            </dl>
+        </section>
+        
+        <section id="navigation">
+            <title>Site Navigation</title>
+            <p>The Sites interface provides several navigation features:</p>
+            <ul>
+                <li>Use the Quick Navigation search box to find specific sites quickly</li>
+                <li>Expand or collapse site hierarchies using the arrow indicators</li>
+                <li>Numbers in brackets indicate the count of child items within each container</li>
+                <li>Select any site to view its details in the right panel</li>
+            </ul>
+        </section>
+    </conbody>
+</concept>
