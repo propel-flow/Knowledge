@@ -1,0 +1,48 @@
+Key characteristics of Propel Flow:
+- AI-first knowledge System to manage business (SaaS companies) operations and market expansion
+	- Key features:
+		- translate software UI (adapting textual and graphical elements of a software's interface from one language to another)
+		- AI learning
+		- version control
+
+Marketing research on Slack:
+- Slack's targeted audiences are mainly in an organizational unit (not individuals, and usually unit associated with work than private communities) remote and hybrid teams, tech companies, startups, small- to medium-sized businesses, and enterprise organization. 
+- According to Statista, computer software and IT Services industry companies contribute to the main targeted audience (which aligns with the targeted audience of Propel Flow and thus Slack could be considered one of the main platforms Propel can market the product and services)
+- With 27.19% of traffic located in the United States (according to Statista), the contents posted on Slack could be mainly in English, with a few advertisements or newsletters in language such as Spanish, Hindi, and Japanese.
+- Using Slack as a way of marketing could composed of mainly two parts: 1) internal marketing by creating a slack channel in which potential customers could join the community and receive regular newsletters and updates on products (main job is to retain the old customers), and 2) marketing to relevant communities by finding potential partners (find SaaS companies on slack) and reach out to new customers
+
+Ways to market on Slack 
+- simple work flow for customer service is shown below. Further revision needed (specifically changing markdown to slack friendly text, adding to other workspaces, automating the expansion of comments, automates advertising, interact with threads)
+
+- connect slack to n8n (need a trigger listening to the slack channel, and a responses that post messages on Slack channel):
+
+- To set up the send message app: (process 1-6 is done in the slack api although not mentioned)
+	- 1. create a slack (setting up a new Slack workspace)
+	- 2. add apps
+	- 3. browse apps
+	- 4. Build
+	- 5. Your apps
+	- 6. create new apps. In "OAuth & Permissions", under "Scopes", and in the section "Bot Token Scopes" click on "add an OAuth Scope" select "app-mentions:read", "channels read", "chat:write", "channels:join", and "groups:read" (can also add anything else later on if necessary)
+	- 7. On Slack api, under "OAuth & Permissions" in the "OAuth Tokens" section and click "Install to Awesome AI stuff". Once you allow the permission, a Bot OAuth token will appear.
+	- 8. Copy the OAuth token and on n8n, under the first section "Credential to connect with", choose the drop down "create new credential" and click on "access token" and then paste the OAuth Token into the textbox
+	- 9. If we want a message to be sent, then go back to the Slack app and @ the app that you just created
+	
+- To set up the Slack Trigger:
+	- 1. click on to the web hook on n8n trigger slack to copy the web hook on to the clipboard
+	- 2. Go to Slackapi and under the "feature" click into "Event Subscriptions" and enable events
+	- 3. Paste in he web hook under "Request URL"
+	- 4. Back in n8n, under "channel to watch" choose the channel that align with the writing slack
+	- 5. Hit "test step"
+	- 6. Go back to Slackapi and hit "retry", it will be verified
+	- 7. Under "subscribe to bot events", click "add bot user event" (which assigns when will the workflow be triggered)
+- response from AI Agent
+	- 1. Click the AI agent
+		- make sure that the AI agent is connected to the chatgpt or gemini, or any other types of LLM (multiple LLM could be implemented in the process)
+	- 2. under "prompt", drag in the texts that were sent
+	- 3. In the slack message, under "parameter", drag in agent's outputs to the "message text"
+- also make sure that when the workflow is connected, change the URL from testing URL to working URL.
+- This could service as a customer service. Answering potential questions such as "what does propel flow do?" 
+(credit to Nate Herk's youtube video "How to connect Slack to n8n (2025)" )
+
+
+
