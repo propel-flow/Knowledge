@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Tag Viewer - Updated Structure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 2.5rem;
+        }
+        
+        .upload-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .upload-area {
+            border: 2px dashed #3498db;
+            border-radius: 8px;
+            padding: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .upload-area:hover {
+            background: #f8f9ff;
+            border-color: #2980b9;
+        }
+        
+        .upload-area.dragover {
+            background: #e3f2fd;
+            border-color: #1976d2;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        .upload-text {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .upload-subtext {
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        .filters {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .filter-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .filter-group label {
+            font-weight: 600;
+            color: #2c3e50;
+            min-width: 120px;
+        }
+        
+        select, input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            background: white;
+        }
+        
+        select:focus, input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+        
+        .campaign-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+        
+        .campaign-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-left: 4px solid #3498db;
+        }
+        
+        .campaign-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+        
+        .campaign-card.critical {
+            border-left-color: #e74c3c;
+        }
+        
+        .campaign-card.high {
+            border-left-color: #f39c12;
+        }
+        
+        .campaign-card.medium {
+            border-left-color: #f1c40f;
+        }
+        
+        .campaign-card.low {
+            border-left-color: #2ecc71;
+        }
+        
+        .campaign-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .campaign-description {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .tag-section {
+            margin-bottom: 15px;
+        }
+        
+        .tag-label {
+            font-weight: 600;
+            color: #34495e;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        
+        .tag {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .tag.industry {
+            background: #f0f8ff;
+            color: #3498db;
+        }
+        
+        .tag.role {
+            background: #f8f4ff;
+            color: #8e44ad;
+        }
+        
+        .tag.function {
+            background: #e8f5e8;
+            color: #27ae60;
+        }
+        
+        .tag.pain {
+            background: #fdf2f2;
+            color: #e74c3c;
+        }
+        
+        .tag.interest {
+            background: #fff8e1;
+            color: #f39c12;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .status-auto_generated {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .status-in_review {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+        
+        .status-ready_for_publish {
+            background: #e8f5e8;
+            color: #388e3c;
+        }
+        
+        .status-published {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+        
+        .meta-info {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .meta-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .urgency-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        
+        .urgency-Critical {
+            background: #e74c3c;
+        }
+        
+        .urgency-High {
+            background: #f39c12;
+        }
+        
+        .urgency-Medium {
+            background: #f1c40f;
+        }
+        
+        .urgency-Low {
+            background: #2ecc71;
+        }
+        
+        .no-results {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .summary-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #3498db;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        .export-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 15px;
+            transition: background 0.2s ease;
+        }
+        
+        .export-btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Campaign Tag Viewer</h1>
+        
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <input type="file" id="fileInput" accept=".json" multiple>
+                <div class="upload-text">Drop your campaign JSON files here or click to browse</div>
+                <div class="upload-subtext">Supports multiple JSON files</div>
+            </div>
+            <button class="export-btn" id="exportBtn" style="display: none;">Export Filtered Results</button>
+        </div>
+        
+        <div class="filters" id="filters" style="display: none;">
+            <div class="filter-group">
+                <label>Status:</label>
+                <select id="statusFilter">
+                    <option value="">All Statuses</option>
+                    <option value="auto_generated">Auto Generated</option>
+                    <option value="in_review">In Review</option>
+                    <option value="ready_for_publish">Ready for Publish</option>
+                    <option value="published">Published</option>
+                </select>
+                
+                <label>Urgency:</label>
+                <select id="urgencyFilter">
+                    <option value="">All Urgency Levels</option>
+                    <option value="Critical">Critical</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                
+                <label>Industry:</label>
+                <select id="industryFilter">
+                    <option value="">All Industries</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>Role Level:</label>
+                <select id="roleLevelFilter">
+                    <option value="">All Role Levels</option>
+                </select>
+                
+                <label>Function Area:</label>
+                <select id="functionFilter">
+                    <option value="">All Functions</option>
+                </select>
+                
+                <label>Search:</label>
+                <input type="text" id="searchInput" placeholder="Search titles, descriptions...">
+            </div>
+        </div>
+        
+        <div class="summary-stats" id="summaryStats" style="display: none;">
+            <div class="stat-card">
+                <span class="stat-number" id="totalCampaigns">0</span>
+                <div class="stat-label">Total Campaigns</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="technologyCampaigns">0</span>
+                <div class="stat-label">Technology Industry</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="readyCampaigns">0</span>
+                <div class="stat-label">Ready to Publish</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="uniqueFunctions">0</span>
+                <div class="stat-label">Function Areas</div>
+            </div>
+        </div>
+        
+        <div class="campaign-grid" id="campaignGrid">
+            <!-- Campaigns will be populated here -->
+        </div>
+        
+        <div class="no-results" id="noResults" style="display: none;">
+            No campaigns match your current filters.
+        </div>
+    </div>
+
+    <script>
+        let allCampaigns = [];
+        let filteredCampaigns = [];
+
+        // File upload handling
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+
+        uploadArea.addEventListener('click', () => fileInput.click());
+        uploadArea.addEventListener('dragover', handleDragOver);
+        uploadArea.addEventListener('dragleave', handleDragLeave);
+        uploadArea.addEventListener('drop', handleDrop);
+        fileInput.addEventListener('change', handleFileSelect);
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        }
+
+        function handleDragLeave(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = Array.from(e.dataTransfer.files);
+            processFiles(files);
+        }
+
+        function handleFileSelect(e) {
+            const files = Array.from(e.target.files);
+            processFiles(files);
+        }
+
+        async function processFiles(files) {
+            const jsonFiles = files.filter(file => file.name.endsWith('.json'));
+            
+            for (const file of jsonFiles) {
+                try {
+                    const text = await file.text();
+                    const data = JSON.parse(text);
+                    
+                    if (data.campaigns) {
+                        allCampaigns.push(...data.campaigns);
+                    } else if (Array.isArray(data)) {
+                        allCampaigns.push(...data);
+                    } else if (data.id) {
+                        allCampaigns.push(data);
+                    }
+                } catch (error) {
+                    console.error(`Error parsing ${file.name}:`, error);
+                }
+            }
+            
+            if (allCampaigns.length > 0) {
+                setupFilters();
+                updateSummaryStats();
+                applyFilters();
+                document.getElementById('filters').style.display = 'block';
+                document.getElementById('summaryStats').style.display = 'grid';
+                document.getElementById('exportBtn').style.display = 'inline-block';
+            }
+        }
+
+        function setupFilters() {
+            const industries = new Set();
+            const roleLevels = new Set();
+            const functions = new Set();
+
+            allCampaigns.forEach(campaign => {
+                if (campaign.campaign_tags?.industry) {
+                    industries.add(campaign.campaign_tags.industry);
+                }
+                if (campaign.campaign_tags?.role_level) {
+                    roleLevels.add(campaign.campaign_tags.role_level);
+                }
+                if (campaign.campaign_tags?.function_area) {
+                    functions.add(campaign.campaign_tags.function_area);
+                }
+            });
+
+            populateSelect('industryFilter', Array.from(industries).sort());
+            populateSelect('roleLevelFilter', Array.from(roleLevels).sort());
+            populateSelect('functionFilter', Array.from(functions).sort());
+
+            // Add event listeners for filters
+            document.getElementById('statusFilter').addEventListener('change', applyFilters);
+            document.getElementById('urgencyFilter').addEventListener('change', applyFilters);
+            document.getElementById('industryFilter').addEventListener('change', applyFilters);
+            document.getElementById('roleLevelFilter').addEventListener('change', applyFilters);
+            document.getElementById('functionFilter').addEventListener('change', applyFilters);
+            document.getElementById('searchInput').addEventListener('input', applyFilters);
+        }
+
+        function populateSelect(selectId, options) {
+            const select = document.getElementById(selectId);
+            options.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                select.appendChild(optionElement);
+            });
+        }
+
+        function applyFilters() {
+            const statusFilter = document.getElementById('statusFilter').value;
+            const urgencyFilter = document.getElementById('urgencyFilter').value;
+            const industryFilter = document.getElementById('industryFilter').value;
+            const roleLevelFilter = document.getElementById('roleLevelFilter').value;
+            const functionFilter = document.getElementById('functionFilter').value;
+            const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+
+            filteredCampaigns = allCampaigns.filter(campaign => {
+                // Status filter
+                if (statusFilter && campaign.workflow_status !== statusFilter) return false;
+                
+                // Urgency filter
+                if (urgencyFilter && campaign.target_audience?.urgency !== urgencyFilter) return false;
+                
+                // Industry filter
+                if (industryFilter && campaign.campaign_tags?.industry !== industryFilter) return false;
+                
+                // Role Level filter
+                if (roleLevelFilter && campaign.campaign_tags?.role_level !== roleLevelFilter) return false;
+                
+                // Function filter
+                if (functionFilter && campaign.campaign_tags?.function_area !== functionFilter) return false;
+                
+                // Search filter
+                if (searchQuery) {
+                    const searchText = (
+                        (campaign.title || '') + ' ' +
+                        (campaign.description || '') + ' ' +
+                        (campaign.content_elements?.headline || '') + ' ' +
+                        (campaign.content_elements?.hook || '')
+                    ).toLowerCase();
+                    
+                    if (!searchText.includes(searchQuery)) return false;
+                }
+                
+                return true;
+            });
+
+            renderCampaigns();
+            updateSummaryStats();
+        }
+
+        function renderCampaigns() {
+            const grid = document.getElementById('campaignGrid');
+            const noResults = document.getElementById('noResults');
+            
+            if (filteredCampaigns.length === 0) {
+                grid.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+            
+            noResults.style.display = 'none';
+            
+            grid.innerHTML = filteredCampaigns.map(campaign => {
+                const urgency = campaign.target_audience?.urgency || 'Medium';
+                const status = campaign.workflow_status || 'auto_generated';
+                const industry = campaign.campaign_tags?.industry;
+                const roleLevel = campaign.campaign_tags?.role_level;
+                const functionArea = campaign.campaign_tags?.function_area;
+                const painPoints = campaign.campaign_tags?.pain_points || [];
+                const contentInterests = campaign.campaign_tags?.content_interests || [];
+                
+                return `
+                    <div class="campaign-card ${urgency.toLowerCase()}">
+                        <div class="campaign-title">
+                            <span class="urgency-indicator urgency-${urgency}"></span>
+                            ${campaign.title || 'Untitled Campaign'}
+                        </div>
+                        
+                        <div class="campaign-description">
+                            ${campaign.description || 'No description available'}
+                        </div>
+                        
+                        <div class="tag-section">
+                            <div class="tag-label">Status</div>
+                            <span class="status-badge status-${status}">${status.replace('_', ' ')}</span>
+                        </div>
+                        
+                        ${industry ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Industry</div>
+                            <div class="tag-group">
+                                <span class="tag industry">${industry}</span>
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        ${roleLevel ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Role Level</div>
+                            <div class="tag-group">
+                                <span class="tag role">${roleLevel}</span>
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        ${functionArea ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Function Area</div>
+                            <div class="tag-group">
+                                <span class="tag function">${functionArea}</span>
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        ${painPoints.length > 0 ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Pain Points</div>
+                            <div class="tag-group">
+                                ${painPoints.map(p => `<span class="tag pain">${p}</span>`).join('')}
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        ${contentInterests.length > 0 ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Content Interests</div>
+                            <div class="tag-group">
+                                ${contentInterests.map(i => `<span class="tag interest">${i}</span>`).join('')}
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        <div class="meta-info">
+                            <div class="meta-row">
+                                <span><strong>Urgency:</strong> ${urgency}</span>
+                                <span><strong>Company Size:</strong> ${campaign.target_audience?.company_size || 'Unknown'}</span>
+                            </div>
+                            <div class="meta-row">
+                                <span><strong>Primary CTA:</strong> ${campaign.content_elements?.primary_cta || 'Not set'}</span>
+                                <span><strong>Created:</strong> ${campaign.dublin_core?.created ? new Date(campaign.dublin_core.created).toLocaleDateString() : 'Unknown'}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function updateSummaryStats() {
+            const totalCampaigns = filteredCampaigns.length;
+            const technologyCampaigns = filteredCampaigns.filter(c => c.campaign_tags?.industry === 'Technology').length;
+            const readyCampaigns = filteredCampaigns.filter(c => c.workflow_status === 'ready_for_publish' || c.workflow_status === 'published').length;
+            
+            const uniqueFunctions = new Set();
+            filteredCampaigns.forEach(campaign => {
+                if (campaign.campaign_tags?.function_area) {
+                    uniqueFunctions.add(campaign.campaign_tags.function_area);
+                }
+            });
+
+            document.getElementById('totalCampaigns').textContent = totalCampaigns;
+            document.getElementById('technologyCampaigns').textContent = technologyCampaigns;
+            document.getElementById('readyCampaigns').textContent = readyCampaigns;
+            document.getElementById('uniqueFunctions').textContent = uniqueFunctions.size;
+        }
+
+        // Export functionality
+        document.getElementById('exportBtn').addEventListener('click', () => {
+            const exportData = {
+                filtered_campaigns: filteredCampaigns,
+                summary: {
+                    total_campaigns: filteredCampaigns.length,
+                    technology_campaigns: filteredCampaigns.filter(c => c.campaign_tags?.industry === 'Technology').length,
+                    ready_campaigns: filteredCampaigns.filter(c => c.workflow_status === 'ready_for_publish' || c.workflow_status === 'published').length,
+                    export_timestamp: new Date().toISOString(),
+                    filters_applied: {
+                        status: document.getElementById('statusFilter').value,
+                        urgency: document.getElementById('urgencyFilter').value,
+                        industry: document.getElementById('industryFilter').value,
+                        role_level: document.getElementById('roleLevelFilter').value,
+                        function_area: document.getElementById('functionFilter').value,
+                        search_query: document.getElementById('searchInput').value
+                    }
+                }
+            };
+
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], {
+                type: 'application/json'
+            });
+            
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `filtered_campaigns_${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>

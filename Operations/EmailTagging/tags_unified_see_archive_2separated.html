@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Manager - View & Edit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 2.5rem;
+        }
+        
+        .upload-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .upload-area {
+            border: 2px dashed #3498db;
+            border-radius: 8px;
+            padding: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .upload-area:hover {
+            background: #f8f9ff;
+            border-color: #2980b9;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        /* Tab Navigation */
+        .tab-nav {
+            display: flex;
+            background: white;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 0;
+        }
+        
+        .tab-button {
+            flex: 1;
+            padding: 15px 30px;
+            background: #ecf0f1;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 12px 12px 0 0;
+        }
+        
+        .tab-button.active {
+            background: white;
+            color: #3498db;
+            box-shadow: inset 0 -3px 0 #3498db;
+        }
+        
+        .tab-button:hover:not(.active) {
+            background: #d5dbdb;
+        }
+        
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            background: white;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Viewer Styles */
+        .filters {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .filter-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .filter-group label {
+            font-weight: 600;
+            color: #2c3e50;
+            min-width: 100px;
+        }
+        
+        select, input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            background: white;
+        }
+        
+        .campaign-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+        
+        .campaign-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .campaign-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+        
+        .campaign-card.selected {
+            border-left-color: #e74c3c;
+            background: #fff5f5;
+        }
+        
+        .campaign-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .campaign-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .tag-section {
+            margin-bottom: 10px;
+        }
+        
+        .tag-label {
+            font-weight: 600;
+            color: #34495e;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        
+        .tag {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .tag.industry { background: #e3f2fd; color: #1976d2; }
+        .tag.role { background: #f3e5f5; color: #7b1fa2; }
+        .tag.function { background: #e8f5e8; color: #388e3c; }
+        .tag.pain { background: #ffebee; color: #d32f2f; }
+        .tag.interest { background: #fff8e1; color: #f57c00; }
+        
+        /* Editor Styles */
+        .editor-layout {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+        
+        .campaign-selector {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            position: sticky;
+            top: 20px;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        
+        .selected-count {
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .bulk-operations {
+            background: #34495e;
+            color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .bulk-operations h3 {
+            margin-bottom: 15px;
+            color: #ecf0f1;
+        }
+        
+        .operation-row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .operation-select {
+            padding: 8px 12px;
+            border: 1px solid #7f8c8d;
+            border-radius: 4px;
+            background: white;
+            min-width: 120px;
+        }
+        
+        .operation-input {
+            padding: 8px 12px;
+            border: 1px solid #7f8c8d;
+            border-radius: 4px;
+            min-width: 150px;
+        }
+        
+        .operation-btn {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .operation-btn.add {
+            background: #27ae60;
+        }
+        
+        .operation-btn:hover {
+            opacity: 0.9;
+        }
+        
+        .export-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .export-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        
+        .export-btn:hover {
+            background: #2980b9;
+        }
+        
+        .selection-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #e74c3c;
+            color: white;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .campaign-card.selected .selection-indicator {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Campaign Manager</h1>
+        
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <input type="file" id="fileInput" accept=".json" multiple>
+                <div class="upload-text">Drop your campaign JSON files here or click to browse</div>
+            </div>
+        </div>
+        
+        <div class="tab-nav" id="tabNav" style="display: none;">
+            <button class="tab-button active" onclick="switchTab('viewer')">📊 View Campaigns</button>
+            <button class="tab-button" onclick="switchTab('editor')">✏️ Bulk Edit</button>
+        </div>
+        
+        <!-- VIEWER TAB -->
+        <div class="tab-content active" id="viewer">
+            <div class="filters" id="filters" style="display: none;">
+                <div class="filter-group">
+                    <label>Industry:</label>
+                    <select id="industryFilter">
+                        <option value="">All Industries</option>
+                    </select>
+                    
+                    <label>Role Level:</label>
+                    <select id="roleLevelFilter">
+                        <option value="">All Role Levels</option>
+                    </select>
+                    
+                    <label>Function:</label>
+                    <select id="functionFilter">
+                        <option value="">All Functions</option>
+                    </select>
+                    
+                    <label>Search:</label>
+                    <input type="text" id="searchInput" placeholder="Search campaigns...">
+                </div>
+            </div>
+            
+            <div class="campaign-grid" id="campaignGrid">
+                <!-- Campaigns will be populated here -->
+            </div>
+        </div>
+        
+        <!-- EDITOR TAB -->
+        <div class="tab-content" id="editor">
+            <div class="editor-layout">
+                <div class="campaign-selector">
+                    <h3>Select Campaigns to Edit</h3>
+                    <div class="selected-count" id="selectedCount">0 campaigns selected</div>
+                    <div id="campaignSelector">
+                        <!-- Campaign selection list -->
+                    </div>
+                </div>
+                
+                <div class="bulk-editor">
+                    <div class="bulk-operations">
+                        <h3>Quick Operations</h3>
+                        <div class="operation-row">
+                            <select class="operation-select" id="tagCategory">
+                                <option value="">Select Category</option>
+                                <option value="industry">Industry (Startup/SMB/Mid-Market/Enterprise/Technology/Services)</option>
+                                <option value="role_level">Role Level (C-Suite/VP-Director/Manager/Individual)</option>
+                                <option value="function_area">Function Area (Engineering/Product Management/Design/Content/Leadership/Operations/Growth/Support)</option>
+                                <option value="pain_points">Pain Points (Scale/Efficiency/Innovation/Quality/Speed/Risk)</option>
+                                <option value="content_interests">Content Interests (AI-ML/Localization/Content-Ops/Platform/Strategy)</option>
+                            </select>
+                            <input type="text" class="operation-input" id="tagValue" placeholder="Enter value">
+                            <button class="operation-btn add" onclick="bulkAddTag()">Add</button>
+                            <button class="operation-btn" onclick="bulkRemoveTag()">Remove</button>
+                        </div>
+                        <div class="operation-row">
+                            <button class="operation-btn" style="background: #f39c12;" onclick="clearSelection()">Clear Selection</button>
+                            <button class="operation-btn" style="background: #9b59b6;" onclick="selectAll()">Select All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="export-section">
+                <button class="export-btn" onclick="exportJSON()">Export Updated JSON</button>
+                <button class="export-btn" onclick="previewChanges()">Preview Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allCampaigns = [];
+        let filteredCampaigns = [];
+        let selectedCampaigns = new Set();
+
+        // File upload handling
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+
+        uploadArea.addEventListener('click', () => fileInput.click());
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.style.background = '#e3f2fd';
+        });
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.style.background = '';
+        });
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.style.background = '';
+            const files = Array.from(e.dataTransfer.files);
+            processFiles(files);
+        });
+        fileInput.addEventListener('change', (e) => {
+            const files = Array.from(e.target.files);
+            processFiles(files);
+        });
+
+        async function processFiles(files) {
+            const jsonFiles = files.filter(file => file.name.endsWith('.json'));
+            
+            for (const file of jsonFiles) {
+                try {
+                    const text = await file.text();
+                    const data = JSON.parse(text);
+                    
+                    if (data.campaigns) {
+                        allCampaigns.push(...data.campaigns);
+                    } else if (Array.isArray(data)) {
+                        allCampaigns.push(...data);
+                    } else if (data.id) {
+                        allCampaigns.push(data);
+                    }
+                } catch (error) {
+                    console.error(`Error parsing ${file.name}:`, error);
+                }
+            }
+            
+            if (allCampaigns.length > 0) {
+                setupInterface();
+            }
+        }
+
+        function setupInterface() {
+            setupFilters();
+            renderViewerCampaigns();
+            renderEditorCampaigns();
+            document.getElementById('tabNav').style.display = 'flex';
+            document.getElementById('filters').style.display = 'block';
+        }
+
+        function setupFilters() {
+            const industries = new Set();
+            const roleLevels = new Set();
+            const functions = new Set();
+
+            allCampaigns.forEach(campaign => {
+                if (campaign.campaign_tags?.industry) industries.add(campaign.campaign_tags.industry);
+                if (campaign.campaign_tags?.role_level) roleLevels.add(campaign.campaign_tags.role_level);
+                if (campaign.campaign_tags?.function_area) functions.add(campaign.campaign_tags.function_area);
+            });
+
+            populateSelect('industryFilter', Array.from(industries).sort());
+            populateSelect('roleLevelFilter', Array.from(roleLevels).sort());
+            populateSelect('functionFilter', Array.from(functions).sort());
+
+            // Add filter event listeners
+            document.getElementById('industryFilter').addEventListener('change', applyFilters);
+            document.getElementById('roleLevelFilter').addEventListener('change', applyFilters);
+            document.getElementById('functionFilter').addEventListener('change', applyFilters);
+            document.getElementById('searchInput').addEventListener('input', applyFilters);
+            
+            applyFilters();
+        }
+
+        function populateSelect(selectId, options) {
+            const select = document.getElementById(selectId);
+            options.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                select.appendChild(optionElement);
+            });
+        }
+
+        function applyFilters() {
+            const industryFilter = document.getElementById('industryFilter').value;
+            const roleLevelFilter = document.getElementById('roleLevelFilter').value;
+            const functionFilter = document.getElementById('functionFilter').value;
+            const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+
+            filteredCampaigns = allCampaigns.filter(campaign => {
+                if (industryFilter && campaign.campaign_tags?.industry !== industryFilter) return false;
+                if (roleLevelFilter && campaign.campaign_tags?.role_level !== roleLevelFilter) return false;
+                if (functionFilter && campaign.campaign_tags?.function_area !== functionFilter) return false;
+                
+                if (searchQuery) {
+                    const searchText = (
+                        (campaign.title || '') + ' ' +
+                        (campaign.description || '') + ' ' +
+                        (campaign.content_elements?.headline || '')
+                    ).toLowerCase();
+                    
+                    if (!searchText.includes(searchQuery)) return false;
+                }
+                
+                return true;
+            });
+
+            renderViewerCampaigns();
+        }
+
+        function renderViewerCampaigns() {
+            const grid = document.getElementById('campaignGrid');
+            
+            grid.innerHTML = filteredCampaigns.map(campaign => {
+                const industry = campaign.campaign_tags?.industry;
+                const roleLevel = campaign.campaign_tags?.role_level;
+                const functionArea = campaign.campaign_tags?.function_area;
+                const painPoints = campaign.campaign_tags?.pain_points || [];
+                const contentInterests = campaign.campaign_tags?.content_interests || [];
+                const isSelected = selectedCampaigns.has(campaign.id);
+                
+                return `
+                    <div class="campaign-card ${isSelected ? 'selected' : ''}" onclick="toggleCampaignSelection('${campaign.id}')">
+                        <div class="selection-indicator">✓</div>
+                        <div class="campaign-title">${campaign.title || 'Untitled Campaign'}</div>
+                        <div class="campaign-meta">
+                            ID: ${campaign.id} | Status: ${campaign.workflow_status || 'auto_generated'}
+                        </div>
+                        
+                        ${industry ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Industry</div>
+                            <div class="tag-group">
+                                <span class="tag industry">${industry}</span>
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        ${roleLevel ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Role Level</div>
+                            <div class="tag-group">
+                                <span class="tag role">${roleLevel}</span>
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        ${functionArea ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Function</div>
+                            <div class="tag-group">
+                                <span class="tag function">${functionArea}</span>
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        ${painPoints.length > 0 ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Pain Points</div>
+                            <div class="tag-group">
+                                ${painPoints.map(p => `<span class="tag pain">${p}</span>`).join('')}
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        ${contentInterests.length > 0 ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Interests</div>
+                            <div class="tag-group">
+                                ${contentInterests.map(i => `<span class="tag interest">${i}</span>`).join('')}
+                            </div>
+                        </div>
+                        ` : ''}
+                        
+                        ${campaign.suggested_target_roles ? `
+                        <div class="tag-section">
+                            <div class="tag-label">Suggested Targets</div>
+                            <div style="font-size: 0.8rem; color: #666; font-style: italic;">
+                                ${Object.keys(campaign.suggested_target_roles).join(', ')}
+                            </div>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderEditorCampaigns() {
+            const selector = document.getElementById('campaignSelector');
+            
+            selector.innerHTML = allCampaigns.map(campaign => `
+                <div class="campaign-card" onclick="toggleCampaignSelection('${campaign.id}')">
+                    <div class="selection-indicator">✓</div>
+                    <div class="campaign-title">${campaign.title || 'Untitled'}</div>
+                    <div class="campaign-meta">
+                        ${campaign.campaign_tags?.industry || 'No industry'} | 
+                        ${campaign.campaign_tags?.function_area || 'No function'}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function toggleCampaignSelection(campaignId) {
+            if (selectedCampaigns.has(campaignId)) {
+                selectedCampaigns.delete(campaignId);
+            } else {
+                selectedCampaigns.add(campaignId);
+            }
+            
+            updateSelectedCount();
+            renderViewerCampaigns();
+            renderEditorCampaigns();
+        }
+
+        function updateSelectedCount() {
+            const count = selectedCampaigns.size;
+            document.getElementById('selectedCount').textContent = `${count} campaign${count !== 1 ? 's' : ''} selected`;
+        }
+
+        function switchTab(tabName) {
+            // Update tab buttons
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Update tab content
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        function bulkAddTag() {
+            const category = document.getElementById('tagCategory').value;
+            const value = document.getElementById('tagValue').value.trim();
+            
+            if (!category || !value) {
+                alert('Please select a category and enter a value');
+                return;
+            }
+            
+            const singleValueCategories = ['industry', 'role_level', 'function_area'];
+            
+            selectedCampaigns.forEach(campaignId => {
+                const campaign = allCampaigns.find(c => c.id === campaignId);
+                if (campaign) {
+                    if (!campaign.campaign_tags) campaign.campaign_tags = {};
+                    
+                    if (singleValueCategories.includes(category)) {
+                        campaign.campaign_tags[category] = value;
+                    } else {
+                        if (!campaign.campaign_tags[category]) campaign.campaign_tags[category] = [];
+                        if (!campaign.campaign_tags[category].includes(value)) {
+                            campaign.campaign_tags[category].push(value);
+                        }
+                    }
+                }
+            });
+            
+            document.getElementById('tagValue').value = '';
+            renderViewerCampaigns();
+            renderEditorCampaigns();
+        }
+
+        function bulkRemoveTag() {
+            const category = document.getElementById('tagCategory').value;
+            const value = document.getElementById('tagValue').value.trim();
+            
+            if (!category || !value) {
+                alert('Please select a category and enter a value');
+                return;
+            }
+            
+            const singleValueCategories = ['industry', 'role_level', 'function_area'];
+            
+            selectedCampaigns.forEach(campaignId => {
+                const campaign = allCampaigns.find(c => c.id === campaignId);
+                if (campaign?.campaign_tags?.[category]) {
+                    if (singleValueCategories.includes(category)) {
+                        if (campaign.campaign_tags[category] === value) {
+                            campaign.campaign_tags[category] = null;
+                        }
+                    } else if (Array.isArray(campaign.campaign_tags[category])) {
+                        campaign.campaign_tags[category] = campaign.campaign_tags[category].filter(tag => tag !== value);
+                    }
+                }
+            });
+            
+            document.getElementById('tagValue').value = '';
+            renderViewerCampaigns();
+            renderEditorCampaigns();
+        }
+
+        function clearSelection() {
+            selectedCampaigns.clear();
+            updateSelectedCount();
+            renderViewerCampaigns();
+            renderEditorCampaigns();
+        }
+
+        function selectAll() {
+            filteredCampaigns.forEach(campaign => selectedCampaigns.add(campaign.id));
+            updateSelectedCount();
+            renderViewerCampaigns();
+            renderEditorCampaigns();
+        }
+
+        function exportJSON() {
+            const exportData = {
+                campaigns: allCampaigns,
+                summary: {
+                    total_campaigns: allCampaigns.length,
+                    selected_campaigns: selectedCampaigns.size,
+                    export_timestamp: new Date().toISOString()
+                }
+            };
+
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], {
+                type: 'application/json'
+            });
+            
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `updated_campaigns_${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function previewChanges() {
+            const selectedData = allCampaigns.filter(c => selectedCampaigns.has(c.id));
+            
+            const preview = {
+                preview_data: selectedData,
+                selected_count: selectedCampaigns.size,
+                preview_generated: new Date().toISOString()
+            };
+            
+            const blob = new Blob([JSON.stringify(preview, null, 2)], {
+                type: 'application/json'
+            });
+            
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `preview_changes_${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

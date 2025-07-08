@@ -1,0 +1,2063 @@
+{
+  "email_campaigns": [
+    {
+      "id": "welcome_email_1_thanks",
+      "title": "Thanks for Joining Us! 🎉",
+      "description": "Welcome email for new subscribers introducing the Propel Flow AI community and setting expectations",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Welcome Series",
+        "sequence_position": 1,
+        "reddit_post": null,
+        "persona": "New Subscriber",
+        "pain_points": [
+          "Need for strategic AI guidance",
+          "Uncertainty about AI implementation",
+          "Lack of trusted AI expertise",
+          "Information overload in AI space"
+        ],
+        "sentiment": "Welcoming, Excited, Supportive",
+        "theme": "Community Onboarding and Expectation Setting",
+        "use_case_keywords": "Welcome, Community, AI strategy, Enterprise AI, Implementation guide, Knowledge base, Strategy session"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "Technical Founder",
+          "Engineering Manager",
+          "Product Manager",
+          "CTO"
+        ],
+        "company_size": "10-500 employees",
+        "stage": "Seed to Series B",
+        "pain_level": "Medium - Seeking guidance"
+      },
+      "campaign_tags": {
+        "industry": [
+          "SaaS",
+          "Technology",
+          "Enterprise"
+        ],
+        "functional_area": [
+          "Leadership",
+          "Strategy",
+          "AI Implementation"
+        ],
+        "pain_category": [
+          "Strategic Planning",
+          "AI Adoption",
+          "Knowledge Access"
+        ],
+        "urgency": "Low",
+        "solution_type": [
+          "Community Access",
+          "Knowledge Resources",
+          "Strategic Guidance"
+        ],
+        "competitor_alternatives": [
+          "Self-research",
+          "Consultants",
+          "Other AI Communities"
+        ],
+        "buying_stage": "Awareness",
+        "objections": [
+          "Time Investment",
+          "Information Quality",
+          "Relevance"
+        ]
+      },
+      "content_elements": {
+        "headline": "Thanks for Joining Us! 🎉",
+        "hook": "You're now part of a community of forward-thinking leaders who are building AI systems they actually own",
+        "primary_cta": "Let's Talk Strategy",
+        "secondary_cta": "AI Knowledge Base",
+        "stats_featured": [],
+        "testimonial_theme": "Proven enterprise AI experience"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:00:00Z",
+        "modified": "2025-06-22T16:53:22.414Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "welcome_email_2_assessment",
+      "title": "Is Your Organization AI-Ready?",
+      "description": "AI readiness assessment email to help organizations evaluate their preparation for AI implementation",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Welcome Series",
+        "sequence_position": 2,
+        "reddit_post": null,
+        "persona": "Technical Decision Maker",
+        "pain_points": [
+          "Uncertainty about AI readiness",
+          "Lack of AI implementation framework",
+          "Previous failed AI initiatives",
+          "Need for systematic assessment"
+        ],
+        "sentiment": "Educational, Analytical, Supportive",
+        "theme": "AI Readiness and Strategic Assessment",
+        "use_case_keywords": "AI readiness, Assessment, Infrastructure, Data foundation, Organizational change, Strategic alignment"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "CTO",
+          "VP Engineering",
+          "Head of AI",
+          "Technical Director"
+        ],
+        "company_size": "50-1000 employees",
+        "stage": "Series A to Enterprise",
+        "pain_level": "High - Need to assess before investing"
+      },
+      "campaign_tags": {
+        "industry": [
+          "SaaS",
+          "Technology",
+          "Enterprise",
+          "Manufacturing"
+        ],
+        "functional_area": [
+          "Engineering",
+          "IT",
+          "Strategy",
+          "Operations"
+        ],
+        "pain_category": [
+          "AI Readiness",
+          "Strategic Planning",
+          "Risk Assessment"
+        ],
+        "urgency": "High",
+        "solution_type": [
+          "Assessment Framework",
+          "Readiness Evaluation",
+          "Strategic Planning"
+        ],
+        "competitor_alternatives": [
+          "Internal Assessment",
+          "McKinsey",
+          "Deloitte",
+          "Other Consultants"
+        ],
+        "buying_stage": "Problem Aware",
+        "objections": [
+          "Assessment Cost",
+          "Time Investment",
+          "Internal Capability"
+        ]
+      },
+      "content_elements": {
+        "headline": "Is Your Organization AI-Ready?",
+        "hook": "Most companies rush into AI without understanding their readiness level",
+        "primary_cta": "Take Assessment",
+        "secondary_cta": "Discuss My Results",
+        "stats_featured": [
+          "87% lack AI expertise"
+        ],
+        "testimonial_theme": "$11M lesson learned"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:05:00Z",
+        "modified": "2025-06-22T16:53:22.421Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "welcome_email_3_case_study",
+      "title": "The $11M Mistake (And How We Fixed It)",
+      "description": "Detailed case study of a major AI implementation failure and successful recovery strategy",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Welcome Series",
+        "sequence_position": 3,
+        "reddit_post": null,
+        "persona": "Executive Decision Maker",
+        "pain_points": [
+          "Fear of expensive AI failures",
+          "Vendor lock-in concerns",
+          "Need for proven results",
+          "ROI uncertainty"
+        ],
+        "sentiment": "Cautionary, Educational, Solution-focused",
+        "theme": "Case Study and Lessons Learned",
+        "use_case_keywords": "Case study, Vendor platform, AI transformation, Cost reduction, Lessons learned, Strategic rebuild"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "CEO",
+          "CTO",
+          "VP Operations",
+          "Head of Digital Transformation"
+        ],
+        "company_size": "200+ employees",
+        "stage": "Series B to Enterprise",
+        "pain_level": "Critical - Risk of major investment failure"
+      },
+      "campaign_tags": {
+        "industry": [
+          "Enterprise",
+          "Manufacturing",
+          "Fortune 500",
+          "Technology"
+        ],
+        "functional_area": [
+          "Executive",
+          "Operations",
+          "IT",
+          "Digital Transformation"
+        ],
+        "pain_category": [
+          "Vendor Lock-in",
+          "AI Implementation Failure",
+          "Cost Management"
+        ],
+        "urgency": "Critical",
+        "solution_type": [
+          "Strategic Consulting",
+          "Vendor-Neutral Architecture",
+          "Cost Optimization"
+        ],
+        "competitor_alternatives": [
+          "Traditional Consultants",
+          "Vendor Solutions",
+          "Internal Teams"
+        ],
+        "buying_stage": "Solution Aware",
+        "objections": [
+          "High Cost",
+          "Implementation Risk",
+          "Vendor Trust"
+        ]
+      },
+      "content_elements": {
+        "headline": "The $11M Mistake (And How We Fixed It)",
+        "hook": "This is the story everyone talks about but few understand",
+        "primary_cta": "Get Case Study Details",
+        "secondary_cta": "Take Readiness Assessment",
+        "stats_featured": [
+          "$11M to $285K",
+          "97% Cost Reduction"
+        ],
+        "testimonial_theme": "Understanding actual content challenges"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:10:00Z",
+        "modified": "2025-06-22T16:53:22.421Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "welcome_email_4_vendor_traps",
+      "title": "3 Vendor Traps Everyone Falls Into",
+      "description": "Educational content about common AI vendor pitfalls and how to avoid them",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Welcome Series",
+        "sequence_position": 4,
+        "reddit_post": null,
+        "persona": "Technical Buyer",
+        "pain_points": [
+          "Vendor lock-in risk",
+          "Comprehensive platform promises",
+          "Demo vs reality gap",
+          "Future-proofing concerns"
+        ],
+        "sentiment": "Warning, Educational, Protective",
+        "theme": "Vendor Evaluation and Risk Management",
+        "use_case_keywords": "Vendor traps, Platform lock-in, Demo magic, Future-proof, AI strategy, Red flags, Strategic alternative"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "CTO",
+          "Head of Engineering",
+          "Technical Architect",
+          "VP Technology"
+        ],
+        "company_size": "50-500 employees",
+        "stage": "Series A to Series C",
+        "pain_level": "High - Risk of expensive mistakes"
+      },
+      "campaign_tags": {
+        "industry": [
+          "SaaS",
+          "Technology",
+          "Enterprise Software"
+        ],
+        "functional_area": [
+          "Engineering",
+          "Technology",
+          "Procurement",
+          "Strategy"
+        ],
+        "pain_category": [
+          "Vendor Lock-in",
+          "Platform Risk",
+          "Strategic Independence"
+        ],
+        "urgency": "High",
+        "solution_type": [
+          "Vendor-Neutral Architecture",
+          "Strategic Consulting",
+          "Risk Assessment"
+        ],
+        "competitor_alternatives": [
+          "All-in-one Platforms",
+          "Single Vendor Solutions",
+          "Traditional Enterprise Software"
+        ],
+        "buying_stage": "Solution Aware",
+        "objections": [
+          "Integration Complexity",
+          "Multi-vendor Management",
+          "Higher Initial Cost"
+        ]
+      },
+      "content_elements": {
+        "headline": "3 Vendor Traps Everyone Falls Into",
+        "hook": "I've watched brilliant teams make the same expensive mistakes over and over",
+        "primary_cta": "Request a Case Study",
+        "secondary_cta": "Strategic Alternative Guide",
+        "stats_featured": [
+          "3-5x Higher total cost",
+          "18-36 Months to switch",
+          "67% Features never used"
+        ],
+        "testimonial_theme": "Avoiding vendor lock-in"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:15:00Z",
+        "modified": "2025-06-22T16:53:22.421Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_5_knowledge_management",
+      "title": "Stop Patching Systems. Start Building Your Global Presence.",
+      "description": "Addresses knowledge management challenges for scaling SaaS companies",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Product Focus",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "Scaling SaaS Leader",
+        "pain_points": [
+          "Slow international launches",
+          "Information silos",
+          "Wasted effort and duplication",
+          "Lost productivity searching for information"
+        ],
+        "sentiment": "Problem-focused, Solution-oriented",
+        "theme": "Knowledge Management and Global Scaling",
+        "use_case_keywords": "Knowledge management, Global expansion, Information silos, Translation automation, Single source of truth, AI-first KMS"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "Head of Operations",
+          "VP Engineering",
+          "Head of Content",
+          "International Expansion Lead"
+        ],
+        "company_size": "50-200 employees",
+        "stage": "Series A to Series B",
+        "pain_level": "High - Scaling bottlenecks"
+      },
+      "campaign_tags": {
+        "industry": [
+          "SaaS",
+          "Technology",
+          "Global Software"
+        ],
+        "functional_area": [
+          "Operations",
+          "Engineering",
+          "Content",
+          "International"
+        ],
+        "pain_category": [
+          "Knowledge Management",
+          "Global Scaling",
+          "Information Silos"
+        ],
+        "urgency": "High",
+        "solution_type": [
+          "AI Knowledge Management",
+          "Translation Automation",
+          "System Integration"
+        ],
+        "competitor_alternatives": [
+          "Confluence",
+          "Notion",
+          "SharePoint",
+          "Custom Solutions"
+        ],
+        "buying_stage": "Problem Aware",
+        "objections": [
+          "Migration Complexity",
+          "Cost",
+          "Team Adoption"
+        ]
+      },
+      "content_elements": {
+        "headline": "Stop Patching Systems. Start Building Your Global Presence.",
+        "hook": "You're scaling your SaaS, but your knowledge systems are holding you back",
+        "primary_cta": "See How It Works",
+        "secondary_cta": "Get In Touch",
+        "stats_featured": [
+          "20% time searching",
+          "AI-first approach"
+        ],
+        "testimonial_theme": "Platform flexibility and future-proofing"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:20:00Z",
+        "modified": "2025-06-22T16:53:22.421Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_6_translation_automation",
+      "title": "Launch Globally in Days, Not Months",
+      "description": "AI-powered translation automation for global SaaS expansion",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Product Focus",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "International Expansion Manager",
+        "pain_points": [
+          "Brand dilution in translations",
+          "Slow time-to-market internationally",
+          "Expensive translation corrections",
+          "Code breaking in translated versions"
+        ],
+        "sentiment": "Urgent, Solution-focused, Growth-oriented",
+        "theme": "Global SaaS Expansion and Translation Automation",
+        "use_case_keywords": "Translation automation, Global expansion, Brand protection, Code-safe localization, GitHub integration, Quality control"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "Head of International",
+          "VP Growth",
+          "Product Manager",
+          "Engineering Manager"
+        ],
+        "company_size": "25-150 employees",
+        "stage": "Series A to Series B",
+        "pain_level": "Critical - International expansion blocking growth"
+      },
+      "campaign_tags": {
+        "industry": [
+          "SaaS",
+          "Global Technology",
+          "B2B Software"
+        ],
+        "functional_area": [
+          "International Expansion",
+          "Product",
+          "Engineering",
+          "Growth"
+        ],
+        "pain_category": [
+          "Translation Quality",
+          "Time-to-Market",
+          "Brand Consistency"
+        ],
+        "urgency": "Critical",
+        "solution_type": [
+          "Translation Automation",
+          "Brand Protection",
+          "Developer Integration"
+        ],
+        "competitor_alternatives": [
+          "Manual Translation",
+          "Traditional TMS",
+          "Freelance Translators"
+        ],
+        "buying_stage": "Problem Aware",
+        "objections": [
+          "Quality Concerns",
+          "Integration Complexity",
+          "Cost vs Manual"
+        ]
+      },
+      "content_elements": {
+        "headline": "Launch Globally in Days, Not Months",
+        "hook": "Stop letting slow, expensive translations hold back your international expansion",
+        "primary_cta": "See Global Potential",
+        "secondary_cta": "Book a Session",
+        "stats_featured": [
+          "90% Faster Translations",
+          "75% Cost Reduction",
+          "100% Brand Protection"
+        ],
+        "testimonial_theme": "Global launch speed and brand consistency"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:25:00Z",
+        "modified": "2025-06-22T16:53:22.422Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_7_ai_chatbot",
+      "title": "Reduce Support Tickets by 40% with AI",
+      "description": "AI-powered chatbot solution for customer support automation",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Product Focus",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "Head of Customer Support",
+        "pain_points": [
+          "High volume of repetitive support tickets",
+          "24/7 support coverage needs",
+          "Inconsistent support quality",
+          "Support team overwhelm"
+        ],
+        "sentiment": "Relief-focused, Efficiency-oriented",
+        "theme": "AI Customer Support and Ticket Reduction",
+        "use_case_keywords": "AI chatbot, Support automation, Ticket reduction, 24/7 support, Knowledge base integration, Multi-language support"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "Head of Customer Success",
+          "VP Support",
+          "Customer Support Manager",
+          "Operations Manager"
+        ],
+        "company_size": "20-300 employees",
+        "stage": "Seed to Series B",
+        "pain_level": "High - Support overwhelm"
+      },
+      "campaign_tags": {
+        "industry": [
+          "SaaS",
+          "B2B Software",
+          "Customer Service"
+        ],
+        "functional_area": [
+          "Customer Support",
+          "Customer Success",
+          "Operations"
+        ],
+        "pain_category": [
+          "Support Overwhelm",
+          "24/7 Coverage",
+          "Support Quality"
+        ],
+        "urgency": "High",
+        "solution_type": [
+          "AI Chatbot",
+          "Support Automation",
+          "Knowledge Integration"
+        ],
+        "competitor_alternatives": [
+          "Zendesk",
+          "Intercom",
+          "Custom Chatbots",
+          "Human-only Support"
+        ],
+        "buying_stage": "Problem Aware",
+        "objections": [
+          "Customer Experience",
+          "Implementation Time",
+          "False Positive Responses"
+        ]
+      },
+      "content_elements": {
+        "headline": "Reduce Support Tickets by 40% with AI",
+        "hook": "Deploy an intelligent chatbot that has learned from your entire knowledge base",
+        "primary_cta": "See Demo",
+        "secondary_cta": "We'll Show You How",
+        "stats_featured": [
+          "40% Reduction in Tier-1 Tickets",
+          "24/7 Always Available",
+          "100% Product Knowledge"
+        ],
+        "testimonial_theme": "Perfect product knowledge and multi-language support"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:30:00Z",
+        "modified": "2025-06-22T16:53:22.422Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_8_workflow_automation",
+      "title": "From Commit to Content in Seconds",
+      "description": "Development workflow automation connecting Git commits to documentation generation",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Product Focus",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "Technical Documentation Manager",
+        "pain_points": [
+          "Manual documentation updates",
+          "Documentation lag behind development",
+          "Developer time spent on documentation",
+          "Inconsistent documentation quality"
+        ],
+        "sentiment": "Efficiency-focused, Developer-friendly",
+        "theme": "Developer Workflow Automation and Documentation",
+        "use_case_keywords": "Workflow automation, Git integration, Documentation automation, Developer productivity, Jira integration, Release notes"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "Engineering Manager",
+          "Technical Writer",
+          "DevOps Engineer",
+          "Product Manager"
+        ],
+        "company_size": "15-100 employees",
+        "stage": "Seed to Series A",
+        "pain_level": "High - Developer productivity drain"
+      },
+      "campaign_tags": {
+        "industry": [
+          "SaaS",
+          "Software Development",
+          "Technology"
+        ],
+        "functional_area": [
+          "Engineering",
+          "DevOps",
+          "Technical Writing",
+          "Product"
+        ],
+        "pain_category": [
+          "Documentation Lag",
+          "Developer Productivity",
+          "Workflow Efficiency"
+        ],
+        "urgency": "High",
+        "solution_type": [
+          "Workflow Automation",
+          "Git Integration",
+          "Documentation Generation"
+        ],
+        "competitor_alternatives": [
+          "Manual Documentation",
+          "Confluence",
+          "GitBook",
+          "Custom Scripts"
+        ],
+        "buying_stage": "Problem Aware",
+        "objections": [
+          "Development Disruption",
+          "Integration Complexity",
+          "Output Quality"
+        ]
+      },
+      "content_elements": {
+        "headline": "From Commit to Content in Seconds",
+        "hook": "Supercharge your documentation workflow by connecting development events directly to your Knowledge Management System",
+        "primary_cta": "Start Automating",
+        "secondary_cta": "Get Started Today",
+        "stats_featured": [
+          "75% Faster Draft Creation",
+          "0 Manual Data Gathering",
+          "100% Development Integration"
+        ],
+        "testimonial_theme": "Draft creation speed and technical writer focus"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:35:00Z",
+        "modified": "2025-06-22T16:53:22.422Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_9_global_expansion",
+      "title": "From $11M to $285K: Real Translation Savings",
+      "description": "Case study showcasing dramatic cost reduction in global expansion through AI-powered content localization",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Case Study",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "International Business Leader",
+        "pain_points": [
+          "Excessive translation costs",
+          "Global support complexity",
+          "Regional market penetration",
+          "Content localization bottlenecks"
+        ],
+        "sentiment": "Results-focused, ROI-driven",
+        "theme": "Global Expansion Cost Optimization",
+        "use_case_keywords": "Global expansion, Translation savings, Content localization, Regional context, Multinational, AI-powered, Cost reduction"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "VP International",
+          "Head of Global Operations",
+          "International Business Development",
+          "CFO"
+        ],
+        "company_size": "100+ employees",
+        "stage": "Series B to Enterprise",
+        "pain_level": "Critical - High translation costs blocking expansion"
+      },
+      "campaign_tags": {
+        "industry": [
+          "Enterprise",
+          "Multinational",
+          "Global Technology"
+        ],
+        "functional_area": [
+          "International Business",
+          "Operations",
+          "Finance",
+          "Global Expansion"
+        ],
+        "pain_category": [
+          "Translation Costs",
+          "Global Scaling",
+          "Market Entry"
+        ],
+        "urgency": "Critical",
+        "solution_type": [
+          "Cost Optimization",
+          "AI Content Localization",
+          "Global Strategy"
+        ],
+        "competitor_alternatives": [
+          "Traditional Translation Services",
+          "In-house Teams",
+          "Agency Solutions"
+        ],
+        "buying_stage": "Solution Aware",
+        "objections": [
+          "Quality Concerns",
+          "Cultural Sensitivity",
+          "Implementation Scale"
+        ]
+      },
+      "content_elements": {
+        "headline": "From $11M to $285K: Real Translation Savings",
+        "hook": "Supporting customers in APAC, the Americas, and other global regions isn't optional—it's essential",
+        "primary_cta": "Learn More",
+        "secondary_cta": "Partner With Us",
+        "stats_featured": [
+          "97% Cost Reduction",
+          "99% AI Search Accuracy",
+          "65% Team Size Reduction"
+        ],
+        "testimonial_theme": "Global IT infrastructure success and Japanese team satisfaction"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:40:00Z",
+        "modified": "2025-06-22T16:53:22.422Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_10_cms_exit_strategy",
+      "title": "Before You Re-Sign That 6-Figure CMS Contract",
+      "description": "Strategic advisory content helping organizations evaluate their CMS investments and exit strategies",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Strategic Advisory",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "Technology Decision Maker",
+        "pain_points": [
+          "Expensive CMS contract renewals",
+          "CMS vendor lock-in",
+          "Duplicate systems across teams",
+          "AI-readiness of current CMS"
+        ],
+        "sentiment": "Advisory, Cost-conscious, Strategic",
+        "theme": "CMS Strategy and Vendor Independence",
+        "use_case_keywords": "CMS evaluation, Contract renewal, Vendor lock-in, AI-native, Exit strategy, Cost optimization, Technology independence"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "CTO",
+          "Head of Marketing Technology",
+          "VP Engineering",
+          "Content Operations Manager"
+        ],
+        "company_size": "100+ employees",
+        "stage": "Series B to Enterprise",
+        "pain_level": "High - Expensive contract decisions pending"
+      },
+      "campaign_tags": {
+        "industry": [
+          "Enterprise",
+          "Marketing Technology",
+          "Content Management"
+        ],
+        "functional_area": [
+          "Technology",
+          "Marketing Operations",
+          "Content Management"
+        ],
+        "pain_category": [
+          "Vendor Lock-in",
+          "Cost Management",
+          "Technology Strategy"
+        ],
+        "urgency": "High",
+        "solution_type": [
+          "Strategic Consulting",
+          "CMS Assessment",
+          "Migration Planning"
+        ],
+        "competitor_alternatives": [
+          "Existing CMS Vendors",
+          "Traditional Consultants",
+          "Internal Assessment"
+        ],
+        "buying_stage": "Solution Aware",
+        "objections": [
+          "Migration Risk",
+          "Team Disruption",
+          "Cost of Change"
+        ]
+      },
+      "content_elements": {
+        "headline": "Before You Re-Sign That 6-Figure CMS Contract",
+        "hook": "Is your current CMS investment actually delivering results, or are you locked into an expensive system",
+        "primary_cta": "Download Checklist",
+        "secondary_cta": "Strategy Consultation",
+        "stats_featured": [
+          "$125K+ Annual cost"
+        ],
+        "testimonial_theme": "CMS health check and AI readiness"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:45:00Z",
+        "modified": "2025-06-22T16:53:22.422Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_11_translation_quality",
+      "title": "Speed Up Translation Without Losing Quality",
+      "description": "Educational content on balancing AI automation with human expertise in translation workflows",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Educational",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "Translation Manager",
+        "pain_points": [
+          "Translation speed vs quality tradeoff",
+          "Cultural authenticity in AI translations",
+          "Scalable quality control",
+          "Brand voice consistency across languages"
+        ],
+        "sentiment": "Educational, Balanced, Strategic",
+        "theme": "Translation Quality and Process Optimization",
+        "use_case_keywords": "Translation quality, AI automation, Human expertise, Cultural authenticity, Brand voice, Process optimization, Global content"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "Translation Manager",
+          "Localization Lead",
+          "Content Operations",
+          "International Marketing Manager"
+        ],
+        "company_size": "50-200 employees",
+        "stage": "Series A to Series B",
+        "pain_level": "Medium - Process optimization needed"
+      },
+      "campaign_tags": {
+        "industry": [
+          "SaaS",
+          "Global Technology",
+          "Content Services"
+        ],
+        "functional_area": [
+          "Localization",
+          "Content Operations",
+          "International Marketing"
+        ],
+        "pain_category": [
+          "Translation Quality",
+          "Process Efficiency",
+          "Cultural Authenticity"
+        ],
+        "urgency": "Medium",
+        "solution_type": [
+          "Process Optimization",
+          "Quality Framework",
+          "Best Practices"
+        ],
+        "competitor_alternatives": [
+          "Manual Translation",
+          "Pure AI Translation",
+          "Traditional TMS"
+        ],
+        "buying_stage": "Education",
+        "objections": [
+          "Quality Risk",
+          "Process Change",
+          "Team Training"
+        ]
+      },
+      "content_elements": {
+        "headline": "Speed Up Translation Without Losing Quality",
+        "hook": "AI can help your brand expand globally faster—but only if you blend automation with human nuance",
+        "primary_cta": "Build Your Global Content Kit",
+        "secondary_cta": "Schedule Strategy Call",
+        "stats_featured": [
+          "5-Step Quality-Speed Framework"
+        ],
+        "testimonial_theme": "AI speed with human sensitivity for market belonging"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:50:00Z",
+        "modified": "2025-06-22T16:53:22.422Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_12_campaign_expansion",
+      "title": "New Markets Are Waiting. Are You Ready to Speak Their Language?",
+      "description": "Service-focused email offering market entry content localization services",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Sales/Service",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "Business Development Leader",
+        "pain_points": [
+          "Poor translation losing market trust",
+          "Generic messaging missing cultural connection",
+          "Slow content adaptation delaying market entry",
+          "Fragmented localization efforts"
+        ],
+        "sentiment": "Opportunity-focused, Service-oriented",
+        "theme": "Market Entry Services and Content Localization",
+        "use_case_keywords": "Market entry, Content localization, Cultural adaptation, Sales materials, Marketing assets, Global launch, Market penetration"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "VP Business Development",
+          "International Sales Manager",
+          "Marketing Director",
+          "Growth Manager"
+        ],
+        "company_size": "25-150 employees",
+        "stage": "Series A to Series B",
+        "pain_level": "High - Market entry urgency"
+      },
+      "campaign_tags": {
+        "industry": [
+          "B2B Services",
+          "SaaS",
+          "International Business"
+        ],
+        "functional_area": [
+          "Business Development",
+          "Sales",
+          "Marketing",
+          "International"
+        ],
+        "pain_category": [
+          "Market Entry",
+          "Cultural Adaptation",
+          "Content Localization"
+        ],
+        "urgency": "High",
+        "solution_type": [
+          "Content Localization Services",
+          "Market Entry Support",
+          "Cultural Adaptation"
+        ],
+        "competitor_alternatives": [
+          "Translation Agencies",
+          "In-house Teams",
+          "Generic Content"
+        ],
+        "buying_stage": "Solution Aware",
+        "objections": [
+          "Service Cost",
+          "Timeline",
+          "Cultural Accuracy"
+        ]
+      },
+      "content_elements": {
+        "headline": "New Markets Are Waiting. Are You Ready to Speak Their Language?",
+        "hook": "Fast expansion requires more than logistics—it demands cultural resonance",
+        "primary_cta": "Build Content Kit",
+        "secondary_cta": "Schedule Strategy Call",
+        "stats_featured": [
+          "70% Prefer Native Language",
+          "4x Faster Content Delivery",
+          "2x Engagement Rates"
+        ],
+        "testimonial_theme": "Canadian agri exporter success in 3 countries"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T22:55:00Z",
+        "modified": "2025-06-22T16:53:22.422Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_13_vendor_traps",
+      "title": "Avoid AI Vendor Traps. Build What You Own.",
+      "description": "Strategic advisory on AI vendor independence and building owned AI infrastructure",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Strategic Advisory",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "Strategic Technology Leader",
+        "pain_points": [
+          "AI vendor lock-in risk",
+          "Platform dependency concerns",
+          "Strategic control loss",
+          "Flexibility limitations"
+        ],
+        "sentiment": "Warning, Strategic, Independence-focused",
+        "theme": "AI Strategic Independence and Vendor-Neutral Architecture",
+        "use_case_keywords": "AI independence, Vendor neutrality, Strategic control, Technology freedom, Platform independence, AI architecture, Ownership strategy"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "CTO",
+          "Chief Architect",
+          "VP Technology",
+          "Head of AI Strategy"
+        ],
+        "company_size": "100+ employees",
+        "stage": "Series B to Enterprise",
+        "pain_level": "High - Strategic independence critical"
+      },
+      "campaign_tags": {
+        "industry": [
+          "Enterprise Technology",
+          "SaaS",
+          "Strategic AI"
+        ],
+        "functional_area": [
+          "Technology Strategy",
+          "Architecture",
+          "AI Strategy"
+        ],
+        "pain_category": [
+          "Vendor Independence",
+          "Strategic Control",
+          "Technology Freedom"
+        ],
+        "urgency": "High",
+        "solution_type": [
+          "Strategic Architecture",
+          "Vendor-Neutral Solutions",
+          "Independence Strategy"
+        ],
+        "competitor_alternatives": [
+          "All-in-one AI Platforms",
+          "Single Vendor Solutions",
+          "Proprietary Platforms"
+        ],
+        "buying_stage": "Solution Aware",
+        "objections": [
+          "Complexity",
+          "Integration Effort",
+          "Short-term Cost"
+        ]
+      },
+      "content_elements": {
+        "headline": "Avoid AI Vendor Traps. Build What You Own.",
+        "hook": "Everyone's racing to add AI. I help you use it—without giving away your stack, your strategy, or your sanity",
+        "primary_cta": "Build Your AI Strategy",
+        "secondary_cta": "Avoid The Traps",
+        "stats_featured": [
+          "Vendor vs Strategic Ownership comparison"
+        ],
+        "testimonial_theme": "AI systems that flex with your team without lock-in"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T23:00:00Z",
+        "modified": "2025-06-22T16:53:22.422Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "email_14_strategic_ai_paths",
+      "title": "3 Fast Paths to Strategic AI Ops",
+      "description": "Strategic framework presenting three different approaches to AI implementation based on organizational context",
+      "source_data": {
+        "csv_row": null,
+        "campaign_type": "Strategic Advisory",
+        "sequence_position": null,
+        "reddit_post": null,
+        "persona": "AI Strategy Decision Maker",
+        "pain_points": [
+          "Unclear AI implementation path",
+          "Post-merger system chaos",
+          "Pilot-to-production scaling challenges",
+          "Long-term AI architecture planning"
+        ],
+        "sentiment": "Strategic, Framework-oriented, Choice-driven",
+        "theme": "AI Implementation Strategy and Path Selection",
+        "use_case_keywords": "AI strategy, Implementation paths, Strategic planning, System unification, AI readiness, Long-term architecture, Operational AI"
+      },
+      "target_audience": {
+        "primary_personas": [
+          "Chief Strategy Officer",
+          "Head of AI",
+          "VP Technology",
+          "Digital Transformation Lead"
+        ],
+        "company_size": "200+ employees",
+        "stage": "Series B to Enterprise",
+        "pain_level": "High - Strategic direction needed"
+      },
+      "campaign_tags": {
+        "industry": [
+          "Enterprise",
+          "Technology Strategy",
+          "Digital Transformation"
+        ],
+        "functional_area": [
+          "Strategy",
+          "AI",
+          "Technology",
+          "Operations"
+        ],
+        "pain_category": [
+          "Strategic Planning",
+          "AI Implementation",
+          "System Architecture"
+        ],
+        "urgency": "High",
+        "solution_type": [
+          "Strategic Framework",
+          "Implementation Planning",
+          "Architecture Design"
+        ],
+        "competitor_alternatives": [
+          "Management Consultants",
+          "Internal Strategy",
+          "Vendor Roadmaps"
+        ],
+        "buying_stage": "Solution Aware",
+        "objections": [
+          "Strategy Cost",
+          "Implementation Timeline",
+          "Organizational Change"
+        ]
+      },
+      "content_elements": {
+        "headline": "3 Fast Paths to Strategic AI Ops",
+        "hook": "Choose your path based on where you are today. Each approach gets you to scalable, strategic AI operations",
+        "primary_cta": "Find Your Path",
+        "secondary_cta": "Strategic Consultation",
+        "stats_featured": [
+          "99% AI search accuracy",
+          "3× ROI on localization",
+          "$11M → $285K run rate"
+        ],
+        "testimonial_theme": "Complexity tamed at scale with unified systems"
+      },
+      "dublin_core": {
+        "created": "2025-06-21T23:05:00Z",
+        "modified": "2025-06-22T16:53:22.422Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "approval_chain": [],
+      "performance_metrics": null,
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars",
+                "Break into 2-3 line paragraphs"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Very short paragraphs",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            },
+            "blog": {
+              "adaptations_needed": [
+                "Expand content",
+                "Add SEO elements",
+                "Include images"
+              ],
+              "character_limit": null,
+              "visual_elements": "rich_formatting"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "catchphrase_library": {
+    "categories": [
+      {
+        "category": "Welcome & Onboarding",
+        "source_themes": [
+          "Community Welcome",
+          "AI Strategy Introduction"
+        ],
+        "phrases": [
+          "Welcome to the AI independence movement",
+          "Join the community building AI they actually own",
+          "Finally, AI strategy that works in the real world",
+          "Your AI transformation journey starts here",
+          "Stop renting AI strategy, start owning it"
+        ]
+      },
+      {
+        "category": "Vendor Lock-in & Independence",
+        "source_themes": [
+          "Vendor Traps",
+          "Strategic Independence"
+        ],
+        "phrases": [
+          "Avoid AI vendor traps. Build what you own",
+          "Stop giving away your AI strategy to vendors",
+          "AI you own. Outcomes you control",
+          "Build for freedom, not vendor lock-in",
+          "Your data, your logic, your control",
+          "Leverage without lock-in",
+          "From vendor dependency to strategic independence"
+        ]
+      },
+      {
+        "category": "Global Expansion & Translation",
+        "source_themes": [
+          "Global Expansion",
+          "Translation Automation"
+        ],
+        "phrases": [
+          "Launch globally in days, not months",
+          "From $11M to $285K: Real translation savings",
+          "New markets are waiting. Ready to speak their language?",
+          "Speed up translation without losing quality",
+          "Global expansion that doesn't break the bank",
+          "Your brand travels well. Make sure your content does too"
+        ]
+      },
+      {
+        "category": "Knowledge Management & Systems",
+        "source_themes": [
+          "Knowledge Management",
+          "System Integration"
+        ],
+        "phrases": [
+          "Stop patching systems. Start building your presence",
+          "From chaos to knowledge in 90 days",
+          "Turn your information silos into strategic assets",
+          "Knowledge that scales with your ambition",
+          "Single source of truth, multiple sources of value"
+        ]
+      },
+      {
+        "category": "Workflow & Automation",
+        "source_themes": [
+          "Workflow Automation",
+          "Developer Productivity"
+        ],
+        "phrases": [
+          "From commit to content in seconds",
+          "Automate the boring stuff, amplify the strategic",
+          "Your developers build features. We build documentation",
+          "Stop chasing updates—let automation draft them"
+        ]
+      },
+      {
+        "category": "Support & Customer Success",
+        "source_themes": [
+          "AI Support",
+          "Customer Success"
+        ],
+        "phrases": [
+          "Reduce support tickets by 40% with AI",
+          "24/7 support that never sleeps, never burns out",
+          "Perfect product knowledge, every time",
+          "Your customers get instant answers. Your team gets strategic time"
+        ]
+      },
+      {
+        "category": "Cost & ROI Focus",
+        "source_themes": [
+          "Cost Reduction",
+          "ROI Achievement"
+        ],
+        "phrases": [
+          "The $11M mistake (and how we fixed it)",
+          "97% cost reduction. Same results. Strategic ownership",
+          "Before you re-sign that 6-figure CMS contract",
+          "Stop bleeding money on translation"
+        ]
+      }
+    ],
+    "dublin_core": {
+      "created": "2025-06-21T23:15:00Z",
+      "modified": "2025-06-21T23:15:00Z",
+      "issued": null
+    },
+    "workflow_status": "auto_generated"
+  },
+  "metadata": {
+    "schema_version": "1.0",
+    "generated_by": "Propel Flow AI Campaign Generator",
+    "source_files": [
+      "Various HTML email templates"
+    ],
+    "total_campaigns": 14,
+    "total_series": 1,
+    "total_catchphrases": 35,
+    "generated_at": "2025-06-21T23:15:00Z",
+    "campaign_types": {
+      "Welcome Series": 4,
+      "Product Focus": 4,
+      "Strategic Advisory": 3,
+      "Case Study": 1,
+      "Educational": 1,
+      "Sales/Service": 1
+    },
+    "last_auto_tagged": "2025-06-22T16:53:22.422Z",
+    "auto_tag_version": "1.0"
+  },
+  "campaign_series": {
+    "welcome_series": {
+      "id": "propel_flow_welcome_series",
+      "title": "Propel Flow AI Welcome Series",
+      "description": "4-email onboarding sequence for new subscribers",
+      "emails": [
+        {
+          "sequence": 1,
+          "email_id": "welcome_email_1_thanks",
+          "delay_days": 0,
+          "trigger": "subscription"
+        },
+        {
+          "sequence": 2,
+          "email_id": "welcome_email_2_assessment",
+          "delay_days": 2,
+          "trigger": "previous_email_sent"
+        },
+        {
+          "sequence": 3,
+          "email_id": "welcome_email_3_case_study",
+          "delay_days": 4,
+          "trigger": "previous_email_sent"
+        },
+        {
+          "sequence": 4,
+          "email_id": "welcome_email_4_vendor_traps",
+          "delay_days": 7,
+          "trigger": "previous_email_sent"
+        }
+      ],
+      "dublin_core": {
+        "created": "2025-06-21T23:10:00Z",
+        "modified": "2025-06-21T23:10:00Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated"
+    }
+  }
+}
