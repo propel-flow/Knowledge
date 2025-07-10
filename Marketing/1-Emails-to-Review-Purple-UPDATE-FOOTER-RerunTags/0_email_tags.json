@@ -1,0 +1,1795 @@
+{
+  "campaigns": [
+    {
+      "id": "ai_tool_fatigue_email.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.805Z",
+        "modified": "2025-06-22T18:10:51.805Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 406,
+        "html_size": 17783,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 3
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Technology",
+        "role_level": "Individual",
+        "function_area": "Engineering",
+        "pain_points": [
+          "Innovation",
+          "Efficiency"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Content-Ops"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Unknown",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "Your Dev Team Won't Touch AI?",
+        "hook": "Another AI demo that looked amazing but crashed during implementation? Your developers roll their eyes at every \"AI will change everything\" meeting. They've seen too many overpromised, under-delivered tools to trust the hype anymore.",
+        "primary_cta": "Start Risk-Free Pilot",
+        "secondary_cta": "Developer AI Guide",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Your Dev Team Won't Touch AI?",
+      "description": "Propel Flow AI - Your Dev Team Won't Touch AI...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "email_10_cms_exit_strategy.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.813Z",
+        "modified": "2025-06-22T18:10:51.813Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 369,
+        "html_size": 15748,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": false,
+        "has_statistics": false,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": null,
+        "role_level": "C-Suite",
+        "function_area": "Content",
+        "pain_points": [
+          "Innovation",
+          "Efficiency"
+        ],
+        "content_interests": [
+          "Content-Ops",
+          "AI-ML",
+          "Strategy"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Unknown",
+        "urgency": "Low"
+      },
+      "content_elements": {
+        "headline": "Before You Re-Sign That 6-Figure CMS Contract",
+        "hook": "Is your current CMS investment actually delivering results, or are you locked into an expensive system that's holding your team back from AI-native content management?",
+        "primary_cta": "Download Checklist",
+        "secondary_cta": "Strategy Consultation",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Before You Re-Sign That 6-Figure CMS Contract",
+      "description": "Propel Flow AI - Before You Re-Sign That 6-Figure CMS Contract CMS Strategy Before You Re-Sign That 6-Figure CMS Contract Is your current CMS investment actually delivering results, or are you locked ...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "email_11_translation_quality.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.815Z",
+        "modified": "2025-06-22T18:10:51.815Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 438,
+        "html_size": 20748,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": false,
+        "mobile_responsive": true,
+        "estimated_read_time": 3
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": null,
+        "role_level": "Individual",
+        "function_area": "Content",
+        "pain_points": [
+          "Innovation",
+          "Scale"
+        ],
+        "content_interests": [
+          "Localization",
+          "AI-ML",
+          "Strategy"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Unknown",
+        "urgency": "High"
+      },
+      "content_elements": {
+        "headline": "Speed Up Translation Without Losing Quality",
+        "hook": "AI can help your brand expand globally faster—but only if you blend automation with human nuance. Here's how smart brands are achieving both speed and cultural authenticity.",
+        "primary_cta": "Build Your Global Content Kit",
+        "secondary_cta": "Schedule Strategy Call",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Speed Up Translation Without Losing Quality",
+      "description": "Propel Flow AI - Speed Up Translation Without Losing Quality Quality Translation Strategy Speed Up Translation Without Losing Quality AI can help your brand expand globally faster—but only if you blen...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "email_12_campaign_expansion.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.816Z",
+        "modified": "2025-06-22T18:10:51.816Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 378,
+        "html_size": 22190,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": false,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Technology",
+        "role_level": "C-Suite",
+        "function_area": "Content",
+        "pain_points": [
+          "Scale",
+          "Speed"
+        ],
+        "content_interests": [
+          "Localization",
+          "AI-ML",
+          "Platform"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Mid-Market",
+        "urgency": "Critical"
+      },
+      "content_elements": {
+        "headline": "New Markets Are Waiting. Are You Ready to Speak Their Language?",
+        "hook": "Fast expansion requires more than logistics—it demands cultural resonance. Your product is global-ready. Let's make sure your messaging is too.",
+        "primary_cta": "Build Content Kit",
+        "secondary_cta": "Schedule Strategy Call",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "New Markets Are Waiting. Are You Ready to Speak Their Language?",
+      "description": "Propel Flow AI - New Markets Are Waiting...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "email_13_vendor_traps.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.817Z",
+        "modified": "2025-06-22T18:10:51.817Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 400,
+        "html_size": 20542,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": false,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Startup",
+        "role_level": "C-Suite",
+        "function_area": "Design",
+        "pain_points": [
+          "Innovation",
+          "Efficiency"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Strategy"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "SMB",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "Avoid AI Vendor Traps. Build What You Own.",
+        "hook": "Everyone's racing to add AI. I help you use it—without giving away your stack, your strategy, or your sanity.",
+        "primary_cta": "Build Your AI Strategy",
+        "secondary_cta": "Avoid The Traps",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Avoid AI Vendor Traps. Build What You Own.",
+      "description": "Propel Flow AI - Avoid AI Vendor Traps...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "email_14_strategic_ai_paths.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.818Z",
+        "modified": "2025-06-22T18:10:51.818Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 351,
+        "html_size": 23315,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": false,
+        "has_statistics": false,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Technology",
+        "role_level": "Individual",
+        "function_area": "Operations",
+        "pain_points": [
+          "Innovation",
+          "Scale"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Localization"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Mid-Market",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "3 Fast Paths to Strategic AI Ops",
+        "hook": "Choose your path based on where you are today. Each approach gets you to scalable, strategic AI operations—but through different entry points.",
+        "primary_cta": "Find Your Path",
+        "secondary_cta": "Strategic Consultation",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "3 Fast Paths to Strategic AI Ops",
+      "description": "Propel Flow AI - 3 Fast Paths to Strategic AI Ops Strategic AI Pathways 3 Fast Paths to Strategic AI Ops Choose your path based on where you are today...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "email_5_knowledge_management.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.819Z",
+        "modified": "2025-06-22T18:10:51.819Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 398,
+        "html_size": 17119,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": false,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Technology",
+        "role_level": "Manager",
+        "function_area": "Engineering",
+        "pain_points": [
+          "Innovation",
+          "Scale"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Localization"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Enterprise",
+        "urgency": "Low"
+      },
+      "content_elements": {
+        "headline": "Stop Patching Systems. Start Building Your Global Presence.",
+        "hook": "You're scaling your SaaS, but your knowledge systems are holding you back. Documentation is scattered, translations are a nightmare, and your teams are wasting time searching for information instead of building your product.",
+        "primary_cta": "See How It Works",
+        "secondary_cta": "Get In Touch",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Stop Patching Systems. Start Building Your Global Presence.",
+      "description": "Propel Flow AI - Stop Patching Systems...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "email_6_translation_automation.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.820Z",
+        "modified": "2025-06-22T18:10:51.820Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 366,
+        "html_size": 18348,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Technology",
+        "role_level": "Individual",
+        "function_area": "Engineering",
+        "pain_points": [
+          "Scale",
+          "Efficiency"
+        ],
+        "content_interests": [
+          "Localization",
+          "AI-ML",
+          "Platform"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "SMB",
+        "urgency": "Critical"
+      },
+      "content_elements": {
+        "headline": "Launch Globally in Days, Not Months",
+        "hook": "Stop letting slow, expensive translations hold back your international expansion. Our AI-powered translation system preserves your brand while scaling your SaaS to any market.",
+        "primary_cta": "See Global Potential",
+        "secondary_cta": "Book a Session",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Launch Globally in Days, Not Months",
+      "description": "Propel Flow AI - Launch Globally in Days, Not Months Global Launch Automation Launch Globally in Days, Not Months Stop letting slow, expensive translations hold back your international expansion...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "email_7_ai_chatbot.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.821Z",
+        "modified": "2025-06-22T18:10:51.821Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 380,
+        "html_size": 18526,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Technology",
+        "role_level": "VP-Director",
+        "function_area": "Support",
+        "pain_points": [
+          "Innovation",
+          "Quality"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Localization"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Unknown",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "Reduce Support Tickets by 40% with AI",
+        "hook": "Deploy an intelligent chatbot that has learned from your entire knowledge base. It's like hiring a support agent with perfect product knowledge who can speak every language, 24/7.",
+        "primary_cta": "See Demo",
+        "secondary_cta": "We'll Show You How",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Reduce Support Tickets by 40% with AI",
+      "description": "Propel Flow AI - Reduce Support Tickets by 40% with AI AI Support Assistant Reduce Support Tickets by 40% with AI Deploy an intelligent chatbot that has learned from your entire knowledge base...",
+      "suggested_target_roles": {
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus",
+        "VP-Director": "Planning and coordination themes"
+      }
+    },
+    {
+      "id": "email_8_workflow_automation.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.823Z",
+        "modified": "2025-06-22T18:10:51.823Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 426,
+        "html_size": 20915,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 3
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": null,
+        "role_level": "Individual",
+        "function_area": "Engineering",
+        "pain_points": [
+          "Efficiency",
+          "Quality"
+        ],
+        "content_interests": [
+          "Platform",
+          "AI-ML",
+          "Content-Ops"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Unknown",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "From Commit to Content in Seconds",
+        "hook": "Supercharge your documentation workflow by connecting development events directly to your Knowledge Management System. Stop chasing updates—let automation draft your release notes and help articles instantly.",
+        "primary_cta": "Start Automating",
+        "secondary_cta": "Get Started Today",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "From Commit to Content in Seconds",
+      "description": "Propel Flow AI - From Commit to Content in Seconds Workflow Automation From Commit to Content in Seconds Supercharge your documentation workflow by connecting development events directly to your Knowl...",
+      "suggested_target_roles": {
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus",
+        "VP-Director": "Planning and coordination themes"
+      }
+    },
+    {
+      "id": "email_9_global_expansion.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.825Z",
+        "modified": "2025-06-22T18:10:51.825Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 331,
+        "html_size": 18076,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": false,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Enterprise",
+        "role_level": "Individual",
+        "function_area": "Content",
+        "pain_points": [
+          "Innovation",
+          "Scale"
+        ],
+        "content_interests": [
+          "Localization",
+          "AI-ML",
+          "Platform"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Enterprise",
+        "urgency": "Critical"
+      },
+      "content_elements": {
+        "headline": "From $11M to $285K: Real Translation Savings",
+        "hook": "Supporting customers in APAC, the Americas, and other global regions isn't optional—it's essential. See how AI-powered content localization is transforming global expansion costs.",
+        "primary_cta": "Learn More",
+        "secondary_cta": "Partner With Us",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "From $11M to $285K: Real Translation Savings",
+      "description": "Propel Flow AI - From $11M to $285K: Real Translation Savings Global Expansion Expertise From $11M to $285K: Real Translation Savings Supporting customers in APAC, the Americas, and other global regio...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "gtm_distribution_struggles_email.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.826Z",
+        "modified": "2025-06-22T18:10:51.826Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 403,
+        "html_size": 17900,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 3
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Startup",
+        "role_level": "VP-Director",
+        "function_area": "Product Management",
+        "pain_points": [
+          "Innovation",
+          "Efficiency"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Strategy",
+          "Platform"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "SMB",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "Built Something Great. Nobody Knows It Exists?",
+        "hook": "Your MVP is polished, your product-market fit is validated, and early users love what you've built. But somehow you're still stuck at 10 customers, watching competitors with inferior products get all the attention and funding.",
+        "primary_cta": "Get GTM Strategy Audit",
+        "secondary_cta": "Distribution Playbook",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Built Something Great. Nobody Knows It Exists?",
+      "description": "Propel Flow AI - Built Something Great...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "product_manager_overwhelm_email.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.827Z",
+        "modified": "2025-06-22T18:10:51.827Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 388,
+        "html_size": 17881,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": null,
+        "role_level": "Individual",
+        "function_area": "Product Management",
+        "pain_points": [
+          "Innovation",
+          "Speed"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Strategy"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Unknown",
+        "urgency": "Critical"
+      },
+      "content_elements": {
+        "headline": "Drowning in Your Backlog?",
+        "hook": "Another day, another urgent request that derails your carefully planned sprint. Between justifying priorities to devs, translating technical features for stakeholders, and handling the endless stream of \"quick asks\" – when do you actually get to do product strategy?",
+        "primary_cta": "Get PM Strategy Session",
+        "secondary_cta": "Download Priority Framework",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Drowning in Your Backlog?",
+      "description": "Propel Flow AI - Drowning in Your Backlog...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "saas_revenue_leakage_email.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.828Z",
+        "modified": "2025-06-22T18:10:51.828Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 358,
+        "html_size": 17675,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Technology",
+        "role_level": "VP-Director",
+        "function_area": "Growth",
+        "pain_points": [
+          "Innovation",
+          "Risk"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Content-Ops"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Unknown",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "Users Gaming Your System?",
+        "hook": "That user creating multiple accounts to dodge payment? They're not alone. While you're focused on growth, revenue is leaking through cracks in your validation, limits, and fraud detection. Every gaming attempt costs you real money.",
+        "primary_cta": "Get Revenue Leak Audit",
+        "secondary_cta": "Gaming Prevention Guide",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Users Gaming Your System?",
+      "description": "Propel Flow AI - Users Gaming Your System...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "startup_tech_debt_email.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.841Z",
+        "modified": "2025-06-22T18:10:51.841Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 369,
+        "html_size": 17624,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Startup",
+        "role_level": "C-Suite",
+        "function_area": "Product Management",
+        "pain_points": [
+          "Quality",
+          "Innovation"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Strategy"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "SMB",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "Stop the 3AM Production Fire Drills",
+        "hook": "That sinking feeling when your sign-up flow throws 500 errors? We've been there. While other teams are building features, you're stuck fighting fires with 15% test coverage and hoping nothing breaks.",
+        "primary_cta": "Get Free Reliability Audit",
+        "secondary_cta": "Download Tech Debt Guide",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Stop the 3AM Production Fire Drills",
+      "description": "Propel Flow AI - Stop the 3AM Production Fire Drills Startup Tech Debt Solutions Stop the 3AM Production Fire Drills That sinking feeling when your sign-up flow throws 500 errors...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "welcome_email_1_thanks.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.842Z",
+        "modified": "2025-06-22T18:10:51.842Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 253,
+        "html_size": 15408,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": false,
+        "has_statistics": false,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Enterprise",
+        "role_level": "C-Suite",
+        "function_area": "Design",
+        "pain_points": [
+          "Innovation",
+          "Efficiency"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Strategy",
+          "Platform"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Enterprise",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "Thanks for Joining Us! 🎉",
+        "hook": "You're now part of a community of forward-thinking leaders who are building AI systems they actually own—without the vendor lock-in trap.",
+        "primary_cta": "Let's Talk Strategy",
+        "secondary_cta": "",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Thanks for Joining Us! 🎉",
+      "description": "Welcome to Propel Flow AI - Thanks for Subscribing...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "welcome_email_2_assessment.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.842Z",
+        "modified": "2025-06-22T18:10:51.842Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 352,
+        "html_size": 16585,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": false,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 2
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Enterprise",
+        "role_level": "VP-Director",
+        "function_area": "Support",
+        "pain_points": [
+          "Innovation",
+          "Efficiency"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Localization"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Enterprise",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "Is Your Organization AI-Ready?",
+        "hook": "Most companies rush into AI without understanding their readiness level. The result? Millions wasted on solutions that don't scale. Let's make sure you're not one of them.",
+        "primary_cta": "Take Assessment",
+        "secondary_cta": "Discuss My Results",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "Is Your Organization AI-Ready?",
+      "description": "Your AI Readiness Assessment - Propel Flow AI Email 2 of 5 Is Your Organization AI-Ready...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "welcome_email_3_case_study.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.843Z",
+        "modified": "2025-06-22T18:10:51.843Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 472,
+        "html_size": 20188,
+        "has_images": true,
+        "has_cta_buttons": true,
+        "has_testimonials": true,
+        "has_statistics": false,
+        "mobile_responsive": true,
+        "estimated_read_time": 3
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Technology",
+        "role_level": "C-Suite",
+        "function_area": "Content",
+        "pain_points": [
+          "Innovation",
+          "Efficiency"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Localization"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Enterprise",
+        "urgency": "Critical"
+      },
+      "content_elements": {
+        "headline": "The $11M Mistake (And How We Fixed It)",
+        "hook": "This is the story everyone talks about but few understand. Here's what really happened—and the 3 critical lessons that could save your company millions.",
+        "primary_cta": "Get Case Study Details",
+        "secondary_cta": "Take Readiness Assessment",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "The $11M Mistake (And How We Fixed It)",
+      "description": "The $11M Mistake (And How We Fixed It) - Propel Flow AI Email 3 of 5 The $11M Mistake (And How We Fixed It) This is the story everyone talks about but few understand...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    },
+    {
+      "id": "welcome_email_4_vendor_traps.html",
+      "dublin_core": {
+        "created": "2025-06-22T18:10:51.844Z",
+        "modified": "2025-06-22T18:10:51.844Z",
+        "issued": null
+      },
+      "workflow_status": "auto_generated",
+      "content_analysis": {
+        "word_count": 531,
+        "html_size": 20108,
+        "has_images": true,
+        "has_cta_buttons": false,
+        "has_testimonials": false,
+        "has_statistics": true,
+        "mobile_responsive": true,
+        "estimated_read_time": 3
+      },
+      "channel_format": {
+        "end_channel": "email",
+        "content_format": "html_email",
+        "character_limit": null,
+        "visual_elements": "rich_formatting",
+        "platform_notes": {
+          "primary": "Email campaigns with full HTML formatting",
+          "reuse_potential": {
+            "linkedin": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Add emojis/bullets",
+                "Shorten to 3000 chars"
+              ],
+              "character_limit": 3000,
+              "visual_elements": "emojis_bullets"
+            },
+            "facebook": {
+              "adaptations_needed": [
+                "Convert to plain text",
+                "Heavy emoji usage",
+                "Mobile-first formatting"
+              ],
+              "character_limit": 63206,
+              "visual_elements": "emojis_bullets"
+            },
+            "twitter": {
+              "adaptations_needed": [
+                "Extreme condensing",
+                "Thread format",
+                "Heavy hashtag usage"
+              ],
+              "character_limit": 280,
+              "visual_elements": "minimal_formatting"
+            }
+          }
+        }
+      },
+      "campaign_tags": {
+        "industry": "Technology",
+        "role_level": "C-Suite",
+        "function_area": "Engineering",
+        "pain_points": [
+          "Innovation",
+          "Efficiency"
+        ],
+        "content_interests": [
+          "AI-ML",
+          "Platform",
+          "Localization"
+        ],
+        "engagement_level": "New"
+      },
+      "target_audience": {
+        "company_size": "Enterprise",
+        "urgency": "Medium"
+      },
+      "content_elements": {
+        "headline": "3 Vendor Traps Everyone Falls Into",
+        "hook": "I've watched brilliant teams make the same expensive mistakes over and over. Here are the three vendor traps that cost companies millions—and how to avoid them.",
+        "primary_cta": "",
+        "secondary_cta": "",
+        "stats_featured": [],
+        "testimonial_theme": ""
+      },
+      "title": "3 Vendor Traps Everyone Falls Into",
+      "description": "3 Vendor Traps Everyone Falls Into - Propel Flow AI Email 4 of 5 3 Vendor Traps Everyone Falls Into I've watched brilliant teams make the same expensive mistakes over and over...",
+      "suggested_target_roles": {
+        "C-Suite": "Strategic decision-making content",
+        "VP-Director": "Planning and coordination themes",
+        "Individual": "Technical implementation details",
+        "Manager": "Team and process management focus"
+      }
+    }
+  ],
+  "summary": {
+    "total_analyzed": 19,
+    "industries": {
+      "Technology": 9,
+      "Startup": 3,
+      "Enterprise": 3
+    },
+    "role_levels": {
+      "Individual": 7,
+      "C-Suite": 7,
+      "Manager": 1,
+      "VP-Director": 4
+    },
+    "function_areas": {
+      "Engineering": 5,
+      "Content": 5,
+      "Design": 2,
+      "Operations": 1,
+      "Support": 2,
+      "Product Management": 3,
+      "Growth": 1
+    },
+    "pain_points": {
+      "Innovation": 16,
+      "Efficiency": 10,
+      "Scale": 6,
+      "Speed": 2,
+      "Quality": 3,
+      "Risk": 1
+    },
+    "content_interests": {
+      "AI-ML": 19,
+      "Platform": 17,
+      "Content-Ops": 4,
+      "Strategy": 7,
+      "Localization": 10
+    },
+    "channels": {
+      "email": 19
+    },
+    "formats": {
+      "html_email": 19
+    },
+    "generated_at": "2025-06-22T18:10:51.798Z"
+  }
+}

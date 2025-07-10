@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propel Flow AI - From Commit to Content in Seconds</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Main container */
+        .email-container {
+            max-width: 700px;
+            margin: 0 auto;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: #3c4656;
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: inline-block;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 300;
+            margin-top: 12px;
+            color: #00DADF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Content sections */
+        .content {
+            padding: 40px 30px;
+        }
+        
+        /* Hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            color: #3c4656;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .hero-stats {
+            display: table;
+            width: 100%;
+            margin: 40px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 30px 20px;
+        }
+        
+        .stat-item {
+            display: table-cell;
+            width: 33.33%;
+            text-align: center;
+            padding: 0 15px;
+        }
+        
+        .stat-number {
+            font-size: 42px;
+            font-weight: 300;
+            color: #3c4656;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Personal note from template 2 */
+        .personal-note {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            border-left: 4px solid #00DADF;
+        }
+        
+        .personal-note .signature {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .personal-note .avatar {
+            width: 60px;
+            height: 60px;
+            border: 3px solid #00DADF;
+            background: #f8f9fa;
+            color: #00DADF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .personal-note .author {
+            flex: 1;
+        }
+        
+        .personal-note .author-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 5px;
+        }
+        
+        .personal-note .author-title {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .personal-note .message {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+            font-style: italic;
+        }
+        
+        /* Section styling */
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            color: #3c4656;
+            font-size: 32px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            color:#F97068;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .section-content {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: center;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Warning callout from template 2 */
+        .warning-callout {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .warning-callout h4 {
+            color: #856404;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .warning-callout h4:before {
+            content: "⚠️";
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .warning-callout p {
+            color: #856404;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Trap section from template 2 */
+        .trap {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 4px solid #F97068;
+        }
+        
+        .trap-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #F97068;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .trap-title {
+            color: #3c4656;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .trap-description {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .trap-example {
+            background: rgba(249, 112, 104, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid #F97068;
+            margin: 20px 0;
+        }
+        
+        .trap-example h4 {
+            color: #F97068;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .trap-example p {
+            color: #721c24;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .trap-solution {
+            background: rgba(136, 136, 136, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid #3c4656;
+            margin: 20px 0;
+        }
+        
+        .trap-solution h4 {
+            color: #3c4656;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .trap-solution h4:before {
+            content: "✓";
+            margin-right: 8px;
+            background: #3c4656;
+            color: white;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        .trap-solution p {
+            color: #3c4656;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* Workflow Features */
+        .workflow-features {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e9ecef;
+            text-align: left;
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 10px;
+        }
+        
+        .feature-desc {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Code block styling */
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        
+        .code-comment {
+            color: #68d391;
+        }
+        
+        .code-keyword {
+            color: #fbb6ce;
+        }
+        
+        .code-string {
+            color: #90cdf4;
+        }
+        
+        /* Case study from template 2 */
+        .case-study {
+            background: linear-gradient(135deg, #00DADF, #6E78FF);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .case-study h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .case-study p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+        
+        .case-results {
+            display: table;
+            width: 100%;
+            margin-top: 25px;
+        }
+        
+        .result-item {
+            display: table-cell;
+            width: 33.33%;
+            text-align: center;
+            padding: 0 10px;
+        }
+        
+        .result-number {
+            font-size: 28px;
+            font-weight: 300;
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .result-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+        
+        /* Integration Grid */
+        .integration-grid {
+            display: table;
+            width: 100%;
+            margin: 40px 0;
+        }
+        
+        .integration-item {
+            display: table-cell;
+            width: 50%;
+            padding: 25px 20px;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .integration-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .integration-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 15px;
+        }
+        
+        .integration-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00DADF, #6E78FF);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .cta-secondary {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            margin-left: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            border-bottom-color: #00DADF;
+            color: #00DADF;
+        }
+        
+        /* Quote/Testimonial */
+        .quote-section {
+            background: #3c4656;
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .quote-text {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 300;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+        
+        .quote-author {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #F97068;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #3c4656;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .contact-info .email {
+            color: #F97068;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        
+        .social-links {
+            margin: 30px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #00DADF;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #F97068;
+        }
+        
+        .unsubscribe {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .unsubscribe a {
+            color: #00DADF;
+            text-decoration: none;
+        }
+        
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero-stats {
+                display: block;
+                padding: 20px;
+            }
+            
+            .stat-item {
+                display: block;
+                width: 100%;
+                margin-bottom: 25px;
+                padding: 0;
+            }
+            
+            .integration-grid {
+                display: block;
+            }
+            
+            .integration-item {
+                display: block;
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 0;
+            }
+            
+            .personal-note .signature {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .case-results {
+                display: block;
+            }
+            
+            .result-item {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 0;
+            }
+            
+            .section-title {
+                font-size: 26px;
+            }
+            
+            .cta-secondary {
+                display: block;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            
+            .quote-section {
+                padding: 30px 20px;
+            }
+            
+            .quote-text {
+                font-size: 20px;
+            }
+            
+            .code-block {
+                font-size: 12px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://docs.propel-flow.com/images/Propel-Flow-Logo-White-Landscape.png" alt="Propel Flow" />
+            </div>
+            <div class="tagline">Workflow Automation</div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Hero Section -->
+            <div class="hero">
+                <h1>From Commit to Content in Seconds</h1>
+                <p>Are you tired of chasing updates and manually drafting release notes? Let automation connect your development events directly to your Knowledge Management System.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">75%</span>
+                        <div class="stat-label">Faster Draft Creation</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <div class="stat-label">Manual Data Gathering</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <div class="stat-label">Development Integration</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Note -->
+            <div class="personal-note">
+                <div class="signature">
+                    <div class="avatar">KP</div>
+                    <div class="author">
+                        <div class="author-name">Katie Potter</div>
+                        <div class="author-title">Workflow Automation Specialist</div>
+                    </div>
+                </div>
+                <div class="message">
+                    "I've seen too many teams drowning in manual documentation updates. The moment your development workflow starts talking directly to your content system, everything changes. Technical writers can focus on quality instead of data gathering."
+                </div>
+            </div>
+            
+            <!-- Warning Section -->
+            <div class="warning-callout">
+                <h4>The Documentation Lag Problem</h4>
+                <p>Your development team ships features faster than your documentation team can keep up. Users discover new functionality before help articles exist. Support tickets pile up because no one knows how the new features work.</p>
+            </div>
+            
+            <!-- Trap Section -->
+            <div class="trap">
+                <div class="trap-number">1</div>
+                <div class="trap-title">The "Manual Documentation Sprint" Trap</div>
+                <div class="trap-description">Every release becomes a scramble to create documentation from scratch. Technical writers become archaeologists, digging through commit messages and Slack threads to piece together what changed.</div>
+                
+                <div class="trap-example">
+                    <h4>🚨 What This Looks Like</h4>
+                    <p>Your team ships a major UI update on Friday. Monday morning brings 50+ support tickets asking "Where did the export button go?" Your help articles still show the old interface.</p>
+                </div>
+                
+                <div class="trap-solution">
+                    <h4>The Automated Alternative</h4>
+                    <p>Connect your development tools directly to your knowledge system. When UI changes are detected, draft articles are created automatically with screenshots and step-by-step guides.</p>
+                </div>
+            </div>
+            
+            <!-- Integration Section -->
+            <div class="section">
+                <div class="section-subtitle">Smart Integrations</div>
+                <h2 class="section-title">Connect Your Development Stack</h2>
+                <div class="section-content">
+                    <p>Transform your existing development workflow into a content creation engine with intelligent automation that understands your process.</p>
+                </div>
+                
+                <div class="integration-grid">
+                    <div class="integration-item">
+                        <div class="integration-icon">📋</div>
+                        <div class="integration-title">Jira-to-Documentation</div>
+                        <div class="integration-desc">Automatically convert resolved Jira tickets into draft content. When an issue moves to "Done", we pull in ticket.summary and ticket.description to create structured drafts.</div>
+                    </div>
+                    <div class="integration-item">
+                        <div class="integration-icon">🔄</div>
+                        <div class="integration-title">GitHub Actions</div>
+                        <div class="integration-desc">Generate user-facing documentation in parallel with development. Trigger on pushes to staging branch to detect UI changes and assemble how-to guides.</div>
+                    </div>
+                </div>
+                
+                <div class="integration-grid">
+                    <div class="integration-item">
+                        <div class="integration-icon">📸</div>
+                        <div class="integration-title">UI Test Environment</div>
+                        <div class="integration-desc">When new buttons appear or menus shift, our system detects component changes, captures screenshots from your test suite, and creates draft guides.</div>
+                    </div>
+                    <div class="integration-item">
+                        <div class="integration-icon">🚀</div>
+                        <div class="integration-title">One-Click Publishing</div>
+                        <div class="integration-desc">From status: 'Approved' in the KMS to a live URL. Content flows into pre-defined web templates with consistent branding automatically.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Code Example Section -->
+            <div class="section">
+                <div class="section-subtitle">Simple Integration</div>
+                <h2 class="section-title">Connect in Minutes</h2>
+                <div class="section-content">
+                    <p>Our SDK makes it incredibly simple to connect your existing tools to the knowledge management system.</p>
+                </div>
+                
+                <div class="code-block">
+<span class="code-comment"># Connect Jira to your KMS</span>
+<span class="code-keyword">from</span> your_kms_sdk <span class="code-keyword">import</span> KMS
+<span class="code-keyword">from</span> your_jira_sdk <span class="code-keyword">import</span> Jira
+
+kms = KMS(api_key=<span class="code-string">"YOUR_API_KEY"</span>)
+jira = Jira(user=<span class="code-string">"user@example.com"</span>, token=<span class="code-string">"JIRA_TOKEN"</span>)
+
+<span class="code-keyword">for</span> issue <span class="code-keyword">in</span> jira.search_issues(<span class="code-string">'project = NEWFEAT AND status = Done'</span>):
+    kms.create_draft_from_ticket(
+        ticket_id=issue.key,
+        title=issue.summary,
+        content=issue.description
+    )
+                </div>
+            </div>
+            
+            <!-- Features Section -->
+            <div class="section">
+                <div class="section-subtitle">Intelligent Features</div>
+                <h2 class="section-title">Smart Automation</h2>
+                
+                <div class="workflow-features">
+                    <div class="feature-item">
+                        <div class="feature-title">Context-Aware Processing</div>
+                        <div class="feature-desc">Our system ignores internal fields like story_points and focuses on user-relevant information, creating clean, useful documentation drafts.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Automatic Tagging & Assignment</div>
+                        <div class="feature-desc">Drafts are automatically tagged and assigned for review based on project type, component, and content analysis.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Localization Detection</div>
+                        <div class="feature-desc">When UI changes are detected in en.json files, the system knows to trigger translation workflows and update global documentation.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Quality Focus</div>
+                        <div class="feature-desc">Technical writers can focus on clarity and polish instead of data gathering, improving overall documentation quality.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study -->
+            <div class="case-study">
+                <h4>SaaS Development Team Success Story</h4>
+                <p>How One Team Eliminated Documentation Lag</p>
+                <p>Complete automation of release notes and help articles from development workflow integration.</p>
+                
+                <div class="case-results">
+                    <div class="result-item">
+                        <span class="result-number">75%</span>
+                        <div class="result-label">Faster Drafts</div>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-number">90%</span>
+                        <div class="result-label">Reduced Manual Work</div>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-number">3x</span>
+                        <div class="result-label">Content Output</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quote Section -->
+            <div class="quote-section">
+                <div class="quote-text">"Teams using this integration report draft creation 75% faster, freeing technical writers to focus on clarity and polish—not data gathering."</div>
+                <div class="quote-author">— Development Team Productivity Study</div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="section">
+                <div class="section-subtitle">Automation Setup</div>
+                <h2 class="section-title">Supercharge Your Workflows</h2>
+                <div class="section-content">
+                    <p>See how connecting your development tools to our AI-powered knowledge system can transform your documentation process.</p>
+                </div>
+                <div class="cta-container">
+                    <a href="http://www.ai.propel-flow.com/en/docs/1-what-enterprise-is-doing.html" class="cta-button">See It In Practice</a>
+                    <a href="https://calendly.com/propel-flow/ai-use-case-discovery" class="cta-secondary">Schedule A Call</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p></div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="http://www.ai.propel-flow.com/en/docs/1-what-enterprise-is-doing.html">AI Knowledge Management</a>
+                    <a href="https://propel-flow.com">Other Services</a>
+                </div>
+                
+                <div class="unsubscribe">
+                    <p>You're receiving this because you're interested in the future of business operations.</p>
+                    <p>
+                        <a href="%UNSUBSCRIBE_LINK%">Update preferences</a> | 
+                        <a href="%UNSUBSCRIBE%">Unsubscribe</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

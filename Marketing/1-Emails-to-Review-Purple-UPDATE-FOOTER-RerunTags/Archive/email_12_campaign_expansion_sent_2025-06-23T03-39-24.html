@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propel Flow AI - New Markets Are Waiting. Are You Ready to Speak Their Language?</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Main container */
+        .email-container {
+            max-width: 700px;
+            margin: 0 auto;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: #3c4656;
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: inline-block;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 300;
+            margin-top: 12px;
+            color: #00DADF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Content sections */
+        .content {
+            padding: 40px 30px;
+        }
+        
+        /* Hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            color: #3c4656;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        /* Stats section */
+        .stats-callout {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: table;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .stat-item {
+            display: table-cell;
+            width: 33.33%;
+            text-align: center;
+            padding: 0 10px;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 300;
+            color: #3c4656;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Section styling */
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            color: #3c4656;
+            font-size: 32px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            color:#F97068;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .section-content {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: center;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Pitfalls section */
+        .pitfalls-grid {
+            display: table;
+            width: 100%;
+            margin: 40px 0;
+        }
+        
+        .pitfall-item {
+            display: table-cell;
+            width: 50%;
+            padding: 25px 20px;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .pitfall-icon {
+            width: 60px;
+            height: 60px;
+            background: #f8f9fa;
+            border: 2px solid #F97068;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #F97068;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        
+        .pitfall-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 10px;
+        }
+        
+        .pitfall-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Solution features */
+        .solution-features {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e9ecef;
+            text-align: left;
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 10px;
+        }
+        
+        .feature-desc {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Deliverables section */
+        .deliverables-grid {
+            display: table;
+            width: 100%;
+            margin: 40px 0;
+        }
+        
+        .deliverable-item {
+            display: table-cell;
+            width: 50%;
+            padding: 25px 20px;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .deliverable-icon {
+            width: 60px;
+            height: 60px;
+            background: #f8f9fa;
+            border: 2px solid #00DADF;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00DADF;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        
+        .deliverable-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 10px;
+        }
+        
+        .deliverable-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Case study */
+        .case-study {
+            background: linear-gradient(135deg, #00DADF, #6E78FF);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .case-study h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .case-study p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+        
+        .case-results {
+            display: table;
+            width: 100%;
+            margin-top: 25px;
+        }
+        
+        .result-item {
+            display: table-cell;
+            width: 33.33%;
+            text-align: center;
+            padding: 0 10px;
+        }
+        
+        .result-number {
+            font-size: 28px;
+            font-weight: 300;
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .result-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+        
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00DADF, #6E78FF);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .cta-secondary {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            margin-left: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            border-bottom-color: #00DADF;
+            color: #00DADF;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #3c4656;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .contact-info .email {
+            color: #F97068;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        
+        .social-links {
+            margin: 30px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #00DADF;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #F97068;
+        }
+        
+        .unsubscribe {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .unsubscribe a {
+            color: #00DADF;
+            text-decoration: none;
+        }
+        
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .stats-grid {
+                display: block;
+            }
+            
+            .stat-item {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 0;
+            }
+            
+            .pitfalls-grid,
+            .deliverables-grid {
+                display: block;
+            }
+            
+            .pitfall-item,
+            .deliverable-item {
+                display: block;
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 0;
+            }
+            
+            .case-results {
+                display: block;
+            }
+            
+            .result-item {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 0;
+            }
+            
+            .section-title {
+                font-size: 26px;
+            }
+            
+            .cta-secondary {
+                display: block;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            
+            .case-study {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://docs.propel-flow.com/images/Propel-Flow-Logo-White-Landscape.png" alt="Propel Flow" />
+            </div>
+            <div class="tagline">Global Market Expansion</div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Hero Section -->
+            <div class="hero">
+                <h1>New Markets Are Waiting. Are You Ready to Speak Their Language?</h1>
+                <p>Fast expansion requires more than logistics—it demands cultural resonance. Your product is global-ready. Let's make sure your messaging is too.</p>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="stats-callout">
+                <p><strong>The Global Opportunity:</strong></p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">70%</span>
+                        <div class="stat-label">Prefer Native Language</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4x</span>
+                        <div class="stat-label">Faster Content Delivery</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2x</span>
+                        <div class="stat-label">Engagement Rates</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pitfalls Section -->
+            <div class="section">
+                <div class="section-subtitle">Common Challenges</div>
+                <h2 class="section-title">What Holds Brands Back in New Markets?</h2>
+                <div class="section-content">
+                    <p>These critical barriers prevent most companies from successfully expanding into new international markets.</p>
+                </div>
+                
+                <div class="pitfalls-grid">
+                    <div class="pitfall-item">
+                        <div class="pitfall-icon">❌</div>
+                        <div class="pitfall-title">Poor Translation Loses Trust</div>
+                        <div class="pitfall-desc">Instant loss of credibility with customers who can't trust your brand message</div>
+                    </div>
+                    <div class="pitfall-item">
+                        <div class="pitfall-icon">💔</div>
+                        <div class="pitfall-title">Generic Messaging Misses Connection</div>
+                        <div class="pitfall-desc">One-size-fits-all content fails to create emotional resonance with local audiences</div>
+                    </div>
+                </div>
+                
+                <div class="pitfalls-grid">
+                    <div class="pitfall-item">
+                        <div class="pitfall-icon">⏱️</div>
+                        <div class="pitfall-title">Slow Content Adaptation</div>
+                        <div class="pitfall-desc">Delays in market entry allow competitors to establish dominance first</div>
+                    </div>
+                    <div class="pitfall-item">
+                        <div class="pitfall-icon">🔀</div>
+                        <div class="pitfall-title">Fragmented Localization</div>
+                        <div class="pitfall-desc">Inconsistent brand messaging across markets damages global brand integrity</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Solution Section -->
+            <div class="section">
+                <div class="section-subtitle">Our Solution</div>
+                <h2 class="section-title">Fast, Cultural-First Content Kits</h2>
+                
+                <div class="solution-features">
+                    <div class="feature-item">
+                        <div class="feature-title">Speed + Cultural Precision = Market Fit</div>
+                        <div class="feature-desc">Rapid localization of key sales and marketing materials with culturally tuned messaging by native experts for authentic market entry.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Agile Rollout Across Multiple Markets</div>
+                        <div class="feature-desc">Systematic approach to launching in multiple countries simultaneously with consistent quality and brand messaging.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Easy Integration</div>
+                        <div class="feature-desc">Seamless integration into your existing CRM, CMS, and advertising platforms for immediate deployment across all channels.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Deliverables Section -->
+            <div class="section">
+                <div class="section-subtitle">What We Deliver</div>
+                <h2 class="section-title">Plug-and-Play Global Content Solutions</h2>
+                
+                <div class="deliverables-grid">
+                    <div class="deliverable-item">
+                        <div class="deliverable-icon">📊</div>
+                        <div class="deliverable-title">Localized Sales Materials</div>
+                        <div class="deliverable-desc">Sales decks and product sheets optimized for local market preferences and buying behaviors</div>
+                    </div>
+                    <div class="deliverable-item">
+                        <div class="deliverable-icon">🎨</div>
+                        <div class="deliverable-title">Adapted Ad Creative</div>
+                        <div class="deliverable-desc">Digital and print advertising materials that resonate with local cultural values and aesthetics</div>
+                    </div>
+                </div>
+                
+                <div class="deliverables-grid">
+                    <div class="deliverable-item">
+                        <div class="deliverable-icon">🌐</div>
+                        <div class="deliverable-title">Website Landing Pages</div>
+                        <div class="deliverable-desc">Culturally tuned landing pages that convert visitors into customers in each target market</div>
+                    </div>
+                    <div class="deliverable-item">
+                        <div class="deliverable-icon">📱</div>
+                        <div class="deliverable-title">Social Media Packs</div>
+                        <div class="deliverable-desc">Region-specific social media content that engages local audiences on their preferred platforms</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study -->
+            <div class="case-study">
+                <h4>Canadian Agri Exporter Success Story</h4>
+                <p>How One Brand Landed in 3 Countries in 90 Days</p>
+                <p>Complete market entry across Japan, UAE, and Germany with culturally adapted content that outperformed original US messaging.</p>
+                
+                <div class="case-results">
+                    <div class="result-item">
+                        <span class="result-number">3</span>
+                        <div class="result-label">Languages Adapted</div>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-number">4x</span>
+                        <div class="result-label">Faster Delivery</div>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-number">2x</span>
+                        <div class="result-label">Engagement Rates</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="section">
+                <div class="section-subtitle">Ready to Expand</div>
+                <h2 class="section-title">Let's Build Your Market Entry Kit</h2>
+                <div class="section-content">
+                    <p>No massive translations. No rework. No delays. Just content that feels native from day one.</p>
+                </div>
+                <div class="cta-container">
+                    <a href="https://a3c3f39a.sibforms.com/serve/MUIFAJKV79ikwGlYx7uQz1DDkpeCmJkh4nBcCiTVcUNdvaobyLEOAclXGh2yUS9ffPo6r-Z428CvdIZLKupPMgnePeEDbc_fRz0fcBFHsJCyJn_nNci0gj0Ujf_TDnLMu5rX59b8iXdt-uZGYHOfXr_WploTPpEIV-aGHaq7f1LZwIZKQ_2zYzA7UJ2hnpXsQDuNC4-mKg1H1DDL" class="cta-button">Build Content Kit</a>
+                    <a href="https://calendly.com/propel-flow/ai-use-case-discovery?month=2025-06" class="cta-secondary">Schedule Strategy Call</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p></div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="http://www.ai.propel-flow.com/en/docs/1-what-enterprise-is-doing.html">AI Knowledge Management</a>
+                    <a href="https://propel-flow.com">Other Services</a>
+                </div>
+                
+                <div class="unsubscribe">
+                    <p>You're receiving this because you're interested in the future of business operations.</p>
+                    <p>
+                        <a href="%UNSUBSCRIBE_LINK%">Update preferences</a> | 
+                        <a href="%UNSUBSCRIBE%">Unsubscribe</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

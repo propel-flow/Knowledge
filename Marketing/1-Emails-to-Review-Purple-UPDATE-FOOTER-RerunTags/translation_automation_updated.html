@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propel Flow AI - Launch Globally in Days, Not Months</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Main container */
+        .email-container {
+            max-width: 700px;
+            margin: 0 auto;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: #3c4656;
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: inline-block;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 300;
+            margin-top: 12px;
+            color: #00DADF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Content sections */
+        .content {
+            padding: 40px 30px;
+        }
+        
+        /* Hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            color: #3c4656;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .hero-stats {
+            display: table;
+            width: 100%;
+            margin: 40px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 30px 20px;
+        }
+        
+        .stat-item {
+            display: table-cell;
+            width: 33.33%;
+            text-align: center;
+            padding: 0 15px;
+        }
+        
+        .stat-number {
+            font-size: 42px;
+            font-weight: 300;
+            color: #3c4656;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Section styling */
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            color: #3c4656;
+            font-size: 32px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            color:#F97068;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .section-content {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: center;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Translation Features */
+        .translation-features {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e9ecef;
+            text-align: left;
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 10px;
+        }
+        
+        .feature-desc {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Workflow Grid */
+        .workflow-grid {
+            display: table;
+            width: 100%;
+            margin: 40px 0;
+        }
+        
+        .workflow-item {
+            display: table-cell;
+            width: 50%;
+            padding: 25px 20px;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .workflow-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .workflow-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 15px;
+        }
+        
+        .workflow-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00DADF, #6E78FF);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .cta-secondary {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            margin-left: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            border-bottom-color: #00DADF;
+            color: #00DADF;
+        }
+        
+        /* Quote/Testimonial */
+        .quote-section {
+            background: #3c4656;
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .quote-text {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 300;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+        
+        .quote-author {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #F97068;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #3c4656;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .contact-info .email {
+            color: #F97068;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        
+        .social-links {
+            margin: 30px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #00DADF;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #F97068;
+        }
+        
+        .unsubscribe {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .unsubscribe a {
+            color: #00DADF;
+            text-decoration: none;
+        }
+        
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero-stats {
+                display: block;
+                padding: 20px;
+            }
+            
+            .stat-item {
+                display: block;
+                width: 100%;
+                margin-bottom: 25px;
+                padding: 0;
+            }
+            
+            .workflow-grid {
+                display: block;
+            }
+            
+            .workflow-item {
+                display: block;
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 0;
+            }
+            
+            .section-title {
+                font-size: 26px;
+            }
+            
+            .cta-secondary {
+                display: block;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            
+            .quote-section {
+                padding: 30px 20px;
+            }
+            
+            .quote-text {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://docs.propel-flow.com/images/Propel-Flow-Logo-White-Landscape.png" alt="Propel Flow" />
+            </div>
+            <div class="tagline">Global Launch Automation</div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Hero Section -->
+            <div class="hero">
+                <h1>Launch Globally in Days, Not Months</h1>
+                <p>Are slow, expensive translations holding back your international expansion? Our AI-powered translation system preserves your brand while accelerating your SaaS entry to global markets.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">90%</span>
+                        <div class="stat-label">Faster Translations</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">75%</span>
+                        <div class="stat-label">Cost Reduction</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <div class="stat-label">Brand Protection</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Problem Section -->
+            <div class="section">
+                <div class="section-subtitle">Translation Challenges</div>
+                <h2 class="section-title">The Global Expansion Nightmare</h2>
+                <div class="section-content">
+                    <p>Are your expansion plans stalled by slow, expensive, and inconsistent translations that dilute your brand identity and confuse customers?</p>
+                </div>
+                
+                <div class="workflow-grid">
+                    <div class="workflow-item">
+                        <div class="workflow-icon">🏷️</div>
+                        <div class="workflow-title">Brand Dilution</div>
+                        <div class="workflow-desc">Your product "InsightGrid" becomes "Einblicksraster" in German marketing materials, completely confusing customers and losing brand recognition.</div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="workflow-icon">⏱️</div>
+                        <div class="workflow-title">Slow Time-to-Market</div>
+                        <div class="workflow-desc">Manual translation processes take weeks or months, allowing competitors to enter new markets before you can launch.</div>
+                    </div>
+                </div>
+                
+                <div class="workflow-grid">
+                    <div class="workflow-item">
+                        <div class="workflow-icon">💸</div>
+                        <div class="workflow-title">Expensive Corrections</div>
+                        <div class="workflow-desc">Human reviewers spend hours correcting the same simple translation mistakes, driving up costs and delaying launches.</div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="workflow-icon">🔧</div>
+                        <div class="workflow-title">Broken Code</div>
+                        <div class="workflow-desc">Traditional translation tools accidentally translate code variables and API endpoints, breaking your software in international markets.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Solution Section -->
+            <div class="section">
+                <div class="section-subtitle">Our Solution</div>
+                <h2 class="section-title">Intelligent Translation Automation</h2>
+                
+                <div class="translation-features">
+                    <div class="feature-item">
+                        <div class="feature-title">Brand-Aware AI Translation</div>
+                        <div class="feature-desc">Our AI intelligently preserves your product names, technical terms, and brand elements while translating content. "SwiftDeploy" stays "SwiftDeploy" in every language.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Code-Safe Localization</div>
+                        <div class="feature-desc">Protect your codebase with intelligent parsing that translates UI text while preserving function names, API endpoints, and variable names like `user.firstName`.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">GitHub Integration</div>
+                        <div class="feature-desc">Manage all your SaaS UI translations through a simple change in a `config.yml` file in your GitHub repository. Deploy translations with your regular development workflow.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Quality Control Automation</div>
+                        <div class="feature-desc">Low-confidence translations are automatically routed to human reviewers, who can focus on nuance and context rather than fixing broken brand names.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Global Taxonomy Management</div>
+                        <div class="feature-desc">When you update a keyword or tag in English, like changing `legacy-api` to `api-v1`, that change is intelligently propagated across all languages.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quote Section -->
+            <div class="quote-section">
+                <div class="quote-text">"We went from 6 months to launch in a new market to 6 days. Our brand stays consistent, our code stays secure, and our customers get the experience they deserve."</div>
+                <div class="quote-author">— VP of International, SaaS Startup</div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="section">
+                <div class="section-subtitle">Global Expansion</div>
+                <h2 class="section-title">Explore Your Global Potential</h2>
+                <div class="section-content">
+                    <p>Discover how our experience with brand-safe, code-secure AI translation automation can help accelerate your entry into new markets.</p>
+                </div>
+                <div class="cta-container">
+                    <a href="http://www.ai.propel-flow.com/en/docs/1-what-enterprise-is-doing.html" class="cta-button">See It In Practice</a>
+                    <a href="https://calendly.com/propel-flow/ai-use-case-discovery" class="cta-secondary">Schedule A Call</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p></div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="http://www.ai.propel-flow.com/en/docs/1-what-enterprise-is-doing.html">AI Knowledge Management</a>
+                    <a href="https://propel-flow.com">Other Services</a>
+                </div>
+                
+                <div class="unsubscribe">
+                    <p>You're receiving this because you're interested in the future of business operations.</p>
+                    <p>
+                        <a href="%UNSUBSCRIBE_LINK%">Update preferences</a> | 
+                        <a href="%UNSUBSCRIBE%">Unsubscribe</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

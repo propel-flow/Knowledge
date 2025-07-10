@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propel Flow AI - Users Gaming Your System?</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Main container */
+        .email-container {
+            max-width: 700px;
+            margin: 0 auto;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: #3c4656;
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: inline-block;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 300;
+            margin-top: 12px;
+            color: #00DADF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Content sections */
+        .content {
+            padding: 40px 30px;
+        }
+        
+        /* Hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            color: #3c4656;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .hero-stats {
+            display: table;
+            width: 100%;
+            margin: 40px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 30px 20px;
+        }
+        
+        .stat-item {
+            display: table-cell;
+            width: 33.33%;
+            text-align: center;
+            padding: 0 15px;
+        }
+        
+        .stat-number {
+            font-size: 42px;
+            font-weight: 300;
+            color: #3c4656;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Section styling */
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            color: #3c4656;
+            font-size: 32px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            color:#F97068;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .section-content {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: center;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Pain Points Grid */
+        .pain-points-grid {
+            display: table;
+            width: 100%;
+            margin: 40px 0;
+        }
+        
+        .pain-point {
+            display: table-cell;
+            width: 50%;
+            padding: 25px 20px;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .pain-icon {
+            width: 60px;
+            height: 60px;
+            background: #f8f9fa;
+            border: 2px solid #00DADF;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00DADF;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        
+        .pain-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 15px;
+        }
+        
+        .pain-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00DADF, #6E78FF);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .cta-secondary {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            margin-left: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            border-bottom-color: #00DADF;
+            color: #00DADF;
+        }
+        
+        /* Feature highlights */
+        .feature-list {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e9ecef;
+            text-align: left;
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 10px;
+        }
+        
+        .feature-desc {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Quote/Testimonial */
+        .quote-section {
+            background: #3c4656;
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .quote-text {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 300;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+        
+        .quote-author {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #F97068;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #3c4656;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .contact-info .email {
+            color: #F97068;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        
+        .social-links {
+            margin: 30px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #00DADF;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #F97068;
+        }
+        
+        .unsubscribe {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .unsubscribe a {
+            color: #00DADF;
+            text-decoration: none;
+        }
+        
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero-stats {
+                display: block;
+                padding: 20px;
+            }
+            
+            .stat-item {
+                display: block;
+                width: 100%;
+                margin-bottom: 25px;
+                padding: 0;
+            }
+            
+            .pain-points-grid {
+                display: block;
+            }
+            
+            .pain-point {
+                display: block;
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 0;
+            }
+            
+            .section-title {
+                font-size: 26px;
+            }
+            
+            .cta-secondary {
+                display: block;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            
+            .quote-section {
+                padding: 30px 20px;
+            }
+            
+            .quote-text {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://docs.propel-flow.com/images/Propel-Flow-Logo-White-Landscape.png" alt="Propel Flow" />
+            </div>
+            <div class="tagline">Revenue Protection AI</div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Hero Section -->
+            <div class="hero">
+                <h1>Users Gaming Your System?</h1>
+                <p>That user creating multiple accounts to dodge payment? They're not alone. While you're focused on growth, revenue is leaking through cracks in your validation, limits, and fraud detection. Every gaming attempt costs you real money.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">94%</span>
+                        <div class="stat-label">Fraud Detection</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">78%</span>
+                        <div class="stat-label">Revenue Recovery</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">$47K</span>
+                        <div class="stat-label">Avg Monthly Savings</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pain Points Section -->
+            <div class="section">
+                <div class="section-subtitle">Revenue Hemorrhaging</div>
+                <h2 class="section-title">The Hidden Cost of Gaming</h2>
+                <div class="section-content">
+                    <p>Smart users are finding creative ways around your limits, and each workaround represents lost revenue that compounds over time.</p>
+                </div>
+                
+                <div class="pain-points-grid">
+                    <div class="pain-point">
+                        <div class="pain-icon">🔄</div>
+                        <div class="pain-title">Multi-Account Abuse</div>
+                        <div class="pain-desc">Users creating endless accounts with slight email variations to avoid payment, turning your free tier into unlimited free usage</div>
+                    </div>
+                    <div class="pain-point">
+                        <div class="pain-icon">📧</div>
+                        <div class="pain-title">Weak Validation Systems</div>
+                        <div class="pain-desc">Basic email validation can't catch sophisticated users who understand disposable emails, aliases, and domain variations</div>
+                    </div>
+                </div>
+                
+                <div class="pain-points-grid">
+                    <div class="pain-point">
+                        <div class="pain-icon">🔍</div>
+                        <div class="pain-title">No Usage Visibility</div>
+                        <div class="pain-desc">You can see individual account usage but can't connect the dots to spot patterns of systematic abuse across multiple accounts</div>
+                    </div>
+                    <div class="pain-point">
+                        <div class="pain-icon">💸</div>
+                        <div class="pain-title">Revenue Model Mismatch</div>
+                        <div class="pain-desc">Your generous free tier made sense for growth, but now power users are exploiting it while your paying customers subsidize the abuse</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Solution Features -->
+            <div class="section">
+                <div class="section-subtitle">AI-Powered Protection</div>
+                <h2 class="section-title">Stop the Revenue Leak</h2>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-title">Advanced Identity Linking</div>
+                        <div class="feature-desc">AI analyzes behavioral patterns, device fingerprints, and usage signatures to identify related accounts even when users try to hide connections.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Smart Tier Enforcement</div>
+                        <div class="feature-desc">Dynamic limits that adapt to usage patterns and automatically flag suspicious activity without disrupting legitimate users' experience.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Revenue Recovery Engine</div>
+                        <div class="feature-desc">Automated workflows to convert detected gaming attempts into upgrade opportunities, turning potential losses into revenue wins.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Real-Time Abuse Detection</div>
+                        <div class="feature-desc">Immediate alerts when gaming patterns emerge, with suggested actions to protect revenue while maintaining user experience.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quote Section -->
+            <div class="quote-section">
+                <div class="quote-text">"We recovered $23K in the first month just from converting multi-account users to paid plans. The gaming attempts dropped 89%."</div>
+                <div class="quote-author">— Jessica Park, Head of Growth at CloudSync</div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="section">
+                <div class="section-subtitle">Protect Your Revenue</div>
+                <h2 class="section-title">How Much Are You Losing?</h2>
+                <div class="section-content">
+                    <p>Get a free revenue leakage audit to see exactly how much gaming is costing you. We'll analyze your usage patterns and show you the hidden revenue opportunities you're missing.</p>
+                </div>
+                <div class="cta-container">
+                    <a href="https://calendly.com/propel-flow/revenue-leak-audit" class="cta-button">Get Revenue Leak Audit</a>
+                    <a href="https://docs.propel-flow.com/saas-gaming-prevention" class="cta-secondary">Gaming Prevention Guide</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p></div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="http://www.ai.propel-flow.com/en/docs/1-what-enterprise-is-doing.html">AI Knowledge Management</a>
+                    <a href="https://propel-flow.com">Other Services</a>
+                </div>
+                
+                <div class="unsubscribe">
+                    <p>You're receiving this because you're interested in the future of business operations.</p>
+                    <p>
+                        <a href="%UNSUBSCRIBE_LINK%">Update preferences</a> | 
+                        <a href="%UNSUBSCRIBE%">Unsubscribe</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

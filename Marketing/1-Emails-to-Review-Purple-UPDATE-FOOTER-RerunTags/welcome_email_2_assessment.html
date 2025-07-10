@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your AI Readiness Assessment - Propel Flow AI</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Main container */
+        .email-container {
+            max-width: 700px;
+            margin: 0 auto;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: #3c4656;
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: inline-block;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .email-number {
+            background: #00DADF;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+        
+        /* Content sections */
+        .content {
+            padding: 40px 30px;
+        }
+        
+        /* Hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            color: #3c4656;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        /* Assessment intro */
+        .assessment-intro {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            border-left: 4px solid #00DADF;
+        }
+        
+        .assessment-intro h3 {
+            color: #3c4656;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .assessment-intro p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .stats-highlight {
+            background: rgba(0, 218, 223, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .stats-highlight .stat {
+            font-size: 28px;
+            font-weight: 700;
+            color: #00DADF;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .stats-highlight .stat-desc {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        /* Assessment questions */
+        .assessment-questions {
+            margin: 40px 0;
+        }
+        
+        .assessment-questions h3 {
+            color: #3c4656;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .question-category {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .category-title {
+            color: #F97068;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .category-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            margin-right: 12px;
+        }
+        
+        .question-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .question-list li {
+            padding: 8px 0 8px 20px;
+            position: relative;
+            font-size: 15px;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .question-list li:before {
+            content: "?";
+            color: #00DADF;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            background: rgba(0, 218, 223, 0.1);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        /* Warning callout */
+        .warning-callout {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .warning-callout h4 {
+            color: #856404;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .warning-callout h4:before {
+            content: "⚠️";
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .warning-callout p {
+            color: #856404;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* CTA section */
+        .cta-section {
+            background: linear-gradient(135deg, #3c4656, #2a3441);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .cta-section h3 {
+            color: #00DADF;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .cta-section p {
+            font-size: 16px;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00DADF, #6E78FF);
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            margin: 0 10px 10px 0;
+        }
+        
+        .cta-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .cta-secondary {
+            display: inline-block;
+            background: transparent;
+            color: #00DADF;
+            padding: 18px 35px;
+            text-decoration: none;
+            border: 2px solid #00DADF;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            background: #00DADF;
+            color: white;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #3c4656;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .contact-info .email {
+            color: #F97068;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        
+        .social-links {
+            margin: 30px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #00DADF;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #F97068;
+        }
+        
+        .unsubscribe {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .unsubscribe a {
+            color: #00DADF;
+            text-decoration: none;
+        }
+        
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .category-title {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .category-icon {
+                margin: 0 auto 10px;
+            }
+            
+            .cta-button, .cta-secondary {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .header {
+                padding: 25px 20px;
+            }
+            
+            .cta-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://docs.propel-flow.com/images/Propel-Flow-Logo-White-Landscape.png" alt="Propel Flow" />
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Hero Section -->
+            <div class="hero">
+                <h1>Is Your Organization AI-Ready?</h1>
+                <p>Most companies rush into AI without understanding their readiness level. The result? Millions wasted on solutions that don't scale. Let's make sure you're not one of them.</p>
+            </div>
+            
+            <!-- Assessment Intro -->
+            <div class="assessment-intro">
+                <h3>Why This Assessment Matters</h3>
+                <p>After helping dozens of enterprise clients, I've seen the same patterns emerge. Companies that do this assessment <strong>before</strong> implementing AI are 3x more likely to achieve their transformation goals.</p>
+                
+                <div class="stats-highlight">
+                    <span class="stat">87%</span>
+                    <div class="stat-desc">of companies lack the AI/automation expertise needed to stay competitive</div>
+                </div>
+                
+                <p>The companies that succeed? They start with an honest assessment of where they are today.</p>
+            </div>
+            
+            <!-- Assessment Questions -->
+            <div class="assessment-questions">
+                <h3>📋 Your AI Readiness Checkpoint</h3>
+                
+                <div class="question-category">
+                    <div class="category-title">
+                        <div class="category-icon">🏗️</div>
+                        Infrastructure Maturity
+                    </div>
+                    <ul class="question-list">
+                        <li>Do you have cloud architecture that can scale with AI workloads?</li>
+                        <li>Are your data pipelines structured and reliable?</li>
+                        <li>Do you have enterprise-grade security protocols in place?</li>
+                        <li>Can your systems integrate with external AI services?</li>
+                    </ul>
+                </div>
+                
+                <div class="question-category">
+                    <div class="category-title">
+                        <div class="category-icon">📊</div>
+                        Data Foundation
+                    </div>
+                    <ul class="question-list">
+                        <li>Is your data clean, accessible, and well-governed?</li>
+                        <li>Do you have a unified data model across departments?</li>
+                        <li>Can you easily extract and transform data for AI training?</li>
+                        <li>Do you have data quality monitoring in place?</li>
+                    </ul>
+                </div>
+                
+                <div class="question-category">
+                    <div class="category-title">
+                        <div class="category-icon">👥</div>
+                        Organizational Change
+                    </div>
+                    <ul class="question-list">
+                        <li>Does leadership actively support AI transformation?</li>
+                        <li>Do you have change management processes for new technology?</li>
+                        <li>Is your team culturally ready to adopt AI tools?</li>
+                        <li>Do you have AI champions within your organization?</li>
+                    </ul>
+                </div>
+                
+                <div class="question-category">
+                    <div class="category-title">
+                        <div class="category-icon">🎯</div>
+                        Strategic Alignment
+                    </div>
+                    <ul class="question-list">
+                        <li>Do you have clear, measurable AI objectives?</li>
+                        <li>Have you identified specific use cases for AI implementation?</li>
+                        <li>Do you have budget allocated for AI initiatives?</li>
+                        <li>Can you measure and track AI performance improvements?</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Warning -->
+            <div class="warning-callout">
+                <h4>The $11M Lesson</h4>
+                <p>One client rushed into a major AI platform without this assessment. They spent $11M over 3 years with minimal results. When we did this assessment afterward, we found they were missing 60% of the foundational elements. We rebuilt their approach and achieved the same goals for $285K.</p>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h3>🚀 Get Your Personalized Readiness Score</h3>
+                <p>Discuss your assessment results from above and receive a detailed roadmap with specific recommendations for your situation.</p>
+                
+                <a href="https://calendly.com/propel-flow/ai-use-case-discovery?month=2025-06" class="cta-secondary">Discuss My Results</a>
+            </div>
+        </div>
+        
+        
+        <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p></div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="http://www.ai.propel-flow.com/en/docs/1-what-enterprise-is-doing.html">AI Knowledge Management</a>
+                    <a href="https://propel-flow.com">Other Services</a>
+                </div>
+                
+                <div class="unsubscribe">
+                    <p>You're receiving this because you're interested in the future of business operations.</p>
+                    <p>
+                        <a href="%UNSUBSCRIBE_LINK%">Update preferences</a> | 
+                        <a href="%UNSUBSCRIBE%">Unsubscribe</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

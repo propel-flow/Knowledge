@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propel Flow AI - Before You Re-Sign That 6-Figure CMS Contract</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Main container */
+        .email-container {
+            max-width: 700px;
+            margin: 0 auto;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: #3c4656;
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: inline-block;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 300;
+            margin-top: 12px;
+            color: #00DADF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Content sections */
+        .content {
+            padding: 40px 30px;
+        }
+        
+        /* Hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            color: #3c4656;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        /* Personal note from template 2 */
+        .personal-note {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            border-left: 4px solid #00DADF;
+        }
+        
+        .personal-note .signature {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .personal-note .avatar {
+            width: 60px;
+            height: 60px;
+            border: 3px solid #00DADF;
+            background: #f8f9fa;
+            color: #00DADF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .personal-note .author {
+            flex: 1;
+        }
+        
+        .personal-note .author-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 5px;
+        }
+        
+        .personal-note .author-title {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .personal-note .message {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+            font-style: italic;
+        }
+        
+        /* Section styling */
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            color: #3c4656;
+            font-size: 32px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            color:#F97068;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .section-content {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            text-align: center;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Trap sections from template 2 */
+        .trap {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 4px solid #F97068;
+        }
+        
+        .trap-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #F97068;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .trap-title {
+            color: #3c4656;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .trap-description {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .trap-example {
+            background: rgba(249, 112, 104, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid #F97068;
+            margin: 20px 0;
+        }
+        
+        .trap-example h4 {
+            color: #F97068;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .trap-example p {
+            color: #721c24;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .trap-solution {
+            background: rgba(136, 136, 136, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid #3c4656;
+            margin: 20px 0;
+        }
+        
+        .trap-solution h4 {
+            color: #3c4656;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .trap-solution h4:before {
+            content: "✓";
+            margin-right: 8px;
+            background: #3c4656;
+            color: white;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        .trap-solution p {
+            color: #3c4656;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* Assessment intro from template 2 */
+        .assessment-intro {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            border-left: 4px solid #00DADF;
+        }
+        
+        .assessment-intro h3 {
+            color: #3c4656;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .assessment-intro p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .stats-highlight {
+            background: rgba(0, 218, 223, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .stats-highlight .stat {
+            font-size: 28px;
+            font-weight: 700;
+            color: #00DADF;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .stats-highlight .stat-desc {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        /* Checklist styles */
+        .checklist {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            margin: 40px 0;
+        }
+        
+        .checklist-section {
+            margin-bottom: 35px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .checklist-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .checklist-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3c4656;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        .checklist-items {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .checklist-items li {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .checklist-items li:before {
+            content: "☐";
+            color: #00DADF;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 16px;
+        }
+        
+        /* Warning callout from template 2 */
+        .warning-callout {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .warning-callout h4 {
+            color: #856404;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .warning-callout h4:before {
+            content: "⚠️";
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .warning-callout p {
+            color: #856404;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Cost highlight */
+        .cost-highlight {
+            background: #3c4656;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .cost-highlight .cost-number {
+            font-size: 48px;
+            font-weight: 300;
+            color: #00DADF;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .cost-highlight .cost-desc {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00DADF, #6E78FF);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .cta-secondary {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            margin-left: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            border-bottom-color: #00DADF;
+            color: #00DADF;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #3c4656;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .contact-info .email {
+            color: #F97068;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        
+        .social-links {
+            margin: 30px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #00DADF;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #F97068;
+        }
+        
+        .unsubscribe {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .unsubscribe a {
+            color: #00DADF;
+            text-decoration: none;
+        }
+        
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .section-title {
+                font-size: 26px;
+            }
+            
+            .cta-secondary {
+                display: block;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            
+            .warning-callout, .cost-highlight {
+                padding: 25px 20px;
+            }
+            
+            .cost-highlight .cost-number {
+                font-size: 36px;
+            }
+            
+            .personal-note .signature {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://docs.propel-flow.com/images/Propel-Flow-Logo-White-Landscape.png" alt="Propel Flow" />
+            </div>
+            <div class="tagline">CMS Strategy</div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Hero Section -->
+            <div class="hero">
+                <h1>Before You Re-Sign That 6-Figure CMS Contract</h1>
+                <p>Is your current CMS investment actually delivering results, or are you locked into an expensive system that's holding your team back from AI-native content management?</p>
+            </div>
+            
+            <!-- Personal Note -->
+            <div class="personal-note">
+                <div class="signature">
+                    <div class="avatar">KP</div>
+                    <div class="author">
+                        <div class="author-name">Katie Potter</div>
+                        <div class="author-title">CMS Strategy Consultant</div>
+                    </div>
+                </div>
+                <div class="message">
+                    "I've seen too many organizations locked into expensive CMS contracts that become more expensive and less useful each year. Contract renewal time is your opportunity to break free—if you know what to look for."
+                </div>
+            </div>
+            
+            <!-- Cost Reality Check -->
+            <div class="cost-highlight">
+                <span class="cost-number">$125K+</span>
+                <div class="cost-desc">Annual cost for one team—often duplicated across departments with no unified governance</div>
+            </div>
+            
+            <!-- Trap Section -->
+            <div class="trap">
+                <div class="trap-number">1</div>
+                <div class="trap-title">The "Comprehensive Platform" Lock-In Trap</div>
+                <div class="trap-description">Vendors promise one platform that does everything. AI, content management, translation, analytics—all in one magical solution. It sounds perfect until you realize you're locked into their vision of how content should work.</div>
+                
+                <div class="trap-example">
+                    <h4>🚨 What This Looks Like</h4>
+                    <p>Each team uses its own CMS, each claiming ownership of taxonomy and product terms. You end up with conflicting versions of "truth" for brand, tone, product naming, and metadata—while paying multiple six-figure contracts.</p>
+                </div>
+                
+                <div class="trap-solution">
+                    <h4>The Exit Strategy Alternative</h4>
+                    <p>Build capabilities, don't buy platforms. Use AI-native systems that integrate through APIs you control. When better AI models emerge, you can switch providers without rebuilding everything.</p>
+                </div>
+            </div>
+            
+            <!-- Warning Section -->
+            <div class="warning-callout">
+                <h4>The Hidden CMS Trap</h4>
+                <p>Your CMS contract is up for renewal, but are you prepared to evaluate whether it's still serving your needs? Most organizations just re-sign without understanding how much the landscape has changed.</p>
+            </div>
+            
+            <!-- Assessment Section -->
+            <div class="assessment-intro">
+                <h3>Why This Assessment Matters</h3>
+                <p>The content management landscape has fundamentally changed. Systems that made sense 3 years ago may now be holding back your AI transformation.</p>
+                
+                <div class="stats-highlight">
+                    <span class="stat">73%</span>
+                    <div class="stat-desc">of CMS users report their current system can't handle AI-native workflows</div>
+                </div>
+                
+                <p>Use our checklist to determine if your current CMS is ready for the AI-first future—or if it's time to plan your exit strategy.</p>
+            </div>
+            
+            <!-- Checklist Section -->
+            <div class="section">
+                <div class="section-subtitle">Exit Strategy</div>
+                <h2 class="section-title">CMS Health Check</h2>
+                <div class="section-content">
+                    <p>Use this checklist to evaluate whether your current CMS is ready for the AI-first future—or if it's time to plan your exit strategy.</p>
+                </div>
+                
+                <div class="checklist">
+                    <div class="checklist-section">
+                        <div class="checklist-title">1. AI-Native and Flexible</div>
+                        <ul class="checklist-items">
+                            <li>Can your CMS integrate with any AI/LLM provider, or are you locked into one?</li>
+                            <li>Can you swap LLMs as market options evolve (e.g., OpenAI, Anthropic, Mistral)?</li>
+                            <li>Does your CMS treat AI as a native layer (metadata, validation, summarization) or a bolt-on plugin?</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="checklist-section">
+                        <div class="checklist-title">2. Cost and Commitment</div>
+                        <ul class="checklist-items">
+                            <li>Are you locked into multi-year contracts without performance benchmarks?</li>
+                            <li>Can you reduce user licenses or modules without penalty?</li>
+                            <li>Is the annual cost duplicated across teams without unified governance?</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="checklist-section">
+                        <div class="checklist-title">3. Governance and Ownership</div>
+                        <ul class="checklist-items">
+                            <li>Do you have conflicting versions of "truth" for brand, tone, product naming, or metadata?</li>
+                            <li>Is there a unified governance structure across teams (legal, marketing, product, support)?</li>
+                            <li>Can you maintain consistent taxonomy across all content systems?</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="checklist-section">
+                        <div class="checklist-title">4. Interoperability & Extensibility</div>
+                        <ul class="checklist-items">
+                            <li>Does the CMS play well with your TMS, DAM, analytics, or design system?</li>
+                            <li>Is there robust API support and webhook automation?</li>
+                            <li>Can workflows, AI triggers, and validation rules be embedded seamlessly?</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="checklist-section">
+                        <div class="checklist-title">5. Migration Readiness</div>
+                        <ul class="checklist-items">
+                            <li>Can you export structured content (Markdown, XML, JSON) for reuse elsewhere?</li>
+                            <li>Do you have documentation of schemas, workflows, and dependencies?</li>
+                            <li>Is there an exit clause that gives you your content and its structure?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="section">
+                <div class="section-subtitle">Free Assessment</div>
+                <h2 class="section-title">Get Your CMS Exit Strategy</h2>
+                <div class="section-content">
+                    <p>Download the complete CMS Exit Strategy Checklist and discover if your current system is ready for AI-native content management—or if it's time to plan your transition.</p>
+                </div>
+                <div class="cta-container">
+                    <a href="http://www.ai.propel-flow.com/en/docs/1-what-enterprise-is-doing.html" class="cta-button">See It In Practice</a>
+                    <a href="https://calendly.com/propel-flow/ai-use-case-discovery" class="cta-secondary">Schedule A Call</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+                <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p></div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p class="email">EMAIL</p>
+                    <p>hello@propel-flow.com</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="http://www.ai.propel-flow.com/en/docs/1-what-enterprise-is-doing.html">AI Knowledge Management</a>
+                    <a href="https://propel-flow.com">Other Services</a>
+                </div>
+                
+                <div class="unsubscribe">
+                    <p>You're receiving this because you're interested in the future of business operations.</p>
+                    <p>
+                        <a href="%UNSUBSCRIBE_LINK%">Update preferences</a> | 
+                        <a href="%UNSUBSCRIBE%">Unsubscribe</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
