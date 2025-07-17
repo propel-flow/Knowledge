@@ -1,0 +1,309 @@
+{
+  "project": {
+    "key": "N8N",
+    "name": "N8N Marketing & Product Development",
+    "projectTypeKey": "software",
+    "description": "Strategic initiative to validate product-market fit through N8N workflow automation, community building, and Jira marketplace entry"
+  },
+  "epics": [
+    {
+      "summary": "Epic: Jira Marketplace Development",
+      "description": "Convert priority N8N workflows into Jira marketplace plugins",
+      "labels": ["marketplace", "development", "plugins"],
+      "priority": "Highest",
+      "team": "Team A - Jira Development (2 interns)"
+    },
+    {
+      "summary": "Epic: Community Building & Outreach",
+      "description": "Build private groups across LinkedIn, Facebook, Reddit & Discord while executing automated outreach campaigns",
+      "labels": ["community", "outreach", "marketing"],
+      "priority": "High",
+      "team": "Team C - Outreach (2 interns)"
+    },
+    {
+      "summary": "Epic: CMS Market Research",
+      "description": "Research content management system integrations and competitive positioning",
+      "labels": ["research", "cms", "competition"],
+      "priority": "Medium",
+      "team": "Team B - CMS Research (1 intern)"
+    },
+    {
+      "summary": "Epic: Analytics & Coordination",
+      "description": "Implement Discord coordination, analytics dashboard, and performance tracking",
+      "labels": ["analytics", "discord", "coordination"],
+      "priority": "High",
+      "team": "Team D - Analytics (1 intern)"
+    }
+  ],
+  "stories": [
+    {
+      "epic": "Epic: Jira Marketplace Development",
+      "summary": "Convert Jira-Discord webhook integration workflow",
+      "description": "Modify local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0440-jira_telegram_webhook.json` to work with Discord instead of Telegram for team coordination. This workflow currently handles Jira webhooks and routes them to Telegram - needs adaptation for Discord API integration.",
+      "storyPoints": 8,
+      "labels": ["n8n-workflow", "discord", "jira-integration"],
+      "priority": "Highest",
+      "assignee": "Team A Lead",
+      "technicalNotes": "**Management Outside N8N:** Discord bot permissions and server setup required outside N8N",
+      "acceptanceCriteria": [
+        "Discord webhook receives Jira ticket updates from N8N workflow",
+        "Formatted messages posted to appropriate Discord channels with proper formatting",
+        "Team members can interact with tickets via Discord reactions/commands",
+        "Integration tested with sample tickets from development Jira instance"
+      ]
+    },
+    {
+      "epic": "Epic: Jira Marketplace Development",
+      "summary": "Build Splunk-Jira automation plugin from existing workflow",
+      "description": "Convert local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/1240-splunk-jira-ticket-automation.json` into a Jira marketplace plugin for enterprise logging integration. Original workflow automates ticket creation from Splunk alerts.",
+      "storyPoints": 13,
+      "labels": ["plugin-development", "splunk-integration", "automation"],
+      "priority": "Highest",
+      "assignee": "Team A Developer",
+      "technicalNotes": "**Management Outside N8N:** Splunk API credentials, Jira plugin framework (Atlassian Connect/Forge), marketplace submission process",
+      "acceptanceCriteria": [
+        "Plugin automatically creates Jira tickets from Splunk alerts",
+        "Alert severity mapping to Jira priority levels implemented",
+        "Compatible with both Jira Cloud and Server instances",
+        "Passes Atlassian marketplace technical review requirements"
+      ]
+    },
+    {
+      "epic": "Epic: Jira Marketplace Development",
+      "summary": "WordPress-Jira AI content workflow plugin",
+      "description": "Adapt local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0883-n8n-ai-categorize-wordpress.json` for Jira marketplace as content management integration. Original workflow uses AI to categorize WordPress content.",
+      "storyPoints": 10,
+      "labels": ["wordpress", "content-management", "ai"],
+      "priority": "High",
+      "assignee": "Team A Developer",
+      "technicalNotes": "**Management Outside N8N:** WordPress plugin development, OpenAI/Claude API management, dual marketplace submissions (WordPress & Jira)",
+      "acceptanceCriteria": [
+        "WordPress posts automatically create Jira tickets for content review",
+        "AI categorizes content and assigns to appropriate Jira teams",
+        "Editorial workflow integrated with Jira approval process",
+        "Plugin published to both WordPress and Jira marketplaces"
+      ]
+    },
+    {
+      "epic": "Epic: Jira Marketplace Development",
+      "summary": "Email AI auto-responder Jira integration",
+      "description": "Convert local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0821-email-ai-auto-responder.json` into Jira plugin for customer support automation. Original workflow handles email processing with AI responses.",
+      "storyPoints": 11,
+      "labels": ["email-automation", "ai-integration", "customer-support"],
+      "priority": "High",
+      "assignee": "Team A Developer",
+      "technicalNotes": "**Management Outside N8N:** Email provider APIs (Gmail, Outlook), AI model management, GDPR compliance for email processing",
+      "acceptanceCriteria": [
+        "Incoming emails automatically create Jira tickets",
+        "AI generates draft responses based on ticket context",
+        "Email threading maintained in Jira comments",
+        "Support for multiple email providers and AI models"
+      ]
+    },
+    {
+      "epic": "Epic: Community Building & Outreach",
+      "summary": "Deploy LinkedIn prospecting automation",
+      "description": "Use existing workflow `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/linkedin_scraping_workflow_claude_for_work.json` to identify and engage prospects through automated LinkedIn outreach.",
+      "storyPoints": 8,
+      "labels": ["linkedin", "prospecting", "automation"],
+      "priority": "High",
+      "assignee": "Team C Lead",
+      "technicalNotes": "**Management Outside N8N:** LinkedIn API compliance, cookie-based authentication management, Claude for Work browser automation service",
+      "acceptanceCriteria": [
+        "LinkedIn scraper identifies 50+ qualified prospects daily",
+        "Claude for Work analyzes prospect profiles for automation fit scoring",
+        "Automated personalized connection requests sent with <20% rejection rate",
+        "Prospects tracked through engagement funnel in CRM system"
+      ]
+    },
+    {
+      "epic": "Epic: Community Building & Outreach",
+      "summary": "Create private LinkedIn group for technical decision makers",
+      "description": "Establish private LinkedIn group targeting CTOs, engineering managers, and product leaders. Use prospect data from LinkedIn scraping workflow to build initial member base.",
+      "storyPoints": 5,
+      "labels": ["linkedin-group", "community-building", "technical-audience"],
+      "priority": "High",
+      "assignee": "Team C Member 1",
+      "technicalNotes": "**Management Outside N8N:** LinkedIn group admin panel, content calendar management, member approval workflows",
+      "acceptanceCriteria": [
+        "Private LinkedIn group created with compelling description and rules",
+        "100+ qualified members invited from prospect database",
+        "Weekly content calendar established for group engagement",
+        "Group growth tracked with engagement metrics dashboard"
+      ]
+    },
+    {
+      "epic": "Epic: Community Building & Outreach",
+      "summary": "Reddit community engagement automation",
+      "description": "Leverage existing Reddit scraper `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/Reddit_Scraper/` to identify engagement opportunities and automate community participation.",
+      "storyPoints": 6,
+      "labels": ["reddit", "community-engagement", "automation"],
+      "priority": "Medium",
+      "assignee": "Team C Member 2",
+      "technicalNotes": "**Management Outside N8N:** Reddit API credentials, karma building strategy, subreddit-specific rule compliance",
+      "acceptanceCriteria": [
+        "Daily identification of relevant Reddit discussions in target subreddits",
+        "Automated comment suggestions generated for manual review",
+        "Private subreddit created for exclusive N8N automation discussions",
+        "Reddit engagement metrics tracked and optimized"
+      ]
+    },
+    {
+      "epic": "Epic: Community Building & Outreach",
+      "summary": "Discord server setup with automated task management",
+      "description": "Create Discord server for intern coordination and implement bot integration with existing workflows. Reference `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/` for webhook automation patterns.",
+      "storyPoints": 9,
+      "labels": ["discord", "team-coordination", "bot-development"],
+      "priority": "Highest",
+      "assignee": "Team D Lead",
+      "technicalNotes": "**Management Outside N8N:** Discord bot hosting, permissions management, voice channel moderation, GitHub integration for commit notifications",
+      "acceptanceCriteria": [
+        "Discord server configured with team channels and automation bots",
+        "Task assignment commands integrated with Jira API",
+        "Daily standup automation and progress tracking implemented",
+        "GitHub commit notifications routing to appropriate team channels"
+      ]
+    },
+    {
+      "epic": "Epic: CMS Market Research",
+      "summary": "Analyze competitor integrations (Heretto, Smartling, RWS)",
+      "description": "Research existing CMS integrations and identify N8N workflow opportunities. Focus on documentation workflows that could be adapted from existing templates in `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/` collection.",
+      "storyPoints": 8,
+      "labels": ["competitive-analysis", "cms", "documentation"],
+      "priority": "Medium",
+      "assignee": "Team B Lead",
+      "technicalNotes": "**Management Outside N8N:** CMS vendor API documentation review, pricing model analysis, customer interview scheduling",
+      "acceptanceCriteria": [
+        "Competitive analysis report comparing 10+ CMS platforms",
+        "Gap analysis identifying N8N workflow opportunities",
+        "Technical feasibility assessment for top 3 integration targets",
+        "Customer persona definitions for CMS workflow users"
+      ]
+    },
+    {
+      "epic": "Epic: CMS Market Research",
+      "summary": "WordPress automation workflow catalog",
+      "description": "Catalog and test WordPress-related workflows from local collection. Identify workflows like `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0832-wordpress-ai-content-generator.json` for potential marketplace plugins.",
+      "storyPoints": 6,
+      "labels": ["wordpress", "workflow-catalog", "testing"],
+      "priority": "Medium",
+      "assignee": "Team B Lead",
+      "technicalNotes": "**Management Outside N8N:** WordPress test site setup, plugin development environment, marketplace research",
+      "acceptanceCriteria": [
+        "20+ WordPress workflows tested and documented from local collection",
+        "Top 5 workflows identified for plugin development priority",
+        "Technical requirements documented for each workflow conversion",
+        "WordPress marketplace competitor analysis completed"
+      ]
+    },
+    {
+      "epic": "Epic: Analytics & Coordination",
+      "summary": "Claude for Work integration with Discord notifications",
+      "description": "Integrate existing Claude for Work automation from `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/claude_for_work_test_workflow.json` with Discord for team coordination.",
+      "storyPoints": 7,
+      "labels": ["claude-integration", "discord", "automation"],
+      "priority": "High",
+      "assignee": "Team D Lead",
+      "technicalNotes": "**Management Outside N8N:** Claude for Work browser automation service hosting, Discord webhook management, image processing pipeline",
+      "acceptanceCriteria": [
+        "Claude for Work analysis results automatically posted to Discord",
+        "Analysis results trigger appropriate Jira task creation",
+        "Team members notified via Discord when analysis requires action",
+        "Integration handles error scenarios and retry logic"
+      ]
+    },
+    {
+      "epic": "Epic: Analytics & Coordination",
+      "summary": "N8N workflow performance analytics dashboard",
+      "description": "Build analytics system to track workflow performance across all team activities. Potentially leverage open source projects like Grafana + N8N metrics or custom dashboard solutions.",
+      "storyPoints": 10,
+      "labels": ["analytics", "dashboard", "monitoring"],
+      "priority": "Medium",
+      "assignee": "Team D Lead",
+      "technicalNotes": "**Management Outside N8N:** Database setup for metrics storage, dashboard hosting (Grafana/custom), N8N API monitoring",
+      "openSourceReference": "Explore: https://github.com/n8n-io/n8n/discussions/analytics or Grafana N8N dashboard templates",
+      "acceptanceCriteria": [
+        "Real-time dashboard showing workflow execution statistics",
+        "Error rate monitoring and alerting system implemented",
+        "Team productivity metrics tracked and visualized",
+        "Automated weekly reports generated and distributed"
+      ]
+    },
+    {
+      "epic": "Epic: Analytics & Coordination",
+      "summary": "Multi-platform outreach orchestration workflow",
+      "description": "Create master workflow to coordinate outreach across LinkedIn, Facebook, Reddit, and Discord. Build upon existing universal webhook system from `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/universal_marketing_research_webhook.json`.",
+      "storyPoints": 12,
+      "labels": ["orchestration", "multi-platform", "outreach"],
+      "priority": "High",
+      "assignee": "Team D Member",
+      "technicalNotes": "**Management Outside N8N:** Platform API rate limiting, account rotation strategy, content approval workflows",
+      "openSourceReference": "Consider: https://github.com/social-media-automation examples or multi-platform posting libraries",
+      "acceptanceCriteria": [
+        "Single workflow coordinates posting across all platforms",
+        "Content automatically adapted for each platform's format requirements",
+        "Engagement tracking and response automation implemented",
+        "A/B testing framework for message optimization"
+      ]
+    },
+    {
+      "epic": "Epic: Analytics & Coordination",
+      "summary": "Intern task assignment automation via Discord",
+      "description": "Build Discord bot that automatically assigns tasks based on GitHub activity, Jira updates, and team capacity. Integrate with existing automation workflows for seamless task distribution.",
+      "storyPoints": 9,
+      "labels": ["discord-bot", "task-automation", "team-management"],
+      "priority": "High",
+      "assignee": "Team D Member",
+      "technicalNotes": "**Management Outside N8N:** Discord bot hosting and permissions, GitHub webhook configuration, capacity tracking algorithms",
+      "openSourceReference": "Reference: https://github.com/discord/discord-api-docs for bot development patterns",
+      "acceptanceCriteria": [
+        "Discord commands for task creation and assignment implemented",
+        "Automatic task routing based on team member skills and availability",
+        "Integration with Jira for task status synchronization",
+        "Daily/weekly workload balancing automation"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "summary": "Setup development environment for N8N workflow modification",
+      "parent": "Convert Jira-Discord webhook integration workflow",
+      "description": "Install N8N locally and import existing workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0440-jira_telegram_webhook.json` for modification",
+      "storyPoints": 2,
+      "labels": ["setup", "development-environment"],
+      "assignee": "Team A Lead"
+    },
+    {
+      "summary": "Research Discord API integration patterns",
+      "parent": "Convert Jira-Discord webhook integration workflow",
+      "description": "Study Discord webhook API and identify required changes to replace Telegram integration in existing workflow",
+      "storyPoints": 3,
+      "labels": ["research", "discord-api"],
+      "assignee": "Team A Lead"
+    },
+    {
+      "summary": "Create test Discord server for development",
+      "parent": "Discord server setup with automated task management",
+      "description": "Set up development Discord server with appropriate channels and permissions for testing automation workflows",
+      "storyPoints": 1,
+      "labels": ["setup", "discord"],
+      "assignee": "Team D Lead"
+    },
+    {
+      "summary": "Document existing LinkedIn scraping workflow capabilities",
+      "parent": "Deploy LinkedIn prospecting automation",
+      "description": "Analyze and document the functionality of `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/linkedin_scraping_workflow_claude_for_work.json`",
+      "storyPoints": 2,
+      "labels": ["documentation", "linkedin"],
+      "assignee": "Team C Lead"
+    },
+    {
+      "summary": "Test Claude for Work automation service",
+      "parent": "Claude for Work integration with Discord notifications",
+      "description": "Verify that existing Claude for Work automation service is functional and document any setup requirements",
+      "storyPoints": 3,
+      "labels": ["testing", "claude-integration"],
+      "assignee": "Team D Lead"
+    }
+  ]
+}

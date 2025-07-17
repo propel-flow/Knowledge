@@ -1,0 +1,297 @@
+{
+  "name": "Prospect Pain Point Intelligence Capture",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "prospect-interaction",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "prospect-interaction-webhook",
+      "name": "Prospect Interaction Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [1560, 180]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generate sales intelligence insights for team\nconst data = $json.github_data;\nconst analysisData = $json.analysis_summary;\n\n// Create trend analysis\nconst trendInsights = {\n  pain_point_frequency: {},\n  competitive_mentions: {},\n  urgency_patterns: {},\n  stage_distribution: {}\n};\n\n// Generate actionable recommendations\nconst actionableInsights = {\n  positioning_adjustments: [\n    `Based on ${data.positioning_analysis.competitive_alternatives.length} competitive alternatives mentioned, consider emphasizing unique differentiators`,\n    `Value concerns detected: ${data.positioning_analysis.value_concerns.join(', ')} - address in next marketing materials`,\n    `Market category perception: ${data.positioning_analysis.market_category_perception} - may need education`\n  ],\n  \n  content_recommendations: [\n    `Create content addressing: ${data.pain_points.primary_concerns.slice(0,3).join(', ')}`,\n    `Develop case studies for ${data.positioning_analysis.target_market_fit} segment`,\n    `Prepare objection handling for: ${data.buying_intelligence.objections.join(', ')}`\n  ],\n  \n  sales_actions: [\n    `Follow up with ${data.prospect.id} in ${data.buying_intelligence.urgency_level > 7 ? '24 hours' : '1 week'}`,\n    `Send targeted content for ${data.buying_intelligence.stage} stage`,\n    `Address specific concerns: ${data.pain_points.categories}`\n  ]\n};\n\n// Weekly aggregation trigger check\nconst shouldTriggerWeeklyAnalysis = new Date().getDay() === 1; // Monday\n\nreturn {\n  prospect_summary: {\n    id: data.prospect.id,\n    stage: data.buying_intelligence.stage,\n    urgency: data.buying_intelligence.urgency_level,\n    primary_pain: data.pain_points.primary_concerns[0] || 'Unknown'\n  },\n  actionable_insights: actionableInsights,\n  trend_data: trendInsights,\n  trigger_weekly_analysis: shouldTriggerWeeklyAnalysis,\n  next_steps: {\n    immediate: data.recommended_actions.immediate_followup,\n    content_needed: data.recommended_actions.content_suggestions,\n    positioning_updates: data.recommended_actions.positioning_adjustments\n  }\n};"
+      },
+      "id": "generate-sales-insights",
+      "name": "Generate Sales Insights",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1340, 500]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.trigger_weekly_analysis }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equal"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "weekly-analysis-trigger",
+      "name": "Weekly Analysis Trigger",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3,
+      "position": [1560, 500]
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/YOUR_USERNAME/Sales-Intelligence-KB/contents/pain-points/trending/weekly-analysis-{{ $now.format('YYYY-MM-DD') }}.json",
+        "method": "PUT",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "token {{ $credentials.githubApi.token }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "Weekly pain point trend analysis"
+            },
+            {
+              "name": "content",
+              "value": "={{ Buffer.from(JSON.stringify($json.trend_data, null, 2)).toString('base64') }}"
+            }
+          ]
+        }
+      },
+      "id": "store-weekly-trends",
+      "name": "Store Weekly Trends",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1780, 400]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ \n  success: true, \n  interaction_id: $('pain-point-preprocessor').first().json.interaction_id,\n  github_stored: true,\n  airtable_backup: true,\n  insights_generated: true,\n  urgency_level: $('github-data-formatter').first().json.analysis_summary.urgency_score,\n  recommended_actions: $('generate-sales-insights').first().json.next_steps.immediate\n}) }}"
+      },
+      "id": "response-webhook",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1780, 300]
+    }
+  ],
+  "connections": {
+    "prospect-interaction-webhook": {
+      "main": [
+        [
+          {
+            "node": "pain-point-preprocessor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "pain-point-preprocessor": {
+      "main": [
+        [
+          {
+            "node": "sales-guru-analyzer",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "sales-guru-analyzer": {
+      "main": [
+        [
+          {
+            "node": "github-data-formatter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "github-data-formatter": {
+      "main": [
+        [
+          {
+            "node": "store-to-github",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "backup-to-airtable",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "high-urgency-check",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "generate-sales-insights",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "high-urgency-check": {
+      "main": [
+        [
+          {
+            "node": "urgent-sales-alert",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "generate-sales-insights": {
+      "main": [
+        [
+          {
+            "node": "weekly-analysis-trigger",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "response-webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "weekly-analysis-trigger": {
+      "main": [
+        [
+          {
+            "node": "store-weekly-trends",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "store-weekly-trends": {
+      "main": [
+        [
+          {
+            "node": "response-webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "urgent-sales-alert": {
+      "main": [
+        [
+          {
+            "node": "response-webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "backup-to-airtable": {
+      "main": [
+        [
+          {
+            "node": "response-webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "store-to-github": {
+      "main": [
+        [
+          {
+            "node": "response-webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": {},
+  "tags": ["sales-intelligence", "pain-points", "automation"],
+  "triggerCount": 1,
+  "updatedAt": "2025-01-16T00:00:00.000Z",
+  "versionId": "2.0.0",
+  "notes": {
+    "setup_instructions": [
+      "1. Create GitHub repository 'Sales-Intelligence-KB' with proper folder structure",
+      "2. Set up GitHub API credentials in N8N",
+      "3. Configure Airtable base with 'Pain Point Intelligence' table",
+      "4. Set up Discord bot with sales channel access",
+      "5. Configure OpenAI API credentials",
+      "6. Import your sales guru knowledge from Obsidian to GitHub repo",
+      "7. Test webhook with sample prospect interaction data"
+    ],
+    "integration_points": [
+      "Webhook URL for CRM/marketing automation platforms",
+      "GitHub for structured sales intelligence storage",
+      "Airtable for backup and manual review capabilities",
+      "Discord for real-time sales team notifications",
+      "OpenAI for advanced pain point analysis using sales frameworks"
+    ],
+    "management_outside_n8n": [
+      "GitHub repository structure and permissions management",
+      "Airtable database schema updates and access control",
+      "Discord server administration and bot permissions",
+      "Sales team training on using insights and recommendations",
+      "Regular review and updating of sales guru analysis prompts",
+      "Weekly/monthly analysis of trend data for strategic insights"
+    ]
+  }
+} [240, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Enhanced pain point extraction using sales guru frameworks\nconst interaction = $json;\nconst timestamp = new Date().toISOString();\n\n// April Dunford's positioning framework analysis\nconst duffordAnalysis = {\n  competitiveAlternatives: [],\n  uniqueAttributes: [],\n  valueConcerns: [],\n  targetMarketFit: '',\n  marketCategory: '',\n  trendRelevance: []\n};\n\n// Extract conversation text\nconst conversationText = interaction.message || interaction.email_body || interaction.form_response || '';\n\n// Identify pain point categories\nconst painPointCategories = {\n  automation_complexity: 0,\n  cost_justification: 0,\n  technical_barriers: 0,\n  time_constraints: 0,\n  change_management: 0,\n  integration_challenges: 0,\n  competitive_pressure: 0,\n  skill_gap: 0\n};\n\n// Emotional indicators\nconst emotionalIndicators = {\n  frustration_level: 0, // 1-10 scale\n  urgency_level: 0,     // 1-10 scale\n  confidence_level: 0,  // 1-10 scale\n  budget_sensitivity: 0 // 1-10 scale\n};\n\n// Prepare for AI analysis\nconst analysisPrompt = `\nAnalyze this prospect interaction for pain points using the April Dunford positioning framework:\n\nConversation: \"${conversationText}\"\n\nExtract:\n1. COMPETITIVE ALTERNATIVES: What are they currently using or considering instead?\n2. UNIQUE ATTRIBUTES: What capabilities do they wish they had?\n3. VALUE CONCERNS: What benefits are they skeptical about?\n4. TARGET MARKET FIT: Do they see themselves as an ideal customer?\n5. MARKET CATEGORY: How do they categorize this type of solution?\n6. TREND RELEVANCE: What current trends are driving their interest?\n\nAlso identify:\n- Specific pain point quotes (exact language used)\n- Emotional indicators (frustration, urgency, confidence)\n- Stage in buying journey (awareness, consideration, decision)\n- Primary objections or concerns\n- Budget/timeline constraints mentioned\n\nOutput as structured JSON.\n`;\n\nreturn {\n  interaction_id: `${timestamp}_${Math.random().toString(36).substr(2, 9)}`,\n  timestamp: timestamp,\n  source: interaction.source || 'unknown',\n  prospect_id: interaction.prospect_id || 'anonymous',\n  conversation_text: conversationText,\n  analysis_prompt: analysisPrompt,\n  initial_categories: painPointCategories,\n  emotional_baseline: emotionalIndicators,\n  positioning_framework: duffordAnalysis,\n  metadata: {\n    platform: interaction.platform,\n    conversation_length: conversationText.length,\n    interaction_type: interaction.type\n  }\n};"
+      },
+      "id": "pain-point-preprocessor",
+      "name": "Pain Point Preprocessor",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o",
+        "messages": {\n          \"messageValues\": [\n            {\n              \"message\": \"={{ $json.analysis_prompt }}\"\n            }\n          ]\n        },\n        \"options\": {\n          \"temperature\": 0.3,\n          \"maxTokens\": 2000\n        }\n      },\n      \"id\": \"sales-guru-analyzer\",\n      \"name\": \"Sales Guru AI Analyzer\",\n      \"type\": \"@n8n/n8n-nodes-langchain.lmChatOpenAi\",\n      \"typeVersion\": 1.2,\n      \"position\": [680, 300]\n    },\n    {\n      \"parameters\": {\n        \"jsCode\": \"// Process AI analysis and structure for GitHub storage\\nconst originalData = $('pain-point-preprocessor').first().json;\\nconst aiAnalysis = $json.text || $json.response;\\n\\n// Parse AI response (assuming JSON format)\\nlet parsedAnalysis;\\ntry {\\n  parsedAnalysis = JSON.parse(aiAnalysis);\\n} catch (e) {\\n  // Fallback: create structured data from text response\\n  parsedAnalysis = {\\n    competitive_alternatives: aiAnalysis.match(/competitive.*?alternatives[:\\\\s]*(.*?)(?=\\\\n|unique)/i)?.[1] || '',\\n    unique_attributes: aiAnalysis.match(/unique.*?attributes[:\\\\s]*(.*?)(?=\\\\n|value)/i)?.[1] || '',\\n    value_concerns: aiAnalysis.match(/value.*?concerns[:\\\\s]*(.*?)(?=\\\\n|target)/i)?.[1] || '',\\n    pain_points: [],\\n    emotional_indicators: {},\\n    buying_stage: 'unknown'\\n  };\\n}\\n\\n// Create GitHub-ready data structure\\nconst githubData = {\\n  // File metadata\\n  file_info: {\\n    filename: `${originalData.timestamp.split('T')[0]}-${originalData.source}-${originalData.interaction_id}.json`,\\n    path: 'pain-points/raw-extractions/',\\n    timestamp: originalData.timestamp\\n  },\\n  \\n  // Prospect information\\n  prospect: {\\n    id: originalData.prospect_id,\\n    interaction_id: originalData.interaction_id,\\n    source: originalData.source,\\n    platform: originalData.metadata.platform\\n  },\\n  \\n  // Raw conversation data\\n  conversation: {\\n    text: originalData.conversation_text,\\n    length: originalData.metadata.conversation_length,\\n    type: originalData.metadata.interaction_type\\n  },\\n  \\n  // April Dunford positioning analysis\\n  positioning_analysis: {\\n    competitive_alternatives: parsedAnalysis.competitive_alternatives || [],\\n    unique_attributes_desired: parsedAnalysis.unique_attributes || [],\\n    value_concerns: parsedAnalysis.value_concerns || [],\\n    target_market_fit: parsedAnalysis.target_market_fit || 'unknown',\\n    market_category_perception: parsedAnalysis.market_category || 'unspecified',\\n    trend_relevance: parsedAnalysis.trend_relevance || []\\n  },\\n  \\n  // Pain point categorization\\n  pain_points: {\\n    primary_concerns: parsedAnalysis.pain_points || [],\\n    categories: {\\n      automation_complexity: parsedAnalysis.automation_complexity_score || 0,\\n      cost_justification: parsedAnalysis.cost_justification_score || 0,\\n      technical_barriers: parsedAnalysis.technical_barriers_score || 0,\\n      time_constraints: parsedAnalysis.time_constraints_score || 0,\\n      change_management: parsedAnalysis.change_management_score || 0,\\n      integration_challenges: parsedAnalysis.integration_challenges_score || 0\\n    },\\n    quotes: parsedAnalysis.exact_quotes || []\\n  },\\n  \\n  // Emotional and buying signals\\n  buying_intelligence: {\\n    stage: parsedAnalysis.buying_stage || 'awareness',\\n    urgency_level: parsedAnalysis.urgency_level || 1,\\n    budget_indicators: parsedAnalysis.budget_indicators || [],\\n    decision_criteria: parsedAnalysis.decision_criteria || [],\\n    objections: parsedAnalysis.objections || []\\n  },\\n  \\n  // Sales action recommendations\\n  recommended_actions: {\\n    immediate_followup: parsedAnalysis.immediate_actions || [],\\n    positioning_adjustments: parsedAnalysis.positioning_recommendations || [],\\n    content_suggestions: parsedAnalysis.content_recommendations || [],\\n    objection_handling: parsedAnalysis.objection_responses || []\\n  }\\n};\\n\\n// Also prepare for Airtable backup\\nconst airtableData = {\\n  'Interaction ID': originalData.interaction_id,\\n  'Timestamp': originalData.timestamp,\\n  'Prospect ID': originalData.prospect_id,\\n  'Source': originalData.source,\\n  'Primary Pain Points': (parsedAnalysis.pain_points || []).join(', '),\\n  'Buying Stage': parsedAnalysis.buying_stage || 'unknown',\\n  'Urgency Level': parsedAnalysis.urgency_level || 1,\\n  'Competitive Alternative': (parsedAnalysis.competitive_alternatives || []).join(', '),\\n  'Value Concerns': (parsedAnalysis.value_concerns || []).join(', '),\\n  'Recommended Actions': (parsedAnalysis.immediate_actions || []).join(', ')\\n};\\n\\nreturn {\\n  github_data: githubData,\\n  airtable_data: airtableData,\\n  github_filename: githubData.file_info.filename,\\n  analysis_summary: {\\n    pain_point_count: (parsedAnalysis.pain_points || []).length,\\n    urgency_score: parsedAnalysis.urgency_level || 1,\\n    stage: parsedAnalysis.buying_stage || 'unknown'\\n  }\\n};\"\n      },\n      \"id\": \"github-data-formatter\",\n      \"name\": \"GitHub Data Formatter\",\n      \"type\": \"n8n-nodes-base.code\",\n      \"typeVersion\": 2,\n      \"position\": [900, 300]\n    },\n    {\n      \"parameters\": {\n        \"url\": \"https://api.github.com/repos/YOUR_USERNAME/Sales-Intelligence-KB/contents/pain-points/raw-extractions/{{ $json.github_filename }}\",\n        \"method\": \"PUT\",\n        \"sendHeaders\": true,\n        \"headerParameters\": {\n          \"parameters\": [\n            {\n              \"name\": \"Authorization\",\n              \"value\": \"token {{ $credentials.githubApi.token }}\"\n            },\n            {\n              \"name\": \"Content-Type\",\n              \"value\": \"application/json\"\n            }\n          ]\n        },\n        \"sendBody\": true,\n        \"bodyParameters\": {\n          \"parameters\": [\n            {\n              \"name\": \"message\",\n              \"value\": \"Add pain point analysis: {{ $json.github_filename }}\"\n            },\n            {\n              \"name\": \"content\",\n              \"value\": \"={{ Buffer.from(JSON.stringify($json.github_data, null, 2)).toString('base64') }}\"\n            }\n          ]\n        }\n      },\n      \"id\": \"store-to-github\",\n      \"name\": \"Store to GitHub Knowledge Base\",\n      \"type\": \"n8n-nodes-base.httpRequest\",\n      \"typeVersion\": 4,\n      \"position\": [1120, 200]\n    },\n    {\n      \"parameters\": {\n        \"table\": {\n          \"__rl\": true,\n          \"mode\": \"list\",\n          \"value\": \"Pain Point Intelligence\"\n        },\n        \"columns\": {\n          \"value\": \"={{ $json.airtable_data }}\",\n          \"schema\": [\n            {\n              \"id\": \"Interaction ID\",\n              \"type\": \"string\",\n              \"display\": true\n            },\n            {\n              \"id\": \"Timestamp\",\n              \"type\": \"dateTime\",\n              \"display\": true\n            },\n            {\n              \"id\": \"Prospect ID\",\n              \"type\": \"string\",\n              \"display\": true\n            },\n            {\n              \"id\": \"Primary Pain Points\",\n              \"type\": \"string\",\n              \"display\": true\n            },\n            {\n              \"id\": \"Buying Stage\",\n              \"type\": \"string\",\n              \"display\": true\n            },\n            {\n              \"id\": \"Urgency Level\",\n              \"type\": \"number\",\n              \"display\": true\n            }\n          ]\n        }\n      },\n      \"id\": \"backup-to-airtable\",\n      \"name\": \"Backup to Airtable\",\n      \"type\": \"n8n-nodes-base.airtable\",\n      \"typeVersion\": 2,\n      \"position\": [1120, 400]\n    },\n    {\n      \"parameters\": {\n        \"conditions\": {\n          \"options\": {\n            \"caseSensitive\": true,\n            \"leftValue\": \"\",\n            \"typeValidation\": \"strict\"\n          },\n          \"conditions\": [\n            {\n              \"leftValue\": \"={{ $json.analysis_summary.urgency_score }}\",\n              \"rightValue\": 7,\n              \"operator\": {\n                \"type\": \"number\",\n                \"operation\": \"gte\"\n              }\n            }\n          ],\n          \"combinator\": \"and\"\n        }\n      },\n      \"id\": \"high-urgency-check\",\n      \"name\": \"High Urgency Check\",\n      \"type\": \"n8n-nodes-base.switch\",\n      \"typeVersion\": 3,\n      \"position\": [1340, 300]\n    },\n    {\n      \"parameters\": {\n        \"url\": \"https://discord.com/api/v10/channels/{{ $credentials.discord.sales_channel_id }}/messages\",\n        \"sendHeaders\": true,\n        \"headerParameters\": {\n          \"parameters\": [\n            {\n              \"name\": \"Authorization\",\n              \"value\": \"Bot {{ $credentials.discord.bot_token }}\"\n            },\n            {\n              \"name\": \"Content-Type\",\n              \"value\": \"application/json\"\n            }\n          ]\n        },\n        \"sendBody\": true,\n        \"bodyParameters\": {\n          \"parameters\": [\n            {\n              \"name\": \"content\",\n              \"value\": \"🚨 **High-Urgency Prospect Alert** 🚨\\\\n\\\\n📋 **Interaction ID:** {{ $json.github_data.prospect.interaction_id }}\\\\n👤 **Prospect:** {{ $json.github_data.prospect.id }}\\\\n📅 **Stage:** {{ $json.github_data.buying_intelligence.stage }}\\\\n⚡ **Urgency:** {{ $json.github_data.buying_intelligence.urgency_level }}/10\\\\n\\\\n🎯 **Primary Pain Points:**\\\\n{{ $json.github_data.pain_points.primary_concerns.join('\\\\n• ') }}\\\\n\\\\n🏃‍♂️ **Recommended Actions:**\\\\n{{ $json.github_data.recommended_actions.immediate_followup.join('\\\\n• ') }}\\\\n\\\\n📁 **GitHub File:** `{{ $json.github_filename }}`\"\n            }\n          ]\n        }\n      },\n      \"id\": \"urgent-sales-alert\",\n      \"name\": \"Urgent Sales Alert\",\n      \"type\": \"n8n-nodes-base.httpRequest\",\n      \"typeVersion\": 4,\n      \"position\":
