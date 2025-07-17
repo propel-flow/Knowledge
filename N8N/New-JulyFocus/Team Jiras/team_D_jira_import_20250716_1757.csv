@@ -1,0 +1,357 @@
+Summary,Issue Type,Priority,Assignee,Description,Labels,Story Points,Epic Link,Team,Working On
+Set up GitHub Sales Intelligence Knowledge Base repository,Story,Highest,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 5
+
+---
+
+Create and structure GitHub repository to store pain point data, sales guru insights, and dynamic artifacts. Convert existing Obsidian knowledge base into API-accessible format.
+
+
+**Technical Notes**: **Management Outside N8N:** GitHub repository permissions, file structure design, API access tokens
+
+**Acceptance Criteria**:
+- GitHub repository 'Sales-Intelligence-KB' created with proper folder structure
+- Pain point data schema defined and documented
+- Sales guru knowledge from Obsidian converted to structured JSON format
+- API access configured for N8N workflow integration
+- Backup integration with Airtable configured",github;knowledge-base;data-structure;team-d;CHANGE_TO_YOUR_NAME,5,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Build Sales Guru Knowledge API integration,Story,High,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 9
+
+---
+
+Create N8N workflow components to apply sales guru insights (April Dunford, mentors, CMO strategies) to pain point analysis and response generation.
+
+
+**Technical Notes**: **Management Outside N8N:** Sales framework prompt engineering, knowledge base maintenance, mentor insight updates
+
+**Acceptance Criteria**:
+- April Dunford positioning framework applied to all pain point analysis
+- Mentor insights (Andrew Grealy, Nick Stuart, Terry C) integrated into recommendations
+- CMO strategy frameworks applied to message optimization
+- Sales guru knowledge API endpoints created for N8N access
+- Knowledge base updates trigger workflow improvements",api-integration;sales-frameworks;knowledge-application;team-d;CHANGE_TO_YOUR_NAME,9,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Create Discord sales intelligence notification system,Story,Medium,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 6
+
+---
+
+Build Discord bot integration to provide real-time sales intelligence alerts, pain point summaries, and recommended actions to sales team channels.
+
+
+**Technical Notes**: **Management Outside N8N:** Discord bot permissions, channel management, message formatting and rate limits
+
+**Acceptance Criteria**:
+- Discord bot posts pain point alerts to appropriate team channels
+- High-urgency prospects trigger immediate sales team notifications
+- Weekly pain point trend summaries automatically generated
+- Sales action recommendations provided with each alert
+- Team members can interact with alerts for task creation",discord;notifications;sales-alerts;team-d;CHANGE_TO_YOUR_NAME,6,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Create prospect pain point dashboard and analytics,Story,Medium,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 9
+
+---
+
+Build analytics dashboard to visualize pain point trends, prospect intelligence, and sales performance correlations for strategic decision making.
+
+
+**Technical Notes**: **Management Outside N8N:** Dashboard hosting platform, data visualization tools, user access management
+
+**Acceptance Criteria**:
+- Real-time dashboard showing pain point trends and distributions
+- Prospect intelligence metrics and conversion correlations displayed
+- Sales team performance tracking by pain point category
+- Automated weekly/monthly intelligence reports generated
+- Executive summary views for strategic decision making",dashboard;analytics;visualization;team-d;CHANGE_TO_YOUR_NAME,9,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Design GitHub repository folder structure and data schemas,Sub-task,Medium,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 2
+
+---
+
+Create detailed folder structure and JSON schemas for pain point data, sales guru insights, and performance tracking
+
+
+**Acceptance Criteria**:
+- Folder structure documented and approved
+- JSON schemas defined for all data types
+- API access patterns documented
+- Backup strategy with Airtable designed",design;data-structure;team-d;CHANGE_TO_YOUR_NAME,2,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Convert Obsidian sales guru content to structured JSON,Sub-task,Medium,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 3
+
+---
+
+Extract and structure April Dunford positioning framework, mentor insights, and CMO strategies from Obsidian vault
+
+
+**Acceptance Criteria**:
+- April Dunford framework converted to API-accessible format
+- Mentor insights structured with applicable scenarios
+- CMO strategies organized by use case and pain point category
+- All JSON files validate against defined schemas",data-conversion;knowledge-extraction;team-d;CHANGE_TO_YOUR_NAME,3,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Design Discord bot message templates and channel routing,Sub-task,Medium,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 2
+
+---
+
+Create message templates for different alert types and design channel routing logic for sales team notifications
+
+
+**Acceptance Criteria**:
+- Message templates created for all alert types
+- Channel routing logic documented and implemented
+- Urgency level formatting defined
+- Team interaction patterns designed",discord;templates;routing;team-d;CHANGE_TO_YOUR_NAME,2,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Design dashboard mockups and data visualization requirements,Sub-task,Medium,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 2
+
+---
+
+Create dashboard mockups and define data visualization requirements for pain point analytics and sales intelligence
+
+
+**Acceptance Criteria**:
+- Dashboard mockups created and approved
+- Data visualization requirements documented
+- User access levels and permissions defined
+- Reporting cadence and automation requirements specified",design;dashboard;mockups;team-d;CHANGE_TO_YOUR_NAME,2,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Epic: Analytics & Coordination,Epic,High,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: TBD
+
+---
+
+Implement Discord coordination, analytics dashboard, and performance tracking
+",analytics;discord;coordination;team-a;CHANGE_TO_YOUR_NAME,0,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Discord server setup with automated task management,Story,Highest,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 9
+
+---
+
+Create Discord server for intern coordination and implement bot integration with existing workflows. Reference `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/` for webhook automation patterns.
+
+
+**Technical Notes**: **Management Outside N8N:** Discord bot hosting, permissions management, voice channel moderation, GitHub integration for commit notifications
+
+**Acceptance Criteria**:
+- Discord server configured with team channels and automation bots
+- Task assignment commands integrated with Jira API
+- Daily standup automation and progress tracking implemented
+- GitHub commit notifications routing to appropriate team channels",discord;team-coordination;bot-development;team-d;CHANGE_TO_YOUR_NAME,9,N8N-2,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Claude for Work integration with Discord notifications,Story,High,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 7
+
+---
+
+Integrate existing Claude for Work automation from `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/claude_for_work_test_workflow.json` with Discord for team coordination.
+
+
+**Technical Notes**: **Management Outside N8N:** Claude for Work browser automation service hosting, Discord webhook management, image processing pipeline
+
+**Acceptance Criteria**:
+- Claude for Work analysis results automatically posted to Discord
+- Analysis results trigger appropriate Jira task creation
+- Team members notified via Discord when analysis requires action
+- Integration handles error scenarios and retry logic",claude-integration;discord;automation;team-d;CHANGE_TO_YOUR_NAME,7,N8N-4,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+N8N workflow performance analytics dashboard,Story,Medium,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 10
+
+---
+
+Build analytics system to track workflow performance across all team activities. Potentially leverage open source projects like Grafana + N8N metrics or custom dashboard solutions.
+
+
+**Technical Notes**: **Management Outside N8N:** Database setup for metrics storage, dashboard hosting (Grafana/custom), N8N API monitoring
+
+**Acceptance Criteria**:
+- Real-time dashboard showing workflow execution statistics
+- Error rate monitoring and alerting system implemented
+- Team productivity metrics tracked and visualized
+- Automated weekly reports generated and distributed",analytics;dashboard;monitoring;team-d;CHANGE_TO_YOUR_NAME,10,N8N-4,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Multi-platform outreach orchestration workflow,Story,High,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 12
+
+---
+
+Create master workflow to coordinate outreach across LinkedIn, Facebook, Reddit, and Discord. Build upon existing universal webhook system from `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/universal_marketing_research_webhook.json`.
+
+
+**Technical Notes**: **Management Outside N8N:** Platform API rate limiting, account rotation strategy, content approval workflows
+
+**Acceptance Criteria**:
+- Single workflow coordinates posting across all platforms
+- Content automatically adapted for each platform's format requirements
+- Engagement tracking and response automation implemented
+- A/B testing framework for message optimization",orchestration;multi-platform;outreach;team-d;CHANGE_TO_YOUR_NAME,12,N8N-4,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Intern task assignment automation via Discord,Story,High,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 9
+
+---
+
+Build Discord bot that automatically assigns tasks based on GitHub activity, Jira updates, and team capacity. Integrate with existing automation workflows for seamless task distribution.
+
+
+**Technical Notes**: **Management Outside N8N:** Discord bot hosting and permissions, GitHub webhook configuration, capacity tracking algorithms
+
+**Acceptance Criteria**:
+- Discord commands for task creation and assignment implemented
+- Automatic task routing based on team member skills and availability
+- Integration with Jira for task status synchronization
+- Daily/weekly workload balancing automation",discord-bot;task-automation;team-management;team-d;CHANGE_TO_YOUR_NAME,9,N8N-4,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Create test Discord server for development,Sub-task,Medium,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 1
+
+---
+
+Set up development Discord server with appropriate channels and permissions for testing automation workflows
+",setup;discord;team-d;CHANGE_TO_YOUR_NAME,1,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Test Claude for Work automation service,Sub-task,Medium,team-d@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: D - Analytics (team-d@company.com)
+**Story Points**: 3
+
+---
+
+Verify that existing Claude for Work automation service is functional and document any setup requirements
+",testing;claude-integration;team-d;CHANGE_TO_YOUR_NAME,3,,D - Analytics,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"

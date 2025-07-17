@@ -1,0 +1,112 @@
+Summary,Issue Type,Priority,Assignee,Description,Labels,Story Points,Epic Link,Team,Working On
+Build competitive intelligence tracking system,Story,Medium,team-b@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: B - CMS Research (team-b@company.com)
+**Story Points**: 8
+
+---
+
+Create workflow to track competitor mentions in pain point data, analyze competitive positioning, and generate competitive intelligence reports.
+
+
+**Technical Notes**: **Management Outside N8N:** Competitor database maintenance, market research data collection, trend analysis reporting
+
+**Acceptance Criteria**:
+- Competitor mentions automatically detected and tracked in pain point data
+- Competitive alternatives analyzed using April Dunford framework
+- Monthly competitive intelligence reports generated
+- Positioning opportunities identified based on competitor gaps
+- Sales team battlecards updated with latest competitive insights",competitive-intelligence;market-analysis;positioning;team-b;CHANGE_TO_YOUR_NAME,8,,B - CMS Research,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Create competitor detection and analysis algorithms,Sub-task,Medium,team-b@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: B - CMS Research (team-b@company.com)
+**Story Points**: 3
+
+---
+
+Develop algorithms to detect competitor mentions and analyze competitive positioning in pain point conversations
+
+
+**Acceptance Criteria**:
+- Competitor mention detection working with >90% accuracy
+- Competitive alternative analysis implemented
+- Positioning gap identification automated
+- Competitor database integration functional",competitive-analysis;algorithms;team-b;CHANGE_TO_YOUR_NAME,3,,B - CMS Research,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Epic: CMS Market Research,Epic,Medium,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: TBD
+
+---
+
+Research content management system integrations and competitive positioning
+",research;cms;competition;team-a;CHANGE_TO_YOUR_NAME,0,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+"Analyze competitor integrations (Heretto, Smartling, RWS)",Story,Medium,team-b@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: B - CMS Research (team-b@company.com)
+**Story Points**: 8
+
+---
+
+Research existing CMS integrations and identify N8N workflow opportunities. Focus on documentation workflows that could be adapted from existing templates in `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/` collection.
+
+
+**Technical Notes**: **Management Outside N8N:** CMS vendor API documentation review, pricing model analysis, customer interview scheduling
+
+**Acceptance Criteria**:
+- Competitive analysis report comparing 10+ CMS platforms
+- Gap analysis identifying N8N workflow opportunities
+- Technical feasibility assessment for top 3 integration targets
+- Customer persona definitions for CMS workflow users",competitive-analysis;cms;documentation;team-b;CHANGE_TO_YOUR_NAME,8,N8N-3,B - CMS Research,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+WordPress automation workflow catalog,Story,Medium,team-b@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: B - CMS Research (team-b@company.com)
+**Story Points**: 6
+
+---
+
+Catalog and test WordPress-related workflows from local collection. Identify workflows like `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0832-wordpress-ai-content-generator.json` for potential marketplace plugins.
+
+
+**Technical Notes**: **Management Outside N8N:** WordPress test site setup, plugin development environment, marketplace research
+
+**Acceptance Criteria**:
+- 20+ WordPress workflows tested and documented from local collection
+- Top 5 workflows identified for plugin development priority
+- Technical requirements documented for each workflow conversion
+- WordPress marketplace competitor analysis completed",wordpress;workflow-catalog;testing;team-b;CHANGE_TO_YOUR_NAME,6,N8N-3,B - CMS Research,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"

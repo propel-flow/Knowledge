@@ -1,0 +1,264 @@
+Summary,Issue Type,Priority,Assignee,Description,Labels,Story Points,Epic Link,Team,Working On
+Build Pain Point Extraction workflow from prospect feedback,Story,Highest,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 8
+
+---
+
+Enhance existing workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0290-feedback-openai-google.json` to extract and categorize specific pain points using April Dunford positioning framework.
+
+
+**Technical Notes**: **Management Outside N8N:** OpenAI API usage monitoring, prompt engineering and testing, feedback form design
+
+**Acceptance Criteria**:
+- Workflow extracts pain points from form submissions using GPT-4
+- Pain points categorized using April Dunford's 5 positioning components
+- Emotional indicators (frustration, urgency) detected and scored
+- Results stored in GitHub repository with proper structure
+- Airtable backup created for manual review",n8n-workflow;ai-analysis;feedback-processing;team-a;CHANGE_TO_YOUR_NAME,8,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Enhance Email Auto-Responder with pain point extraction,Story,High,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 10
+
+---
+
+Modify existing workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0821-email-ai-auto-responder.json` to extract pain points from email conversations and generate sales-intelligent responses.
+
+
+**Technical Notes**: **Management Outside N8N:** Email provider API limits, vector database management, conversation context tracking
+
+**Acceptance Criteria**:
+- Email conversations analyzed for pain points before generating responses
+- Responses incorporate April Dunford positioning principles
+- Pain points extracted from email thread context and stored
+- Sales guru knowledge applied to response generation
+- Conversation tracking maintains context across email threads",email-automation;ai-analysis;sales-intelligence;team-a;CHANGE_TO_YOUR_NAME,10,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Integrate pain point intelligence with CRM lead scoring,Story,Medium,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 7
+
+---
+
+Enhance existing CRM lead workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0010-crm-lead-batchdata-calification.json` to include pain point analysis in lead qualification scoring.
+
+
+**Technical Notes**: **Management Outside N8N:** CRM API integration, scoring algorithm updates, sales process training
+
+**Acceptance Criteria**:
+- Pain point data integrated into lead scoring algorithm
+- Conversation quality assessment added to qualification criteria
+- Sales readiness scoring based on detected pain point urgency
+- CRM records updated with pain point intelligence
+- Lead routing enhanced based on pain point categories",crm-integration;lead-scoring;qualification;team-a;CHANGE_TO_YOUR_NAME,7,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Create pain point extraction prompts using sales frameworks,Sub-task,Medium,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 3
+
+---
+
+Design and test AI prompts that apply April Dunford positioning framework to extract categorized pain points from prospect interactions
+
+
+**Acceptance Criteria**:
+- Prompts extract all 5 April Dunford positioning components
+- Pain point categories defined and tested
+- Emotional indicator detection prompts created
+- Prompt accuracy >80% on test data",prompt-engineering;ai-prompts;team-a;CHANGE_TO_YOUR_NAME,3,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Test enhanced feedback workflow with sample data,Sub-task,Medium,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 2
+
+---
+
+Create test dataset and validate pain point extraction accuracy and GitHub storage functionality
+
+
+**Acceptance Criteria**:
+- 20 sample feedback submissions processed successfully
+- Pain point categorization accuracy measured and documented
+- GitHub storage verified working correctly
+- Airtable backup tested and functional",testing;validation;team-a;CHANGE_TO_YOUR_NAME,2,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Epic: Jira Marketplace Development,Epic,Highest,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: TBD
+
+---
+
+Convert priority N8N workflows into Jira marketplace plugins
+",marketplace;development;plugins;team-a;CHANGE_TO_YOUR_NAME,0,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Convert Jira-Discord webhook integration workflow,Story,Highest,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 8
+
+---
+
+Modify local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0440-jira_telegram_webhook.json` to work with Discord instead of Telegram for team coordination. This workflow currently handles Jira webhooks and routes them to Telegram - needs adaptation for Discord API integration.
+
+
+**Technical Notes**: **Management Outside N8N:** Discord bot permissions and server setup required outside N8N
+
+**Acceptance Criteria**:
+- Discord webhook receives Jira ticket updates from N8N workflow
+- Formatted messages posted to appropriate Discord channels with proper formatting
+- Team members can interact with tickets via Discord reactions/commands
+- Integration tested with sample tickets from development Jira instance",n8n-workflow;discord;jira-integration;team-a;CHANGE_TO_YOUR_NAME,8,N8N-1,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Build Splunk-Jira automation plugin from existing workflow,Story,Highest,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 13
+
+---
+
+Convert local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/1240-splunk-jira-ticket-automation.json` into a Jira marketplace plugin for enterprise logging integration. Original workflow automates ticket creation from Splunk alerts.
+
+
+**Technical Notes**: **Management Outside N8N:** Splunk API credentials, Jira plugin framework (Atlassian Connect/Forge), marketplace submission process
+
+**Acceptance Criteria**:
+- Plugin automatically creates Jira tickets from Splunk alerts
+- Alert severity mapping to Jira priority levels implemented
+- Compatible with both Jira Cloud and Server instances
+- Passes Atlassian marketplace technical review requirements",plugin-development;splunk-integration;automation;team-a;CHANGE_TO_YOUR_NAME,13,N8N-1,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+WordPress-Jira AI content workflow plugin,Story,High,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 10
+
+---
+
+Adapt local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0883-n8n-ai-categorize-wordpress.json` for Jira marketplace as content management integration. Original workflow uses AI to categorize WordPress content.
+
+
+**Technical Notes**: **Management Outside N8N:** WordPress plugin development, OpenAI/Claude API management, dual marketplace submissions (WordPress & Jira)
+
+**Acceptance Criteria**:
+- WordPress posts automatically create Jira tickets for content review
+- AI categorizes content and assigns to appropriate Jira teams
+- Editorial workflow integrated with Jira approval process
+- Plugin published to both WordPress and Jira marketplaces",wordpress;content-management;ai;team-a;CHANGE_TO_YOUR_NAME,10,N8N-1,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Email AI auto-responder Jira integration,Story,High,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 11
+
+---
+
+Convert local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0821-email-ai-auto-responder.json` into Jira plugin for customer support automation. Original workflow handles email processing with AI responses.
+
+
+**Technical Notes**: **Management Outside N8N:** Email provider APIs (Gmail, Outlook), AI model management, GDPR compliance for email processing
+
+**Acceptance Criteria**:
+- Incoming emails automatically create Jira tickets
+- AI generates draft responses based on ticket context
+- Email threading maintained in Jira comments
+- Support for multiple email providers and AI models",email-automation;ai-integration;customer-support;team-a;CHANGE_TO_YOUR_NAME,11,N8N-1,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Setup development environment for N8N workflow modification,Sub-task,Medium,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 2
+
+---
+
+Install N8N locally and import existing workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0440-jira_telegram_webhook.json` for modification
+",setup;development-environment;team-a;CHANGE_TO_YOUR_NAME,2,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
+Research Discord API integration patterns,Sub-task,Medium,team-a@company.com,"
+## 🔥 ACTION REQUIRED 🔥
+
+**WHEN YOU TAKE THIS TICKET:**
+1. Remove the ""CHANGE_TO_YOUR_NAME"" label
+2. Add your name label: `member-yourname` (e.g., `member-sarah`)
+3. Update ""Working On"" field: Add your full name
+4. Add comment: ""Taking this - [Your Name]""
+
+**Team**: A - Jira Development (team-a@company.com)
+**Story Points**: 3
+
+---
+
+Study Discord webhook API and identify required changes to replace Telegram integration in existing workflow
+",research;discord-api;team-a;CHANGE_TO_YOUR_NAME,3,,A - Jira Development,"Add your name when taking ownership (e.g., 'Working on this - Sarah')"
