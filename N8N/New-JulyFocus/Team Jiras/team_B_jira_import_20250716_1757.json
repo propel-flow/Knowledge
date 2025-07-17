@@ -1,0 +1,152 @@
+{
+  "issues": [
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Build competitive intelligence tracking system",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: B - CMS Research (team-b@company.com)\n**Story Points**: 8\n\n---\n\nCreate workflow to track competitor mentions in pain point data, analyze competitive positioning, and generate competitive intelligence reports.\n\n\n**Technical Notes**: **Management Outside N8N:** Competitor database maintenance, market research data collection, trend analysis reporting\n\n**Acceptance Criteria**:\n- Competitor mentions automatically detected and tracked in pain point data\n- Competitive alternatives analyzed using April Dunford framework\n- Monthly competitive intelligence reports generated\n- Positioning opportunities identified based on competitor gaps\n- Sales team battlecards updated with latest competitive insights",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "competitive-intelligence",
+          "market-analysis",
+          "positioning",
+          "team-b",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-b@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 8,
+        "customfield_10002": "B - CMS Research"
+      },
+      "key": "N8N-8"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Create competitor detection and analysis algorithms",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: B - CMS Research (team-b@company.com)\n**Story Points**: 3\n\n---\n\nDevelop algorithms to detect competitor mentions and analyze competitive positioning in pain point conversations\n\n\n**Acceptance Criteria**:\n- Competitor mention detection working with >90% accuracy\n- Competitive alternative analysis implemented\n- Positioning gap identification automated\n- Competitor database integration functional",
+        "issuetype": {
+          "name": "Sub-task"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "competitive-analysis",
+          "algorithms",
+          "team-b",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-b@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 3,
+        "customfield_10002": "B - CMS Research",
+        "parent": {
+          "key": "N8N-8"
+        }
+      }
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Epic: CMS Market Research",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: TBD\n\n---\n\nResearch content management system integrations and competitive positioning\n",
+        "issuetype": {
+          "name": "Epic"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "research",
+          "cms",
+          "competition",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 0,
+        "customfield_10002": "A - Jira Development"
+      },
+      "key": "N8N-3"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Analyze competitor integrations (Heretto, Smartling, RWS)",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: B - CMS Research (team-b@company.com)\n**Story Points**: 8\n\n---\n\nResearch existing CMS integrations and identify N8N workflow opportunities. Focus on documentation workflows that could be adapted from existing templates in `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/` collection.\n\n\n**Technical Notes**: **Management Outside N8N:** CMS vendor API documentation review, pricing model analysis, customer interview scheduling\n\n**Acceptance Criteria**:\n- Competitive analysis report comparing 10+ CMS platforms\n- Gap analysis identifying N8N workflow opportunities\n- Technical feasibility assessment for top 3 integration targets\n- Customer persona definitions for CMS workflow users",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "competitive-analysis",
+          "cms",
+          "documentation",
+          "team-b",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-b@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 8,
+        "customfield_10002": "B - CMS Research",
+        "customfield_10014": "N8N-3"
+      },
+      "key": "N8N-13"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "WordPress automation workflow catalog",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: B - CMS Research (team-b@company.com)\n**Story Points**: 6\n\n---\n\nCatalog and test WordPress-related workflows from local collection. Identify workflows like `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0832-wordpress-ai-content-generator.json` for potential marketplace plugins.\n\n\n**Technical Notes**: **Management Outside N8N:** WordPress test site setup, plugin development environment, marketplace research\n\n**Acceptance Criteria**:\n- 20+ WordPress workflows tested and documented from local collection\n- Top 5 workflows identified for plugin development priority\n- Technical requirements documented for each workflow conversion\n- WordPress marketplace competitor analysis completed",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "wordpress",
+          "workflow-catalog",
+          "testing",
+          "team-b",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-b@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 6,
+        "customfield_10002": "B - CMS Research",
+        "customfield_10014": "N8N-3"
+      },
+      "key": "N8N-14"
+    }
+  ]
+}

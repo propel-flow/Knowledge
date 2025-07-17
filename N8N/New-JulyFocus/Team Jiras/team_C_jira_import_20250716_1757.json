@@ -1,0 +1,273 @@
+{
+  "issues": [
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Integrate LinkedIn scraper with pain point intelligence",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: C - Outreach (team-c@company.com)\n**Story Points**: 7\n\n---\n\nEnhance existing LinkedIn scraper workflow `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/linkedin_scraping_workflow_claude_for_work.json` to capture and analyze pain points from LinkedIn interactions.\n\n\n**Technical Notes**: **Management Outside N8N:** LinkedIn API compliance, Claude for Work browser automation service, rate limiting management\n\n**Acceptance Criteria**:\n- LinkedIn interactions (comments, messages, posts) analyzed for pain points\n- Claude for Work results routed through pain point extraction workflow\n- Prospect profiles enriched with pain point intelligence\n- LinkedIn engagement data correlated with sales intelligence\n- Discord notifications for high-value LinkedIn prospects",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "High"
+        },
+        "labels": [
+          "linkedin",
+          "social-media",
+          "prospect-intelligence",
+          "team-c",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-c@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 7,
+        "customfield_10002": "C - Outreach"
+      },
+      "key": "N8N-4"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Implement dynamic message optimization engine",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: C - Outreach (team-c@company.com)\n**Story Points**: 11\n\n---\n\nBuild system to automatically optimize email templates, landing page copy, and sales materials based on trending pain points and performance data.\n\n\n**Technical Notes**: **Management Outside N8N:** A/B testing platform integration, content management system updates, performance tracking\n\n**Acceptance Criteria**:\n- Email templates automatically updated based on pain point trends\n- Landing page headlines optimized for detected prospect concerns\n- A/B testing triggered for message variants based on pain point categories\n- Performance correlation tracked between pain points and conversion rates\n- Artifact updates stored in GitHub with version control",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "optimization",
+          "a-b-testing",
+          "dynamic-content",
+          "team-c",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-c@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 11,
+        "customfield_10002": "C - Outreach"
+      },
+      "key": "N8N-7"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Set up A/B testing framework integration",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: C - Outreach (team-c@company.com)\n**Story Points**: 4\n\n---\n\nResearch and implement A/B testing integration for email campaigns and landing page optimization based on pain point data\n\n\n**Technical Notes**: **Management Outside N8N:** A/B testing platform selection, statistical significance tracking, campaign management\n\n**Acceptance Criteria**:\n- A/B testing platform selected and integrated\n- Test creation automated based on pain point categories\n- Performance tracking and significance testing implemented\n- Results feed back into message optimization loop",
+        "issuetype": {
+          "name": "Sub-task"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "a-b-testing",
+          "optimization",
+          "integration",
+          "team-c",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-c@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 4,
+        "customfield_10002": "C - Outreach",
+        "parent": {
+          "key": "N8N-7"
+        }
+      }
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Test LinkedIn scraper pain point integration",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: C - Outreach (team-c@company.com)\n**Story Points**: 3\n\n---\n\nTest integration between existing LinkedIn scraper and new pain point extraction workflow with sample LinkedIn data\n\n\n**Acceptance Criteria**:\n- LinkedIn interaction data successfully routed to pain point workflow\n- Pain points extracted from social media context\n- Prospect intelligence updates verified in GitHub\n- Discord notifications tested for LinkedIn prospects",
+        "issuetype": {
+          "name": "Sub-task"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "testing",
+          "linkedin",
+          "integration",
+          "team-c",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-c@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 3,
+        "customfield_10002": "C - Outreach",
+        "parent": {
+          "key": "N8N-4"
+        }
+      }
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Epic: Community Building & Outreach",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: TBD\n\n---\n\nBuild private groups across LinkedIn, Facebook, Reddit & Discord while executing automated outreach campaigns\n",
+        "issuetype": {
+          "name": "Epic"
+        },
+        "priority": {
+          "name": "High"
+        },
+        "labels": [
+          "community",
+          "outreach",
+          "marketing",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 0,
+        "customfield_10002": "A - Jira Development"
+      },
+      "key": "N8N-2"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Deploy LinkedIn prospecting automation",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: C - Outreach (team-c@company.com)\n**Story Points**: 8\n\n---\n\nUse existing workflow `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/linkedin_scraping_workflow_claude_for_work.json` to identify and engage prospects through automated LinkedIn outreach.\n\n\n**Technical Notes**: **Management Outside N8N:** LinkedIn API compliance, cookie-based authentication management, Claude for Work browser automation service\n\n**Acceptance Criteria**:\n- LinkedIn scraper identifies 50+ qualified prospects daily\n- Claude for Work analyzes prospect profiles for automation fit scoring\n- Automated personalized connection requests sent with <20% rejection rate\n- Prospects tracked through engagement funnel in CRM system",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "High"
+        },
+        "labels": [
+          "linkedin",
+          "prospecting",
+          "automation",
+          "team-c",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-c@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 8,
+        "customfield_10002": "C - Outreach",
+        "customfield_10014": "N8N-2"
+      },
+      "key": "N8N-9"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Create private LinkedIn group for technical decision makers",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: C - Outreach (team-c@company.com)\n**Story Points**: 5\n\n---\n\nEstablish private LinkedIn group targeting CTOs, engineering managers, and product leaders. Use prospect data from LinkedIn scraping workflow to build initial member base.\n\n\n**Technical Notes**: **Management Outside N8N:** LinkedIn group admin panel, content calendar management, member approval workflows\n\n**Acceptance Criteria**:\n- Private LinkedIn group created with compelling description and rules\n- 100+ qualified members invited from prospect database\n- Weekly content calendar established for group engagement\n- Group growth tracked with engagement metrics dashboard",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "High"
+        },
+        "labels": [
+          "linkedin-group",
+          "community-building",
+          "technical-audience",
+          "team-c",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-c@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 5,
+        "customfield_10002": "C - Outreach",
+        "customfield_10014": "N8N-2"
+      },
+      "key": "N8N-10"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Reddit community engagement automation",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: C - Outreach (team-c@company.com)\n**Story Points**: 6\n\n---\n\nLeverage existing Reddit scraper `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/Reddit_Scraper/` to identify engagement opportunities and automate community participation.\n\n\n**Technical Notes**: **Management Outside N8N:** Reddit API credentials, karma building strategy, subreddit-specific rule compliance\n\n**Acceptance Criteria**:\n- Daily identification of relevant Reddit discussions in target subreddits\n- Automated comment suggestions generated for manual review\n- Private subreddit created for exclusive N8N automation discussions\n- Reddit engagement metrics tracked and optimized",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "reddit",
+          "community-engagement",
+          "automation",
+          "team-c",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-c@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 6,
+        "customfield_10002": "C - Outreach",
+        "customfield_10014": "N8N-2"
+      },
+      "key": "N8N-11"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Document existing LinkedIn scraping workflow capabilities",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: C - Outreach (team-c@company.com)\n**Story Points**: 2\n\n---\n\nAnalyze and document the functionality of `/Users/katiepotter/0Code/Marketing/Marketing-Research-Channel-Engagment-main-Jun28(KPTest)-notMacReadmefromSubhan/n8n_workflows/linkedin_scraping_workflow_claude_for_work.json`\n",
+        "issuetype": {
+          "name": "Sub-task"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "documentation",
+          "linkedin",
+          "team-c",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-c@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 2,
+        "customfield_10002": "C - Outreach",
+        "parent": {
+          "key": "N8N-9"
+        }
+      }
+    }
+  ]
+}

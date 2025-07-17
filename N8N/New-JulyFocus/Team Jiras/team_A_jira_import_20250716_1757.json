@@ -1,0 +1,360 @@
+{
+  "issues": [
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Build Pain Point Extraction workflow from prospect feedback",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 8\n\n---\n\nEnhance existing workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0290-feedback-openai-google.json` to extract and categorize specific pain points using April Dunford positioning framework.\n\n\n**Technical Notes**: **Management Outside N8N:** OpenAI API usage monitoring, prompt engineering and testing, feedback form design\n\n**Acceptance Criteria**:\n- Workflow extracts pain points from form submissions using GPT-4\n- Pain points categorized using April Dunford's 5 positioning components\n- Emotional indicators (frustration, urgency) detected and scored\n- Results stored in GitHub repository with proper structure\n- Airtable backup created for manual review",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "Highest"
+        },
+        "labels": [
+          "n8n-workflow",
+          "ai-analysis",
+          "feedback-processing",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 8,
+        "customfield_10002": "A - Jira Development"
+      },
+      "key": "N8N-2"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Enhance Email Auto-Responder with pain point extraction",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 10\n\n---\n\nModify existing workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0821-email-ai-auto-responder.json` to extract pain points from email conversations and generate sales-intelligent responses.\n\n\n**Technical Notes**: **Management Outside N8N:** Email provider API limits, vector database management, conversation context tracking\n\n**Acceptance Criteria**:\n- Email conversations analyzed for pain points before generating responses\n- Responses incorporate April Dunford positioning principles\n- Pain points extracted from email thread context and stored\n- Sales guru knowledge applied to response generation\n- Conversation tracking maintains context across email threads",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "High"
+        },
+        "labels": [
+          "email-automation",
+          "ai-analysis",
+          "sales-intelligence",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 10,
+        "customfield_10002": "A - Jira Development"
+      },
+      "key": "N8N-3"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Integrate pain point intelligence with CRM lead scoring",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 7\n\n---\n\nEnhance existing CRM lead workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0010-crm-lead-batchdata-calification.json` to include pain point analysis in lead qualification scoring.\n\n\n**Technical Notes**: **Management Outside N8N:** CRM API integration, scoring algorithm updates, sales process training\n\n**Acceptance Criteria**:\n- Pain point data integrated into lead scoring algorithm\n- Conversation quality assessment added to qualification criteria\n- Sales readiness scoring based on detected pain point urgency\n- CRM records updated with pain point intelligence\n- Lead routing enhanced based on pain point categories",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "crm-integration",
+          "lead-scoring",
+          "qualification",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 7,
+        "customfield_10002": "A - Jira Development"
+      },
+      "key": "N8N-10"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Create pain point extraction prompts using sales frameworks",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 3\n\n---\n\nDesign and test AI prompts that apply April Dunford positioning framework to extract categorized pain points from prospect interactions\n\n\n**Acceptance Criteria**:\n- Prompts extract all 5 April Dunford positioning components\n- Pain point categories defined and tested\n- Emotional indicator detection prompts created\n- Prompt accuracy >80% on test data",
+        "issuetype": {
+          "name": "Sub-task"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "prompt-engineering",
+          "ai-prompts",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 3,
+        "customfield_10002": "A - Jira Development",
+        "parent": {
+          "key": "N8N-2"
+        }
+      }
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Test enhanced feedback workflow with sample data",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 2\n\n---\n\nCreate test dataset and validate pain point extraction accuracy and GitHub storage functionality\n\n\n**Acceptance Criteria**:\n- 20 sample feedback submissions processed successfully\n- Pain point categorization accuracy measured and documented\n- GitHub storage verified working correctly\n- Airtable backup tested and functional",
+        "issuetype": {
+          "name": "Sub-task"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "testing",
+          "validation",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 2,
+        "customfield_10002": "A - Jira Development",
+        "parent": {
+          "key": "N8N-2"
+        }
+      }
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Epic: Jira Marketplace Development",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: TBD\n\n---\n\nConvert priority N8N workflows into Jira marketplace plugins\n",
+        "issuetype": {
+          "name": "Epic"
+        },
+        "priority": {
+          "name": "Highest"
+        },
+        "labels": [
+          "marketplace",
+          "development",
+          "plugins",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 0,
+        "customfield_10002": "A - Jira Development"
+      },
+      "key": "N8N-1"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Convert Jira-Discord webhook integration workflow",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 8\n\n---\n\nModify local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0440-jira_telegram_webhook.json` to work with Discord instead of Telegram for team coordination. This workflow currently handles Jira webhooks and routes them to Telegram - needs adaptation for Discord API integration.\n\n\n**Technical Notes**: **Management Outside N8N:** Discord bot permissions and server setup required outside N8N\n\n**Acceptance Criteria**:\n- Discord webhook receives Jira ticket updates from N8N workflow\n- Formatted messages posted to appropriate Discord channels with proper formatting\n- Team members can interact with tickets via Discord reactions/commands\n- Integration tested with sample tickets from development Jira instance",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "Highest"
+        },
+        "labels": [
+          "n8n-workflow",
+          "discord",
+          "jira-integration",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 8,
+        "customfield_10002": "A - Jira Development",
+        "customfield_10014": "N8N-1"
+      },
+      "key": "N8N-5"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Build Splunk-Jira automation plugin from existing workflow",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 13\n\n---\n\nConvert local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/1240-splunk-jira-ticket-automation.json` into a Jira marketplace plugin for enterprise logging integration. Original workflow automates ticket creation from Splunk alerts.\n\n\n**Technical Notes**: **Management Outside N8N:** Splunk API credentials, Jira plugin framework (Atlassian Connect/Forge), marketplace submission process\n\n**Acceptance Criteria**:\n- Plugin automatically creates Jira tickets from Splunk alerts\n- Alert severity mapping to Jira priority levels implemented\n- Compatible with both Jira Cloud and Server instances\n- Passes Atlassian marketplace technical review requirements",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "Highest"
+        },
+        "labels": [
+          "plugin-development",
+          "splunk-integration",
+          "automation",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 13,
+        "customfield_10002": "A - Jira Development",
+        "customfield_10014": "N8N-1"
+      },
+      "key": "N8N-6"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "WordPress-Jira AI content workflow plugin",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 10\n\n---\n\nAdapt local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0883-n8n-ai-categorize-wordpress.json` for Jira marketplace as content management integration. Original workflow uses AI to categorize WordPress content.\n\n\n**Technical Notes**: **Management Outside N8N:** WordPress plugin development, OpenAI/Claude API management, dual marketplace submissions (WordPress & Jira)\n\n**Acceptance Criteria**:\n- WordPress posts automatically create Jira tickets for content review\n- AI categorizes content and assigns to appropriate Jira teams\n- Editorial workflow integrated with Jira approval process\n- Plugin published to both WordPress and Jira marketplaces",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "High"
+        },
+        "labels": [
+          "wordpress",
+          "content-management",
+          "ai",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 10,
+        "customfield_10002": "A - Jira Development",
+        "customfield_10014": "N8N-1"
+      },
+      "key": "N8N-7"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Email AI auto-responder Jira integration",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 11\n\n---\n\nConvert local workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0821-email-ai-auto-responder.json` into Jira plugin for customer support automation. Original workflow handles email processing with AI responses.\n\n\n**Technical Notes**: **Management Outside N8N:** Email provider APIs (Gmail, Outlook), AI model management, GDPR compliance for email processing\n\n**Acceptance Criteria**:\n- Incoming emails automatically create Jira tickets\n- AI generates draft responses based on ticket context\n- Email threading maintained in Jira comments\n- Support for multiple email providers and AI models",
+        "issuetype": {
+          "name": "Story"
+        },
+        "priority": {
+          "name": "High"
+        },
+        "labels": [
+          "email-automation",
+          "ai-integration",
+          "customer-support",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 11,
+        "customfield_10002": "A - Jira Development",
+        "customfield_10014": "N8N-1"
+      },
+      "key": "N8N-8"
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Setup development environment for N8N workflow modification",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 2\n\n---\n\nInstall N8N locally and import existing workflow `/Users/katiepotter/0Code/N8N-Templates/N8N-2000+OutbackDingo/0440-jira_telegram_webhook.json` for modification\n",
+        "issuetype": {
+          "name": "Sub-task"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "setup",
+          "development-environment",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 2,
+        "customfield_10002": "A - Jira Development",
+        "parent": {
+          "key": "N8N-5"
+        }
+      }
+    },
+    {
+      "fields": {
+        "project": {
+          "key": "N8N"
+        },
+        "summary": "Research Discord API integration patterns",
+        "description": "\n## \ud83d\udd25 ACTION REQUIRED \ud83d\udd25\n\n**WHEN YOU TAKE THIS TICKET:**\n1. Remove the \"CHANGE_TO_YOUR_NAME\" label\n2. Add your name label: `member-yourname` (e.g., `member-sarah`)\n3. Update \"Working On\" field: Add your full name\n4. Add comment: \"Taking this - [Your Name]\"\n\n**Team**: A - Jira Development (team-a@company.com)\n**Story Points**: 3\n\n---\n\nStudy Discord webhook API and identify required changes to replace Telegram integration in existing workflow\n",
+        "issuetype": {
+          "name": "Sub-task"
+        },
+        "priority": {
+          "name": "Medium"
+        },
+        "labels": [
+          "research",
+          "discord-api",
+          "team-a",
+          "CHANGE_TO_YOUR_NAME"
+        ],
+        "assignee": {
+          "name": "team-a@company.com"
+        },
+        "customfield_10001": "Add your name when taking ownership (e.g., 'Working on this - Sarah')",
+        "customfield_10016": 3,
+        "customfield_10002": "A - Jira Development",
+        "parent": {
+          "key": "N8N-5"
+        }
+      }
+    }
+  ]
+}
